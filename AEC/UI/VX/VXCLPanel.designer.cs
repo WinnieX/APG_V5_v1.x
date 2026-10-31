@@ -47,7 +47,7 @@
             // 
             this.lblClipRelease.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.lblClipRelease.BackColor = System.Drawing.Color.Transparent;
-            this.lblClipRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblClipRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblClipRelease.Location = new System.Drawing.Point(0, 320);
             this.lblClipRelease.Name = "lblClipRelease";
             this.lblClipRelease.Size = new System.Drawing.Size(108, 23);
@@ -58,7 +58,7 @@
             // 
             this.lblClipThreshold.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.lblClipThreshold.BackColor = System.Drawing.Color.Transparent;
-            this.lblClipThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblClipThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblClipThreshold.Location = new System.Drawing.Point(0, 258);
             this.lblClipThreshold.Name = "lblClipThreshold";
             this.lblClipThreshold.Size = new System.Drawing.Size(108, 23);
@@ -69,7 +69,7 @@
             // 
             this.lblRelease.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.lblRelease.BackColor = System.Drawing.Color.Transparent;
-            this.lblRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblRelease.Location = new System.Drawing.Point(0, 196);
             this.lblRelease.Name = "lblRelease";
             this.lblRelease.Size = new System.Drawing.Size(108, 23);
@@ -80,7 +80,7 @@
             // 
             this.lblAttack.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.lblAttack.BackColor = System.Drawing.Color.Transparent;
-            this.lblAttack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblAttack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblAttack.Location = new System.Drawing.Point(0, 134);
             this.lblAttack.Name = "lblAttack";
             this.lblAttack.Size = new System.Drawing.Size(108, 23);
@@ -91,7 +91,7 @@
             // 
             this.lblThreshold.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.lblThreshold.BackColor = System.Drawing.Color.Transparent;
-            this.lblThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblThreshold.Location = new System.Drawing.Point(0, 72);
             this.lblThreshold.Name = "lblThreshold";
             this.lblThreshold.Size = new System.Drawing.Size(108, 23);
@@ -102,7 +102,7 @@
             // 
             this.lblTtile.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.lblTtile.BackColor = System.Drawing.Color.Transparent;
-            this.lblTtile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblTtile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblTtile.Location = new System.Drawing.Point(0, 4);
             this.lblTtile.Name = "lblTtile";
             this.lblTtile.Size = new System.Drawing.Size(108, 23);
@@ -111,10 +111,10 @@
             // 
             // paramClipRelease
             // 
-            this.paramClipRelease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.paramClipRelease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.paramClipRelease.disabledBack = global::AEC.Properties.Resources.param_label_disabled;
             this.paramClipRelease.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.paramClipRelease.ForeColor = System.Drawing.Color.White;
+            this.paramClipRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.paramClipRelease.initV = ((short)(0));
             this.paramClipRelease.isShowUpdownButton = true;
             this.paramClipRelease.Location = new System.Drawing.Point(9, 346);
@@ -130,10 +130,10 @@
             // 
             // paramClipThreshold
             // 
-            this.paramClipThreshold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.paramClipThreshold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.paramClipThreshold.disabledBack = global::AEC.Properties.Resources.param_label_disabled;
             this.paramClipThreshold.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.paramClipThreshold.ForeColor = System.Drawing.Color.White;
+            this.paramClipThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.paramClipThreshold.initV = ((short)(0));
             this.paramClipThreshold.isShowUpdownButton = true;
             this.paramClipThreshold.Location = new System.Drawing.Point(9, 284);
@@ -149,10 +149,10 @@
             // 
             // paramRelease
             // 
-            this.paramRelease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.paramRelease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.paramRelease.disabledBack = global::AEC.Properties.Resources.param_label_disabled;
             this.paramRelease.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.paramRelease.ForeColor = System.Drawing.Color.White;
+            this.paramRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.paramRelease.initV = ((short)(0));
             this.paramRelease.isShowUpdownButton = true;
             this.paramRelease.Location = new System.Drawing.Point(9, 222);
@@ -168,10 +168,10 @@
             // 
             // paramAttack
             // 
-            this.paramAttack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.paramAttack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.paramAttack.disabledBack = global::AEC.Properties.Resources.param_label_disabled;
             this.paramAttack.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.paramAttack.ForeColor = System.Drawing.Color.White;
+            this.paramAttack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.paramAttack.initV = ((short)(0));
             this.paramAttack.isShowUpdownButton = true;
             this.paramAttack.Location = new System.Drawing.Point(9, 160);
@@ -187,10 +187,10 @@
             // 
             // paramThreshold
             // 
-            this.paramThreshold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.paramThreshold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.paramThreshold.disabledBack = global::AEC.Properties.Resources.param_label_disabled;
             this.paramThreshold.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.paramThreshold.ForeColor = System.Drawing.Color.White;
+            this.paramThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.paramThreshold.initV = ((short)(0));
             this.paramThreshold.isShowUpdownButton = true;
             this.paramThreshold.Location = new System.Drawing.Point(9, 98);
@@ -212,7 +212,7 @@
             this.chkAuto.backNormal = global::AEC.Properties.Resources.btn_normal;
             this.chkAuto.backPressed = global::AEC.Properties.Resources.auto_btn_pressed;
             this.chkAuto.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.chkAuto.ForeColor = System.Drawing.Color.LightGray;
+            this.chkAuto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.chkAuto.isAutoCheck = true;
             this.chkAuto.isChecked = false;
             this.chkAuto.isShowCheckedBackWhenDsiabled = false;
@@ -245,7 +245,7 @@
             // CLPanel
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.Controls.Add(this.btnSwitchUnit);
             this.Controls.Add(this.paramClipRelease);
             this.Controls.Add(this.paramClipThreshold);

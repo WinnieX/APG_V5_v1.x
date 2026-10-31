@@ -33,6 +33,23 @@ namespace AEC.UI.Controls
 
         public bool isShowBackEQLabel { get; set; }
 
+        public void SetBackgroundColors(
+            Color normalColor1,
+            Color normalColor2,
+            Color hoverColor1,
+            Color hoverColor2,
+            Color pressedColor1,
+            Color pressedColor2)
+        {
+            normalBackColor1 = normalColor1;
+            normalBackColor2 = normalColor2;
+            hoverBackColor1 = hoverColor1;
+            hoverBackColor2 = hoverColor2;
+            pressedBackColor1 = pressedColor1;
+            pressedBackColor2 = pressedColor2;
+            Invalidate();
+        }
+
         public EQThumbnail()
         {
             InitializeComponent();

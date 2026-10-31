@@ -52,16 +52,17 @@
             // 
             // panelSurOutput
             // 
+            this.panelSurOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelSurOutput.Controls.Add(this.panelMonitorSurOutput);
             this.panelSurOutput.Controls.Add(this.gtLabel5);
             this.panelSurOutput.Controls.Add(this.eqThumbnailSurOutput);
-            this.panelSurOutput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelSurOutput.ForeColor = System.Drawing.Color.LightGray;
+            this.panelSurOutput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelSurOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelSurOutput.Location = new System.Drawing.Point(891, 20);
             this.panelSurOutput.Name = "panelSurOutput";
             this.panelSurOutput.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelSurOutput.Radius = 18;
-            this.panelSurOutput.RectColor = System.Drawing.Color.Black;
+            this.panelSurOutput.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelSurOutput.ShowRect = true;
             this.panelSurOutput.Size = new System.Drawing.Size(264, 612);
             this.panelSurOutput.TabIndex = 0;
@@ -70,7 +71,7 @@
             // 
             // panelMonitorSurOutput
             // 
-            this.panelMonitorSurOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelMonitorSurOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelMonitorSurOutput.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panelMonitorSurOutput.Location = new System.Drawing.Point(4, 102);
             this.panelMonitorSurOutput.Name = "panelMonitorSurOutput";
@@ -81,6 +82,7 @@
             // 
             this.gtLabel5.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.gtLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.gtLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.gtLabel5.Location = new System.Drawing.Point(89, 28);
             this.gtLabel5.Name = "gtLabel5";
             this.gtLabel5.Size = new System.Drawing.Size(86, 23);
@@ -99,6 +101,7 @@
             this.eqThumbnailSurOutput.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.eqThumbnailSurOutput.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(234)))));
             this.eqThumbnailSurOutput.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.eqThumbnailSurOutput.isShowBackEQLabel = false;
             this.eqThumbnailSurOutput.Location = new System.Drawing.Point(89, 51);
             this.eqThumbnailSurOutput.Name = "eqThumbnailSurOutput";
             this.eqThumbnailSurOutput.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
@@ -108,6 +111,9 @@
             this.eqThumbnailSurOutput.PressedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(96)))), ((int)(((byte)(168)))));
             this.eqThumbnailSurOutput.PressedTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.eqThumbnailSurOutput.Radius = 12;
+            this.eqThumbnailSurOutput.RoundStyle = ((AEC.UI.Utility.RoundStyle)((((AEC.UI.Utility.RoundStyle.TopLeft | AEC.UI.Utility.RoundStyle.TopRight) 
+            | AEC.UI.Utility.RoundStyle.BottomRight) 
+            | AEC.UI.Utility.RoundStyle.BottomLeft)));
             this.eqThumbnailSurOutput.ShowBorder = false;
             this.eqThumbnailSurOutput.ShowText = true;
             this.eqThumbnailSurOutput.Size = new System.Drawing.Size(86, 42);
@@ -117,16 +123,17 @@
             // 
             // panelAux2Output
             // 
+            this.panelAux2Output.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelAux2Output.Controls.Add(this.panelMonitorAux2Output);
             this.panelAux2Output.Controls.Add(this.gtLabel4);
             this.panelAux2Output.Controls.Add(this.eqThumbnailAux2Output);
-            this.panelAux2Output.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelAux2Output.ForeColor = System.Drawing.Color.LightGray;
+            this.panelAux2Output.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelAux2Output.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelAux2Output.Location = new System.Drawing.Point(641, 20);
             this.panelAux2Output.Name = "panelAux2Output";
             this.panelAux2Output.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelAux2Output.Radius = 18;
-            this.panelAux2Output.RectColor = System.Drawing.Color.Black;
+            this.panelAux2Output.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelAux2Output.ShowRect = true;
             this.panelAux2Output.Size = new System.Drawing.Size(244, 612);
             this.panelAux2Output.TabIndex = 0;
@@ -135,7 +142,7 @@
             // 
             // panelMonitorAux2Output
             // 
-            this.panelMonitorAux2Output.BackColor = System.Drawing.Color.Transparent;
+            this.panelMonitorAux2Output.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelMonitorAux2Output.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panelMonitorAux2Output.Location = new System.Drawing.Point(4, 102);
             this.panelMonitorAux2Output.Name = "panelMonitorAux2Output";
@@ -146,6 +153,7 @@
             // 
             this.gtLabel4.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.gtLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.gtLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.gtLabel4.Location = new System.Drawing.Point(79, 28);
             this.gtLabel4.Name = "gtLabel4";
             this.gtLabel4.Size = new System.Drawing.Size(86, 23);
@@ -164,6 +172,7 @@
             this.eqThumbnailAux2Output.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.eqThumbnailAux2Output.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(234)))));
             this.eqThumbnailAux2Output.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.eqThumbnailAux2Output.isShowBackEQLabel = false;
             this.eqThumbnailAux2Output.Location = new System.Drawing.Point(79, 51);
             this.eqThumbnailAux2Output.Name = "eqThumbnailAux2Output";
             this.eqThumbnailAux2Output.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
@@ -173,6 +182,9 @@
             this.eqThumbnailAux2Output.PressedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(96)))), ((int)(((byte)(168)))));
             this.eqThumbnailAux2Output.PressedTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.eqThumbnailAux2Output.Radius = 12;
+            this.eqThumbnailAux2Output.RoundStyle = ((AEC.UI.Utility.RoundStyle)((((AEC.UI.Utility.RoundStyle.TopLeft | AEC.UI.Utility.RoundStyle.TopRight) 
+            | AEC.UI.Utility.RoundStyle.BottomRight) 
+            | AEC.UI.Utility.RoundStyle.BottomLeft)));
             this.eqThumbnailAux2Output.ShowBorder = false;
             this.eqThumbnailAux2Output.ShowText = true;
             this.eqThumbnailAux2Output.Size = new System.Drawing.Size(86, 42);
@@ -182,16 +194,17 @@
             // 
             // panelAux1Output
             // 
+            this.panelAux1Output.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelAux1Output.Controls.Add(this.panelMonitorAux1Output);
             this.panelAux1Output.Controls.Add(this.gtLabel3);
             this.panelAux1Output.Controls.Add(this.eqThumbnailAux1Output);
-            this.panelAux1Output.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelAux1Output.ForeColor = System.Drawing.Color.LightGray;
+            this.panelAux1Output.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelAux1Output.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelAux1Output.Location = new System.Drawing.Point(391, 20);
             this.panelAux1Output.Name = "panelAux1Output";
             this.panelAux1Output.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelAux1Output.Radius = 18;
-            this.panelAux1Output.RectColor = System.Drawing.Color.Black;
+            this.panelAux1Output.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelAux1Output.ShowRect = true;
             this.panelAux1Output.Size = new System.Drawing.Size(244, 612);
             this.panelAux1Output.TabIndex = 0;
@@ -200,7 +213,7 @@
             // 
             // panelMonitorAux1Output
             // 
-            this.panelMonitorAux1Output.BackColor = System.Drawing.Color.Transparent;
+            this.panelMonitorAux1Output.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelMonitorAux1Output.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panelMonitorAux1Output.Location = new System.Drawing.Point(3, 102);
             this.panelMonitorAux1Output.Name = "panelMonitorAux1Output";
@@ -211,6 +224,7 @@
             // 
             this.gtLabel3.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.gtLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.gtLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.gtLabel3.Location = new System.Drawing.Point(79, 28);
             this.gtLabel3.Name = "gtLabel3";
             this.gtLabel3.Size = new System.Drawing.Size(86, 23);
@@ -229,6 +243,7 @@
             this.eqThumbnailAux1Output.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.eqThumbnailAux1Output.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(234)))));
             this.eqThumbnailAux1Output.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.eqThumbnailAux1Output.isShowBackEQLabel = false;
             this.eqThumbnailAux1Output.Location = new System.Drawing.Point(79, 51);
             this.eqThumbnailAux1Output.Name = "eqThumbnailAux1Output";
             this.eqThumbnailAux1Output.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
@@ -238,6 +253,9 @@
             this.eqThumbnailAux1Output.PressedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(96)))), ((int)(((byte)(168)))));
             this.eqThumbnailAux1Output.PressedTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.eqThumbnailAux1Output.Radius = 12;
+            this.eqThumbnailAux1Output.RoundStyle = ((AEC.UI.Utility.RoundStyle)((((AEC.UI.Utility.RoundStyle.TopLeft | AEC.UI.Utility.RoundStyle.TopRight) 
+            | AEC.UI.Utility.RoundStyle.BottomRight) 
+            | AEC.UI.Utility.RoundStyle.BottomLeft)));
             this.eqThumbnailAux1Output.ShowBorder = false;
             this.eqThumbnailAux1Output.ShowText = true;
             this.eqThumbnailAux1Output.Size = new System.Drawing.Size(86, 42);
@@ -247,16 +265,17 @@
             // 
             // panelMainOutput
             // 
+            this.panelMainOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelMainOutput.Controls.Add(this.panelMonitorMainOutput);
             this.panelMainOutput.Controls.Add(this.gtLabel2);
             this.panelMainOutput.Controls.Add(this.eqThumbnailMainOutput);
-            this.panelMainOutput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelMainOutput.ForeColor = System.Drawing.Color.LightGray;
+            this.panelMainOutput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelMainOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelMainOutput.Location = new System.Drawing.Point(121, 20);
             this.panelMainOutput.Name = "panelMainOutput";
             this.panelMainOutput.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelMainOutput.Radius = 18;
-            this.panelMainOutput.RectColor = System.Drawing.Color.Black;
+            this.panelMainOutput.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelMainOutput.ShowRect = true;
             this.panelMainOutput.Size = new System.Drawing.Size(264, 612);
             this.panelMainOutput.TabIndex = 0;
@@ -265,7 +284,7 @@
             // 
             // panelMonitorMainOutput
             // 
-            this.panelMonitorMainOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelMonitorMainOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelMonitorMainOutput.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panelMonitorMainOutput.Location = new System.Drawing.Point(3, 102);
             this.panelMonitorMainOutput.Name = "panelMonitorMainOutput";
@@ -276,6 +295,7 @@
             // 
             this.gtLabel2.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.gtLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.gtLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.gtLabel2.Location = new System.Drawing.Point(89, 28);
             this.gtLabel2.Name = "gtLabel2";
             this.gtLabel2.Size = new System.Drawing.Size(86, 23);
@@ -294,6 +314,7 @@
             this.eqThumbnailMainOutput.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.eqThumbnailMainOutput.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(234)))));
             this.eqThumbnailMainOutput.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.eqThumbnailMainOutput.isShowBackEQLabel = false;
             this.eqThumbnailMainOutput.Location = new System.Drawing.Point(89, 51);
             this.eqThumbnailMainOutput.Name = "eqThumbnailMainOutput";
             this.eqThumbnailMainOutput.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
@@ -303,6 +324,9 @@
             this.eqThumbnailMainOutput.PressedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(96)))), ((int)(((byte)(168)))));
             this.eqThumbnailMainOutput.PressedTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.eqThumbnailMainOutput.Radius = 12;
+            this.eqThumbnailMainOutput.RoundStyle = ((AEC.UI.Utility.RoundStyle)((((AEC.UI.Utility.RoundStyle.TopLeft | AEC.UI.Utility.RoundStyle.TopRight) 
+            | AEC.UI.Utility.RoundStyle.BottomRight) 
+            | AEC.UI.Utility.RoundStyle.BottomLeft)));
             this.eqThumbnailMainOutput.ShowBorder = false;
             this.eqThumbnailMainOutput.ShowText = true;
             this.eqThumbnailMainOutput.Size = new System.Drawing.Size(86, 42);

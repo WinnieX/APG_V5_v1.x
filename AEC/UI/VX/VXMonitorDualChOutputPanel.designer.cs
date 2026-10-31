@@ -91,17 +91,18 @@
             // 
             // panelDelay
             // 
+            this.panelDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.panelDelay.Controls.Add(this.lblLeftDelay);
             this.panelDelay.Controls.Add(this.lblRightDelay);
             this.panelDelay.Controls.Add(this.paramLeftChDelay);
             this.panelDelay.Controls.Add(this.paramRightChDelay);
-            this.panelDelay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.panelDelay.ForeColor = System.Drawing.Color.LightGray;
+            this.panelDelay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
+            this.panelDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelDelay.Location = new System.Drawing.Point(6, 398);
             this.panelDelay.Name = "panelDelay";
             this.panelDelay.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelDelay.Radius = 18;
-            this.panelDelay.RectColor = System.Drawing.Color.Black;
+            this.panelDelay.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelDelay.ShowRect = false;
             this.panelDelay.Size = new System.Drawing.Size(192, 64);
             this.panelDelay.TabIndex = 30;
@@ -112,7 +113,7 @@
             // 
             this.lblLeftDelay.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.lblLeftDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblLeftDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblLeftDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblLeftDelay.Location = new System.Drawing.Point(10, 4);
             this.lblLeftDelay.Name = "lblLeftDelay";
             this.lblLeftDelay.Size = new System.Drawing.Size(88, 23);
@@ -123,7 +124,7 @@
             // 
             this.lblRightDelay.alignment = AEC.UI.gtLabel.AlignMent.Center;
             this.lblRightDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblRightDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblRightDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblRightDelay.Location = new System.Drawing.Point(101, 4);
             this.lblRightDelay.Name = "lblRightDelay";
             this.lblRightDelay.Size = new System.Drawing.Size(88, 23);
@@ -132,10 +133,10 @@
             // 
             // paramLeftChDelay
             // 
-            this.paramLeftChDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.paramLeftChDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.paramLeftChDelay.disabledBack = global::AEC.Properties.Resources.param_label_disabled;
             this.paramLeftChDelay.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.paramLeftChDelay.ForeColor = System.Drawing.Color.White;
+            this.paramLeftChDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.paramLeftChDelay.initV = ((short)(0));
             this.paramLeftChDelay.isShowUpdownButton = true;
             this.paramLeftChDelay.Location = new System.Drawing.Point(15, 30);
@@ -151,10 +152,10 @@
             // 
             // paramRightChDelay
             // 
-            this.paramRightChDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.paramRightChDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.paramRightChDelay.disabledBack = global::AEC.Properties.Resources.param_label_disabled;
             this.paramRightChDelay.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.paramRightChDelay.ForeColor = System.Drawing.Color.White;
+            this.paramRightChDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.paramRightChDelay.initV = ((short)(0));
             this.paramRightChDelay.isShowUpdownButton = true;
             this.paramRightChDelay.Location = new System.Drawing.Point(108, 30);
@@ -175,7 +176,7 @@
             this.chkRightMute.backHover = global::AEC.Properties.Resources.btn_mute_hover;
             this.chkRightMute.backNormal = global::AEC.Properties.Resources.btn_mute_normal;
             this.chkRightMute.backPressed = global::AEC.Properties.Resources.btn_mute_pressed;
-            this.chkRightMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.chkRightMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.chkRightMute.isAutoCheck = true;
             this.chkRightMute.isChecked = false;
             this.chkRightMute.isShowCheckedBackWhenDsiabled = true;
@@ -195,7 +196,7 @@
             this.chkLeftMute.backHover = global::AEC.Properties.Resources.btn_mute_hover;
             this.chkLeftMute.backNormal = global::AEC.Properties.Resources.btn_mute_normal;
             this.chkLeftMute.backPressed = global::AEC.Properties.Resources.btn_mute_pressed;
-            this.chkLeftMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.chkLeftMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.chkLeftMute.isAutoCheck = true;
             this.chkLeftMute.isChecked = false;
             this.chkLeftMute.isShowCheckedBackWhenDsiabled = true;
@@ -210,15 +211,15 @@
             // 
             // panelLimiter
             // 
-            this.panelLimiter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panelLimiter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.panelLimiter.Controls.Add(this.panelCL);
-            this.panelLimiter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.panelLimiter.ForeColor = System.Drawing.Color.LightGray;
+            this.panelLimiter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
+            this.panelLimiter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelLimiter.Location = new System.Drawing.Point(6, 0);
             this.panelLimiter.Name = "panelLimiter";
             this.panelLimiter.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelLimiter.Radius = 18;
-            this.panelLimiter.RectColor = System.Drawing.Color.Black;
+            this.panelLimiter.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelLimiter.ShowRect = false;
             this.panelLimiter.Size = new System.Drawing.Size(192, 390);
             this.panelLimiter.TabIndex = 0;
@@ -227,17 +228,17 @@
             // 
             // panelCL
             // 
-            this.panelCL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panelCL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.panelCL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panelCL.Location = new System.Drawing.Point(42, 0);
             this.panelCL.Name = "panelCL";
             this.panelCL.Size = new System.Drawing.Size(128, 390);
             this.panelCL.TabIndex = 0;
             // 
-            // MonitorDualChOutputPanel
+            // VXMonitorDualChOutputPanel
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.ratioIndicator);
             this.Controls.Add(this.levelIndicator);
             this.Controls.Add(this.panelDelay);
@@ -245,7 +246,7 @@
             this.Controls.Add(this.chkLeftMute);
             this.Controls.Add(this.panelLimiter);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.Name = "MonitorDualChOutputPanel";
+            this.Name = "VXMonitorDualChOutputPanel";
             this.Size = new System.Drawing.Size(258, 506);
             this.panelDelay.ResumeLayout(false);
             this.panelLimiter.ResumeLayout(false);

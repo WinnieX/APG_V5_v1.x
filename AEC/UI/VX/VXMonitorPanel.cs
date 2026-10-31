@@ -35,9 +35,50 @@ namespace AEC.UI.VX
         public VXMonitorPanel()
         {
             InitializeComponent();
+            InitLightTheme();
             InitFont();
 
             this.syncContext = WindowsFormsSynchronizationContext.Current;
+        }
+
+        private void InitLightTheme()
+        {
+            Color normalColor1 = Color.FromArgb(224, 224, 220);
+            Color normalColor2 = Color.FromArgb(242, 242, 236);
+            Color hoverColor1 = Color.FromArgb(205, 231, 245);
+            Color hoverColor2 = Color.FromArgb(185, 221, 240);
+            Color pressedColor1 = Color.FromArgb(181, 213, 232);
+            Color pressedColor2 = Color.FromArgb(159, 202, 226);
+
+            InitThumbnailColors(this.eqThumbnailMainOutput, normalColor1, normalColor2, hoverColor1, hoverColor2, pressedColor1, pressedColor2);
+            InitThumbnailColors(this.eqThumbnailAux1Output, normalColor1, normalColor2, hoverColor1, hoverColor2, pressedColor1, pressedColor2);
+            InitThumbnailColors(this.eqThumbnailAux2Output, normalColor1, normalColor2, hoverColor1, hoverColor2, pressedColor1, pressedColor2);
+            InitThumbnailColors(this.eqThumbnailSurOutput, normalColor1, normalColor2, hoverColor1, hoverColor2, pressedColor1, pressedColor2);
+        }
+
+        private static void InitThumbnailColors(
+            EQThumbnail thumbnail,
+            Color normalColor1,
+            Color normalColor2,
+            Color hoverColor1,
+            Color hoverColor2,
+            Color pressedColor1,
+            Color pressedColor2)
+        {
+            thumbnail.SetBackgroundColors(normalColor1, normalColor2, hoverColor1, hoverColor2, pressedColor1, pressedColor2);
+            thumbnail.fillColor = normalColor2;
+            thumbnail.NormalBorderColor = Color.FromArgb(200, 200, 190);
+            thumbnail.NormalFillColor = normalColor2;
+            thumbnail.NormalTextColor = Color.FromArgb(32, 32, 64);
+            thumbnail.HoverBorderColor = Color.FromArgb(0, 145, 234);
+            thumbnail.HoverFillColor = hoverColor2;
+            thumbnail.HoverTextColor = Color.FromArgb(32, 32, 64);
+            thumbnail.PressedBorderColor = Color.FromArgb(0, 96, 168);
+            thumbnail.PressedFillColor = pressedColor2;
+            thumbnail.PressedTextColor = Color.FromArgb(32, 32, 64);
+            thumbnail.DisabledBorderColor = Color.FromArgb(168, 168, 168);
+            thumbnail.DisabledFillColor = Color.FromArgb(208, 208, 204);
+            thumbnail.DisabledTextColor = Color.FromArgb(128, 128, 128);
         }
 
         private void InitFont()

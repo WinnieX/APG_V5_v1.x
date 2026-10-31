@@ -42,7 +42,7 @@
             this.chkMute.backHover = global::AEC.Properties.Resources.btn_mute_hover;
             this.chkMute.backNormal = global::AEC.Properties.Resources.btn_mute_normal;
             this.chkMute.backPressed = global::AEC.Properties.Resources.btn_mute_pressed;
-            this.chkMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.chkMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.chkMute.isAutoCheck = true;
             this.chkMute.isChecked = false;
             this.chkMute.isShowCheckedBackWhenDsiabled = true;
