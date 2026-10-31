@@ -42,13 +42,13 @@
             // panelHPF
             // 
             this.panelHPF.Controls.Add(this.hpfFreqSlier);
-            this.panelHPF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.panelHPF.ForeColor = System.Drawing.Color.LightGray;
+            this.panelHPF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
+            this.panelHPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelHPF.Location = new System.Drawing.Point(10, 86);
             this.panelHPF.Name = "panelHPF";
             this.panelHPF.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelHPF.Radius = 18;
-            this.panelHPF.RectColor = System.Drawing.Color.Black;
+            this.panelHPF.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelHPF.ShowRect = true;
             this.panelHPF.Size = new System.Drawing.Size(350, 72);
             this.panelHPF.TabIndex = 25;
@@ -78,13 +78,13 @@
             // 
             this.panelFbe.BackColor = System.Drawing.Color.Transparent;
             this.panelFbe.Controls.Add(this.micFbe);
-            this.panelFbe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.panelFbe.ForeColor = System.Drawing.Color.LightGray;
+            this.panelFbe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
+            this.panelFbe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelFbe.Location = new System.Drawing.Point(10, 8);
             this.panelFbe.Name = "panelFbe";
             this.panelFbe.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelFbe.Radius = 18;
-            this.panelFbe.RectColor = System.Drawing.Color.Black;
+            this.panelFbe.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelFbe.ShowRect = true;
             this.panelFbe.Size = new System.Drawing.Size(350, 72);
             this.panelFbe.TabIndex = 24;
@@ -124,7 +124,7 @@
             // compressorPanel
             // 
             this.compressorPanel.BackColor = System.Drawing.Color.Transparent;
-            this.compressorPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.compressorPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.compressorPanel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.compressorPanel.ForeColor = System.Drawing.Color.LightGray;
             this.compressorPanel.Location = new System.Drawing.Point(10, 164);
@@ -132,7 +132,7 @@
             this.compressorPanel.Name = "compressorPanel";
             this.compressorPanel.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.compressorPanel.Radius = 18;
-            this.compressorPanel.RectColor = System.Drawing.Color.Gray;
+            this.compressorPanel.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.compressorPanel.Size = new System.Drawing.Size(350, 142);
             this.compressorPanel.sliderback = global::AEC.Properties.Resources.mic_slider_back;
             this.compressorPanel.SliderParamWidth = 234;

@@ -84,13 +84,13 @@
             this.gtPanel2.Controls.Add(this.lblDEffectThreshold);
             this.gtPanel2.Controls.Add(this.lblDEffectGain);
             this.gtPanel2.Controls.Add(this.sliderDEffectGain);
-            this.gtPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.gtPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.gtPanel2.ForeColor = System.Drawing.Color.LightGray;
             this.gtPanel2.Location = new System.Drawing.Point(399, 236);
             this.gtPanel2.Name = "gtPanel2";
             this.gtPanel2.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.gtPanel2.Radius = 18;
-            this.gtPanel2.RectColor = System.Drawing.Color.Black;
+            this.gtPanel2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.gtPanel2.ShowRect = true;
             this.gtPanel2.Size = new System.Drawing.Size(387, 70);
             this.gtPanel2.TabIndex = 24;
@@ -120,7 +120,7 @@
             // 
             this.lblDEffectThreshold.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblDEffectThreshold.BackColor = System.Drawing.Color.Transparent;
-            this.lblDEffectThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblDEffectThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblDEffectThreshold.Location = new System.Drawing.Point(7, 8);
             this.lblDEffectThreshold.Name = "lblDEffectThreshold";
             this.lblDEffectThreshold.Size = new System.Drawing.Size(137, 23);
@@ -131,7 +131,7 @@
             // 
             this.lblDEffectGain.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblDEffectGain.BackColor = System.Drawing.Color.Transparent;
-            this.lblDEffectGain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblDEffectGain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblDEffectGain.Location = new System.Drawing.Point(7, 39);
             this.lblDEffectGain.Name = "lblDEffectGain";
             this.lblDEffectGain.Size = new System.Drawing.Size(137, 23);
@@ -175,13 +175,13 @@
             this.gtPanel1.Controls.Add(this.lblReverbBassDamp);
             this.gtPanel1.Controls.Add(this.sliderReverbDelay);
             this.gtPanel1.Controls.Add(this.lblReverbTrebleDamp);
-            this.gtPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.gtPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.gtPanel1.ForeColor = System.Drawing.Color.LightGray;
             this.gtPanel1.Location = new System.Drawing.Point(399, 8);
             this.gtPanel1.Name = "gtPanel1";
             this.gtPanel1.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.gtPanel1.Radius = 18;
-            this.gtPanel1.RectColor = System.Drawing.Color.Black;
+            this.gtPanel1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.gtPanel1.ShowRect = true;
             this.gtPanel1.Size = new System.Drawing.Size(387, 224);
             this.gtPanel1.TabIndex = 24;
@@ -208,7 +208,7 @@
             // 
             this.lblMicReverb.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblMicReverb.BackColor = System.Drawing.Color.Transparent;
-            this.lblMicReverb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblMicReverb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblMicReverb.Location = new System.Drawing.Point(7, 5);
             this.lblMicReverb.Name = "lblMicReverb";
             this.lblMicReverb.Size = new System.Drawing.Size(137, 23);
@@ -219,7 +219,7 @@
             // 
             this.lblMicReverbDirect.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblMicReverbDirect.BackColor = System.Drawing.Color.Transparent;
-            this.lblMicReverbDirect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblMicReverbDirect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblMicReverbDirect.Location = new System.Drawing.Point(7, 32);
             this.lblMicReverbDirect.Name = "lblMicReverbDirect";
             this.lblMicReverbDirect.Size = new System.Drawing.Size(137, 23);
@@ -230,7 +230,7 @@
             // 
             this.lblReverbMicHpf.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblReverbMicHpf.BackColor = System.Drawing.Color.Transparent;
-            this.lblReverbMicHpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblReverbMicHpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblReverbMicHpf.Location = new System.Drawing.Point(7, 59);
             this.lblReverbMicHpf.Name = "lblReverbMicHpf";
             this.lblReverbMicHpf.Size = new System.Drawing.Size(137, 23);
@@ -276,7 +276,7 @@
             // 
             this.lblReverbMicLpf.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblReverbMicLpf.BackColor = System.Drawing.Color.Transparent;
-            this.lblReverbMicLpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblReverbMicLpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblReverbMicLpf.Location = new System.Drawing.Point(7, 86);
             this.lblReverbMicLpf.Name = "lblReverbMicLpf";
             this.lblReverbMicLpf.Size = new System.Drawing.Size(137, 23);
@@ -325,7 +325,7 @@
             // 
             this.lblReverbPreDelay.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblReverbPreDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblReverbPreDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblReverbPreDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblReverbPreDelay.Location = new System.Drawing.Point(7, 113);
             this.lblReverbPreDelay.Name = "lblReverbPreDelay";
             this.lblReverbPreDelay.Size = new System.Drawing.Size(137, 23);
@@ -374,7 +374,7 @@
             // 
             this.lblReverbDelay.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblReverbDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblReverbDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblReverbDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblReverbDelay.Location = new System.Drawing.Point(7, 140);
             this.lblReverbDelay.Name = "lblReverbDelay";
             this.lblReverbDelay.Size = new System.Drawing.Size(137, 23);
@@ -385,7 +385,7 @@
             // 
             this.lblReverbBassDamp.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblReverbBassDamp.BackColor = System.Drawing.Color.Transparent;
-            this.lblReverbBassDamp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblReverbBassDamp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblReverbBassDamp.Location = new System.Drawing.Point(7, 167);
             this.lblReverbBassDamp.Name = "lblReverbBassDamp";
             this.lblReverbBassDamp.Size = new System.Drawing.Size(137, 23);
@@ -415,7 +415,7 @@
             // 
             this.lblReverbTrebleDamp.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblReverbTrebleDamp.BackColor = System.Drawing.Color.Transparent;
-            this.lblReverbTrebleDamp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblReverbTrebleDamp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblReverbTrebleDamp.Location = new System.Drawing.Point(7, 193);
             this.lblReverbTrebleDamp.Name = "lblReverbTrebleDamp";
             this.lblReverbTrebleDamp.Size = new System.Drawing.Size(137, 23);
@@ -445,13 +445,13 @@
             this.panelEcho.Controls.Add(this.sliderEchoRepeat);
             this.panelEcho.Controls.Add(this.sliderEchoDelay);
             this.panelEcho.Controls.Add(this.lblEchoRepeat);
-            this.panelEcho.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panelEcho.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.panelEcho.ForeColor = System.Drawing.Color.LightGray;
             this.panelEcho.Location = new System.Drawing.Point(6, 8);
             this.panelEcho.Name = "panelEcho";
             this.panelEcho.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelEcho.Radius = 18;
-            this.panelEcho.RectColor = System.Drawing.Color.Black;
+            this.panelEcho.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelEcho.ShowRect = true;
             this.panelEcho.Size = new System.Drawing.Size(387, 298);
             this.panelEcho.TabIndex = 23;
@@ -478,7 +478,7 @@
             // 
             this.lblMicEcho.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblMicEcho.BackColor = System.Drawing.Color.Transparent;
-            this.lblMicEcho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblMicEcho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblMicEcho.Location = new System.Drawing.Point(7, 5);
             this.lblMicEcho.Name = "lblMicEcho";
             this.lblMicEcho.Size = new System.Drawing.Size(137, 23);
@@ -489,7 +489,7 @@
             // 
             this.lblMicEchoDirect.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblMicEchoDirect.BackColor = System.Drawing.Color.Transparent;
-            this.lblMicEchoDirect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblMicEchoDirect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblMicEchoDirect.Location = new System.Drawing.Point(7, 34);
             this.lblMicEchoDirect.Name = "lblMicEchoDirect";
             this.lblMicEchoDirect.Size = new System.Drawing.Size(137, 23);
@@ -516,7 +516,7 @@
             // 
             this.lblEchoHpf.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblEchoHpf.BackColor = System.Drawing.Color.Transparent;
-            this.lblEchoHpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblEchoHpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblEchoHpf.Location = new System.Drawing.Point(7, 63);
             this.lblEchoHpf.Name = "lblEchoHpf";
             this.lblEchoHpf.Size = new System.Drawing.Size(137, 23);
@@ -546,7 +546,7 @@
             // 
             this.lblEchoPreDelay.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblEchoPreDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblEchoPreDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblEchoPreDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblEchoPreDelay.Location = new System.Drawing.Point(7, 150);
             this.lblEchoPreDelay.Name = "lblEchoPreDelay";
             this.lblEchoPreDelay.Size = new System.Drawing.Size(137, 23);
@@ -576,7 +576,7 @@
             // 
             this.lblEchoLpfSlope.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblEchoLpfSlope.BackColor = System.Drawing.Color.Transparent;
-            this.lblEchoLpfSlope.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblEchoLpfSlope.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblEchoLpfSlope.Location = new System.Drawing.Point(7, 121);
             this.lblEchoLpfSlope.Name = "lblEchoLpfSlope";
             this.lblEchoLpfSlope.Size = new System.Drawing.Size(137, 23);
@@ -587,7 +587,7 @@
             // 
             this.lblEchoLpf.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblEchoLpf.BackColor = System.Drawing.Color.Transparent;
-            this.lblEchoLpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblEchoLpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblEchoLpf.Location = new System.Drawing.Point(7, 92);
             this.lblEchoLpf.Name = "lblEchoLpf";
             this.lblEchoLpf.Size = new System.Drawing.Size(137, 23);
@@ -598,7 +598,7 @@
             // 
             this.lblEchoRChDelay.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblEchoRChDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblEchoRChDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblEchoRChDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblEchoRChDelay.Location = new System.Drawing.Point(7, 266);
             this.lblEchoRChDelay.Name = "lblEchoRChDelay";
             this.lblEchoRChDelay.Size = new System.Drawing.Size(137, 23);
@@ -685,7 +685,7 @@
             // 
             this.lblEchoRChPreDelay.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblEchoRChPreDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblEchoRChPreDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblEchoRChPreDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblEchoRChPreDelay.Location = new System.Drawing.Point(7, 237);
             this.lblEchoRChPreDelay.Name = "lblEchoRChPreDelay";
             this.lblEchoRChPreDelay.Size = new System.Drawing.Size(137, 23);
@@ -696,7 +696,7 @@
             // 
             this.lblEchoDelay.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblEchoDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblEchoDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblEchoDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblEchoDelay.Location = new System.Drawing.Point(7, 179);
             this.lblEchoDelay.Name = "lblEchoDelay";
             this.lblEchoDelay.Size = new System.Drawing.Size(137, 23);
@@ -745,7 +745,7 @@
             // 
             this.lblEchoRepeat.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblEchoRepeat.BackColor = System.Drawing.Color.Transparent;
-            this.lblEchoRepeat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblEchoRepeat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblEchoRepeat.Location = new System.Drawing.Point(7, 208);
             this.lblEchoRepeat.Name = "lblEchoRepeat";
             this.lblEchoRepeat.Size = new System.Drawing.Size(137, 23);

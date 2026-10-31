@@ -126,7 +126,7 @@
             // 
             this.lblRatio.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblRatio.BackColor = System.Drawing.Color.Transparent;
-            this.lblRatio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblRatio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblRatio.Location = new System.Drawing.Point(10, 106);
             this.lblRatio.Name = "lblRatio";
             this.lblRatio.Size = new System.Drawing.Size(90, 23);
@@ -137,7 +137,7 @@
             // 
             this.lblRelease.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblRelease.BackColor = System.Drawing.Color.Transparent;
-            this.lblRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblRelease.Location = new System.Drawing.Point(10, 75);
             this.lblRelease.Name = "lblRelease";
             this.lblRelease.Size = new System.Drawing.Size(90, 23);
@@ -148,7 +148,7 @@
             // 
             this.lblAttack.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblAttack.BackColor = System.Drawing.Color.Transparent;
-            this.lblAttack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblAttack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblAttack.Location = new System.Drawing.Point(10, 44);
             this.lblAttack.Name = "lblAttack";
             this.lblAttack.Size = new System.Drawing.Size(90, 23);
@@ -159,7 +159,7 @@
             // 
             this.lblThreshold.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblThreshold.BackColor = System.Drawing.Color.Transparent;
-            this.lblThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblThreshold.Location = new System.Drawing.Point(10, 13);
             this.lblThreshold.Name = "lblThreshold";
             this.lblThreshold.Size = new System.Drawing.Size(90, 23);
@@ -168,7 +168,7 @@
             // 
             // VXCompressorPanel
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.sliderRatio);
             this.Controls.Add(this.sliderRelease);
             this.Controls.Add(this.sliderAttack);
@@ -177,9 +177,11 @@
             this.Controls.Add(this.lblRelease);
             this.Controls.Add(this.lblAttack);
             this.Controls.Add(this.lblThreshold);
+            this.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "VXCompressorPanel";
+            this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.Size = new System.Drawing.Size(350, 142);
             this.ResumeLayout(false);
 
