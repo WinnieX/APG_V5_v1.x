@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Localization>
+	<Language name="英文" code="zh-CN"/>
+	<Content>
+		<Item key="formEasyMode" value="Easy Mode"/>
+		<Item key="formProMode" value="Pro Mode"/>
+    <Item key="formMain.remoteControl" value="Remote Control"/>
+    <Item key="formMain.controlTheOtherParty" value="Remotely control the other party"/>
+    <Item key="formMain.controlledRemotelyByTheOtherParty" value="Request remotely control this machine"/>
+		<Item key="formMain.videoTutorial" value="Video Tutorial"/>
+		<Item key="formMain.openVideoTutorial" value="Open Video Tutorial"/>
+		<Item key="formMain.showTutorialQRCode" value="Show Tutorial QRCode"/>
+		<Item key="formMain.scanQRCode" value="Scan to open online video tutorial"/>
+		
+		<Item key="ok" value="OK"/>
+		<Item key="cancel" value="Cancel"/>
+		<Item key="buttonConnection.connect" value="Connect"/>
+		<Item key="buttonConnection.disconnect" value="Disconn"/>
+		<Item key="systemIsBusyAndTryAgain" value="The system is busy, please try again later!"/>
+		<Item key="commInterrupted" value="Communication is interrupted!"/>
+		<Item key="musicVol" value="Music"/>
+		<Item key="micVol" value="Mic"/>
+		<Item key="effectVol" value="Effect"/>
+    <Item key="timbre" value="Timbre"/>
+		
+		<Item key="formProMode.proMode" value="Professional Mode"/>
+		<Item key="formProMode.music" value="Music"/>
+    <Item key="formProMode.musicDeq" value="Music DEQ"/>
+    <Item key="formProMode.mic" value="MIC"/>
+    <Item key="formProMode.micA" value="MIC A"/>
+    <Item key="formProMode.micB" value="MIC B"/>
+    <Item key="formProMode.micAPlusB" value="MIC A&amp;&amp;B"/>
+    <Item key="formProMode.micDeq" value="Mic DEQ"/>
+    <Item key="formProMode.micExciter" value="MIC VT"/>
+		<Item key="formProMode.effect" value="Effect"/>
+		<Item key="formProMode.echo" value="Echo"/>
+		<Item key="formProMode.reverb" value="Reverb"/>
+		<Item key="formProMode.mainOutput" value="Main Out"/>
+    <Item key="formProMode.aux1Output" value="AUX1 Out"/>
+    <Item key="formProMode.aux2Output" value="AUX2 Out"/>
+    <Item key="formProMode.centerOutput" value="Center Out"/>
+    <Item key="formProMode.subOutput" value="SUB Out"/>
+    <Item key="formProMode.surOutput" value="SUR Out"/>
+		<Item key="formProMode.system" value="System"/>
+    <Item key="formProMode.monitor" value="Monitor"/>
+
+    <Item key="formProMode.deviceModels" value="Device Models"/>
+    <Item key="formProMode.rtaOptions" value="RTA Options"/>
+		<Item key="formProMode.commSettings" value="Communication Settings"/>
+    <Item key="formProMode.preferences" value="Preferences"/>
+		<Item key="formProMode.language" value="Language/语言"/>
+		<Item key="formProMode.help" value="Help"/>
+		<Item key="formProMode.viewHelp" value="View Help"/>
+    <Item key="formProMode.onlineHelp" value="Online Help"/>
+    <Item key="formProMode.bluetoothRename" value="Bluetooth Rename"/>
+    <Item key="formProMode.firmwareUpdate" value="Firmwrae Update"/>
+    <Item key="formProMode.activateDevice" value="Activate Device"/>
+    <Item key="formProMode.openLogFileLocation" value="Open Log File Location"/>
+		<Item key="formProMode.about" value="About"/>
+
+    <Item key="eq.type" value="Type"/>
+    <Item key="eq.gain" value="Gain"/>
+    <Item key="eq.freq" value="Freq"/>
+    <Item key="eq.q" value="Q"/>
+    <Item key="deq.cm" value="Mode"/>
+    <Item key="deq.ampSen" value="Amp Sen"/>
+    <Item key="deq.threshold" value="Threshold"/>
+    <Item key="deq.attack" value="Attack"/>
+    <Item key="deq.release" value="Release"/>
+    <Item key="deq.ratio" value="Ratio"/>
+    <Item key="deq.dm" value="Mode"/>
+    
+		<Item key="eqGroupPanel.xBandEq" value="{0} Band EQ"/>
+		<Item key="eqGroupPanel.xBandEchoEq" value="{0} Band Echo EQ"/>
+		
+		<Item key="eqReset" value="EQ Reset"/>
+		<Item key="autoMode" value="Auto"/>
+		<Item key="manualMode" value="Manual"/>
+		<Item key="singMode" value="Sing"/>
+		<Item key="discoMode" value="Disco"/>
+    <Item key="eqReset.tips" value="This will reset all EQ to default settings. Do you want to continue ?"/>
+    <Item key="deqReset" value="DEQ Reset"/>
+    <Item key="deqReset.tips" value="This will reset DEQ to default settings. Do you want to continue ?"/>
+		
+		<Item key="compressorPanel.threshold" value="Threshold"/>
+		<Item key="compressorPanel.attack" value="Attack Time"/>
+		<Item key="compressorPanel.release" value="Release Time"/>
+		<Item key="compressorPanel.ratio" value="Ratio"/>
+
+    <Item key="x5.compAndLimiterPanel.threshold" value="Threshold"/>
+    <Item key="x5.compAndLimiterPanel.attack" value="Attack"/>
+    <Item key="x5.compAndLimiterPanel.release" value="Release"/>
+    <Item key="x5.compAndLimiterPanel.ratio" value="Ratio"/>
+
+    <Item key="fastMode" value="Fast"/>
+    <Item key="mediumMode" value="Med"/>
+    <Item key="slowMode" value="Slow"/>
+
+    <Item key="limiterPanel" value="Limiter"/>
+    <Item key="limiterPanel.threshold" value="Threshold"/>
+    <Item key="limiterPanel.attack" value="Attack"/>
+    <Item key="limiterPanel.release" value="Release"/>
+    <Item key="limiterPanel.clipThreshold" value="Clip Threshold"/>
+    <Item key="limiterPanel.clipRelease" value="Clip Release"/>
+    <Item key="limiterPanel.ratio" value="Ratio"/>
+    <Item key="limiterPanel.mode" value="Mode"/>
+    
+		<Item key="mixerPanel.musicLevel" value="Music Level"/>
+		<Item key="mixerPanel.micLevel" value="Mic Level"/>
+		<Item key="mixerPanel.echoLevel" value="Echo Level"/>
+		<Item key="mixerPanel.reverbLevel" value="Reverb Level"/>
+
+    <Item key="exciterPanel.freq" value="Freq"/>
+    <Item key="exciterPanel.xoverfreq" value="Xover Freq"/>
+    <Item key="exciterPanel.bandWidth" value="Band Width"/>
+    <Item key="exciterPanel.fbGain" value="Depth"/>
+    <Item key="exciterPanel.boostLevel" value="Level"/>
+    <Item key="exciterPanel.bassExciter" value="Bass"/>
+    <Item key="exciterPanel.exciter" value="Freq Band"/>
+    <Item key="exciterPanel.micExciter1" value="MIC Vacuum Tube 1"/>
+    <Item key="exciterPanel.micExciter2" value="MIC Vacuum Tube 2"/>
+		
+		<Item key="panelMusic.musicInput" value="Music Input"/>
+		<Item key="panelMusic.musicInputPort" value="Music Input Port"/>
+    <Item key="panelMusic.musicInputGain" value="Music Input Gain"/>
+    <Item key="panelMusic.musicInputPort3Gain" value="Port 3 Input Gain"/>
+    <Item key="panelMusic.port" value="Port"/>
+    <Item key="panelMusic.bt" value="Bluetooth"/>
+    <Item key="panelMusic.spdif" value="S/PDIF"/>
+    <Item key="panelMusic.fiberPort" value="(The fiber port is automatically identified)"/>
+    <Item key="panelMusic.musicHpf" value="Music HPF"/>
+    <Item key="panelMusic.musicHpfType" value="Filter Type"/>
+    <Item key="panelMusic.musicToMainOutHpf" value="Music To Main Output HPF"/>
+    <Item key="panelMusic.musicToMainOutHpfSlope" value="Filter Slope"/>
+    <Item key="panelMusic.superBass" value="Vacuum Tube Bass"/>
+
+    <Item key="panelMic.micInput" value="MIC Input"/>
+    <Item key="panelMic.micInput.ab.mixed" value="A+B Mixed"/>
+    <Item key="panelMic.micInput.single.a" value="Single A"/>
+    <Item key="panelMic.micInput.single.b" value="Single B"/>
+    <Item key="panelMic.micFBE" value="FBE"/>
+    <Item key="panelMic.micNoiseGate" value="Noise Gate"/>
+		<Item key="panelMic.micHpf" value="MIC HPF"/>
+    <Item key="panelMic.micLpf" value="MIC LPF"/>
+    <Item key="panelMic.micLpfType" value="LPF Type"/>
+    <Item key="panelMic.micLevel" value="MIC Level"/>
+    <Item key="panelMic.effectLevel" value="Effect Level"/>
+    <Item key="panelMic.micABLink" value="MIC A&amp;&amp;B Link"/>
+    <Item key="panelMic.micABLink.tips" value="The linkage operation will synchronize MIC {0} to MIC {1}. Do you want to continue?"/>
+		
+		<Item key="panelEffect.echo.echoLevel" value="Echo Level"/>
+		<Item key="panelEffect.echo.echoDirectLevel" value="Echo Direct Level"/>
+		<Item key="panelEffect.echo.hpf" value="Echo HPF"/>
+    <Item key="panelEffect.echo.hpfType" value="Echo HPF Slope"/>
+		<Item key="panelEffect.echo.lpf" value="Echo LPF"/>
+		<Item key="panelEffect.echo.lpfQ" value="Echo LPF Slope"/>
+    <Item key="panelEffect.echo.lpfType" value="Echo LPF Slope"/>
+		<Item key="panelEffect.echo.preDelay" value="Echo Pre Delay"/>
+		<Item key="panelEffect.echo.delay" value="Echo Delay"/>
+		<Item key="panelEffect.echo.repeat" value="Echo Repeat"/>
+		<Item key="panelEffect.echo.rChPreDelay" value="Echo RCh Pre Delay"/>
+		<Item key="panelEffect.echo.rChDelay" value="Echo RCh Delay"/>
+		
+		<Item key="panelEffect.reverb.reverbLevel" value="Reverb Level"/>
+		<Item key="panelEffect.reverb.reverbDirectLevel" value="Reverb Direct Level"/>
+    <Item key="panelEffect.reverb.hpf" value="Reverb HPF"/>
+    <Item key="panelEffect.reverb.hpfType" value="Reverb HPF Slope"/>
+    <Item key="panelEffect.reverb.lpf" value="Reverb LPF"/>
+    <Item key="panelEffect.reverb.lpfType" value="Reverb LPF Slope"/>
+		<Item key="panelEffect.reverb.micHpf" value="Reverb Mic HPF"/>
+		<Item key="panelEffect.reverb.micLpf" value="Reverb Mic LPF"/>   
+    <Item key="panelEffect.reverb.musicHpf" value="Reverb Music HPF"/>
+    <Item key="panelEffect.reverb.musicLpf" value="Reverb Music LPF"/>
+		<Item key="panelEffect.reverb.preDelay" value="Reverb Pre Delay"/>
+		<Item key="panelEffect.reverb.delay" value="Reverb Time"/>
+		<Item key="panelEffect.reverb.bassDamp" value="Reverb Bass Damp"/>
+    <Item key="panelEffect.reverb.trebleDamp" value="Reverb Treble Damp"/>
+    <Item key="panelEffect.reverb.musicReverbLevel" value="Music Reverb Level"/>
+		
+		<Item key="panelEffect.dEffect.threshold" value="Threshold"/>
+		<Item key="panelEffect.dEffect.gain" value="Gain"/>
+		
+		<Item key="panelOutput.hpfFreq" value="HPF"/>
+		<Item key="panelOutput.hpfQ" value="HPF Q"/>
+		<Item key="panelOutput.hpfMode" value="HPF Type"/>
+		<Item key="panelOutput.lpfFreq" value="LPF"/>
+		<Item key="panelOutput.lpfQ" value="LPF Q"/>
+		<Item key="panelOutput.lpfMode" value="LPF Type"/>
+		<Item key="panelOutput.leftChDelay" value="LCh Delay"/>
+		<Item key="panelOutput.rightChDelay" value="RCh Delay"/>
+		<Item key="panelOutput.leftChMute" value="Left Ch Mute"/>
+		<Item key="panelOutput.rightChMute" value="Right Ch Mute"/>
+    <Item key="panelOutput.leftChPhase" value="LCh Phase"/>
+    <Item key="panelOutput.rightChPhase" value="RCh Phase"/>
+		<Item key="panelOutput.delay" value="Delay"/>
+		<Item key="panelOutput.mute" value="Mute"/>
+    <Item key="panelOutput.phase" value="Phase"/>
+    <Item key="panelOutput.linkage" value="L+R"/>
+    <Item key="panelOutput.leftCh" value="L"/>
+    <Item key="panelOutput.rightCh" value="R"/>
+		
+		<Item key="panelSystem.volMgt" value="Volume Management"/>
+		<Item key="panelSystem.volMgt.musicStartVolume" value="Music Start Volume"/>
+		<Item key="panelSystem.volMgt.musicMaxVolume" value="Music Max Volume"/>
+		<Item key="panelSystem.volMgt.micStartVolume" value="Mic Start Volume"/>
+		<Item key="panelSystem.volMgt.micMaxVolume" value="Mic Max Volume"/>
+		<Item key="panelSystem.volMgt.effectStartVolume" value="Effect Start Volume"/>
+		<Item key="panelSystem.volMgt.effectMaxVolume" value="Effect Max Volume"/>
+		<Item key="panelSystem.volMgt.quickSettings" value="Quick Settings"/>
+		
+		<Item key="panelSystem.autoLockKeyboard" value="Keyboard Lock"/>
+		<Item key="panelSystem.enabled" value="Enabled"/>
+		<Item key="panelSystem.disabled" value="Disabled"/>
+		
+		<Item key="panelSystem.systemUser" value="System User Setting"/>
+		<Item key="panelSystem.systemPassword" value="Sys Password"/>
+		<Item key="panelSystem.ok" value="OK"/>
+		<Item key="panelSystem.normalUser" value="User"/>
+		<Item key="panelSystem.admin" value="Admin"/>
+		
+		<Item key="panelSystem.passowrd.changeKeyboardLockPassowrd" value="Modify Keyboard Password"/>
+		<Item key="panelSystem.passowrd.changeSystemUserPassowrd" value="Modify System Password"/>
+		<Item key="panelSystem.passowrd.oldPassowrd" value="Old Password"/>
+		<Item key="panelSystem.passowrd.newPassowrd" value="New Password"/>
+		<Item key="panelSystem.passowrd.confirmPassowrd" value="Confirm Passowrd"/>
+		<Item key="panelSystem.passowrd.inputError" value="Input Error"/>
+		<Item key="panelSystem.passowrd.invalidInput" value="Invalid Input !"/>
+		<Item key="panelSystem.passowrd.askForChangeKeyboardPassword" value="Are you sure whether to change the keyboard lock password ?"/>
+		<Item key="panelSystem.passowrd.askForChangeSystemPassword" value="Are you sure whether to change the admin password ?"/>
+		
+		<Item key="panelSystem.dataBackupMgt" value="Data Backup Management"/>
+		<Item key="panelSystem.dataBackupMgt.number" value="Number"/>
+		<Item key="panelSystem.dataBackupMgt.dataName" value="Data Name"/>
+		<Item key="panelSystem.dataBackupMgt.backupFileName" value="Backup File Name"/>
+		<Item key="panelSystem.dataBackupMgt.save" value="Save Data To File"/>
+		<Item key="panelSystem.dataBackupMgt.load" value="Load Data From File"/>
+		<Item key="panelSystem.dataBackupMgt.loadData" value="Load Data"/>
+		<Item key="panelSystem.dataBackupMgt.openFileLocation" value="Open File Location"/>
+		<Item key="panelSystem.dataBackupMgt.delete" value="Delete"/>
+    <Item key="panelSystem.dataBackupMgt.factoryMode" value="Factory Mode Data"/>
+    <Item key="panelSystem.dataBackupMgt.userData" value="User Data"/>
+		<Item key="panelSystem.dataBackupMgt.userDataInfo" value="{0}Model：{1}Path：{2}Date Modified：{3}"/>
+		<Item key="panelSystem.dataBackupMgt.askForSaveAndOverwriteFile" value="Mode file {0} already exists, whether to overwrite the existing file ?"/>
+		<Item key="panelSystem.dataBackupMgt.failedToLoadDataAndFileNotExist" value="Failed to load data, the file does not exist !"/>
+		<Item key="panelSystem.dataBackupMgt.askForLoadAndOverwriteData" value="Loading {0} data will overwrite the current data, Are you sure you want to continue ?"/>
+		<Item key="panelSystem.dataBackupMgt.askForContinueLoadingData" value="The system is not connected to the device, Are you sure you want to continue ?"/>
+		<Item key="panelSystem.dataBackupMgt.failedToLoadDataAndFileDataError" value="Failed to load data, file data error !"/>
+		<Item key="panelSystem.dataBackupMgt.fileNotExist" value="The file {0} does not exist. It may have been removed. Do you want to delete it from the list ?"/>
+    <Item key="panelSystem.dataBackupMgt.deleteFile" value="Delete File"/>
+    <Item key="panelSystem.dataBackupMgt.askForDeleteDataFile" value="Are you sure you want to delete this data file?{0}"/>
+		<Item key="panelSystem.dataBackupMgt.fileTypeError" value="File type error !"/>
+		<Item key="panelSystem.dataBackupMgt.fileDataError" value="File data error !"/>
+		<Item key="panelSystem.dataBackupMgt.failedToCopyFile" value="Failed to copy file:({0}) !"/>
+		<Item key="panelSystem.dataBackupMgt.dataIsEncryptedAndCannotBeExported" value="The data is encrypted and cannot be exported !"/>
+		<Item key="panelSystem.dataBackupMgt.failedToSaveFile" value="Failed to save file:({0}) ！"/>
+		
+		<Item key="panelSystem.deviceModeMgt" value="Device Mode Management"/>
+		<Item key="panelSystem.deviceModeMgt.deviceMode" value="Device Mode"/>
+		<Item key="panelSystem.deviceModeMgt.currDeviceMode" value="Curr Mode: "/>
+		<Item key="panelSystem.deviceModeMgt.modeName" value="Mode Name"/>
+		<Item key="panelSystem.deviceModeMgt.saveMode" value="Save Mode"/>
+		<Item key="panelSystem.deviceModeMgt.callMode" value="Call Mode"/>		
+		<Item key="panelSystem.deviceModeMgt.askForCallModeData" value="Are you sure whether to call the mode data{0}: {1} ?"/>
+		<Item key="panelSystem.deviceModeMgt.cannotSave" value="The current user cannot perform the save operation!"/>
+		<Item key="panelSystem.deviceModeMgt.askForSaveModeData" value="Are you sure whether to save the mode data{0}: {1} ?"/>
+		<Item key="panelSystem.deviceModeMgt.askForEncrpyData" value="It is recommended that you backup your data first. This encryption operation cannot be undone. Are you sure you want to continue ?"/>
+    <Item key="panelSystem.deviceModeMgt.encrpyCurrModeData" value="Encrpy Current Mode Data"/>
+    <Item key="panelSystem.deviceModeMgt.factoryPresetCannotBeSaved" value="Cannot save to factory preset！"/>
+		
+		<Item key="panelSystem.infraredRemoteControl" value="Infrared Remote Control"/>
+    <Item key="panelSystem.timbreSelect" value="Timbre Select"/>
+    <Item key="panelSystem.timbrePro" value="Professinal"/>
+    <Item key="panelSystem.timbreClassics" value="Classics"/>
+    <Item key="panelSystem.deviceWorkMode" value="Device Work Mode"/>
+    <Item key="panelSystem.deviceWorkMode.standard" value="Std Mode"/>
+    <Item key="panelSystem.deviceWorkMode.x5" value="X5 Mode"/>
+
+    <Item key="panelSystem.clarity" value="Clarity"/>
+    <Item key="panelSystem.clarity.SDA" value="SD-A"/>
+    <Item key="panelSystem.clarity.SDB" value="SD-B"/>
+    <Item key="panelSystem.clarity.HDA" value="HD-A"/>
+    <Item key="panelSystem.clarity.HDB" value="HD-B"/>
+    <Item key="panelSystem.clarity.UHDA" value="UHD-A"/>
+    <Item key="panelSystem.clarity.UHDB" value="UHD-B"/>
+    <Item key="panelSystem.clarity.note" value="With Clarity Level A, the super high-frequency range is richer than with Clarity Level B."/>
+    
+    <Item key="panelSystem.deviceInfo" value="Device Info"/>
+    <Item key="panelSystem.deviceID" value="Device ID:"/>
+    <Item key="panelSystem.devicePrototype" value="Prototype"/>
+    <Item key="panelSystem.deviceFirmwareVersion" value="Version"/>
+    <Item key="panelSystem.deviceFirmwareBuildNumber" value="Build No."/>
+
+    <Item key="popMenu.thresholdUnit" value="Threshold Uint: {0}"/>
+    <Item key="popMenu.mixerLevelUnit" value="Mixer Level Unit: {0}"/>
+    <Item key="popMenu.channelDelayUnit" value="Output Delay Unit: {0}"/>
+		
+		<Item key="formModeQuickOperation" value="Mode Quick Operation"/>
+		
+		<Item key="panelSystemSelection" value="System Selection"/>
+		<Item key="panelSystemSelection.loudspeaker" value="Loudspeaker"/>
+		<Item key="panelSystemSelection.powerAmplifier" value="Power Amplifier"/>
+		<Item key="panelSystemSelection.microphone" value="Microphone"/>
+		<Item key="panelSystemSelection.brand" value="Brand"/>
+		<Item key="panelSystemSelection.model" value="Model"/>
+		<Item key="panelSystemSelection.power" value="Power"/>
+		<Item key="panelSystemSelection.size" value="Size"/>
+		<Item key="panelSystemSelection.impedance" value="Impedance"/>
+		<Item key="panelSystemSelection.sensitivity" value="Sensitivity"/>
+		<Item key="panelSystemSelection.wired" value="Wired"/>
+		<Item key="panelSystemSelection.wireless" value="Wireless"/>
+		<Item key="panelSystemSelection.recommendedVolume" value="Recommended Volume"/>
+		<Item key="panelSystemSelection.clear" value="Clear"/>
+		<Item key="panelSystemSelection.all" value="All"/>
+		<Item key="panelSystemSelection.buildIn" value="Build In"/>
+		<Item key="panelSystemSelection.customer" value="Customer"/>
+		<Item key="panelSystemSelection.selectedItem" value="Selected item"/>
+    <Item key="panelSystemSelection.theExactMatchCouldNotBeFound" value="The exact match could not be found"/>
+		
+		<Item key="formExportPresetModeData" value="Export Preset Mode Data"/>		
+		<Item key="formExportPresetModeData.modeFileName" value="Mode File Name"/>
+		<Item key="formExportPresetModeData.modeName" value="Mode Name"/>
+		<Item key="formExportPresetModeData.export" value="Export"/>
+		<Item key="formExportPresetModeData.openFileLocation" value="Open File Location"/>
+		<Item key="formExportPresetModeData.cannotBeEmpty" value=" can not be empty !"/>
+		<Item key="formExportPresetModeData.loudspeakerBrand" value="Loudspeaker brand"/>
+		<Item key="formExportPresetModeData.loudspeakerModel" value="Loudspeaker model"/>
+		<Item key="formExportPresetModeData.powerAmplifierBrand" value="Power amplifier brand"/>
+		<Item key="formExportPresetModeData.powerAmplifierModel" value="Power amplifier model"/>
+		<Item key="formExportPresetModeData.powerAmplifierSensitivity" value="Power amplifier sensitivity"/>
+		<Item key="formExportPresetModeData.powerAmplifierSensitivityInputError" value="Power amplifier sensitivity input error!"/>
+		<Item key="formExportPresetModeData.microphoneBrand" value="Microphone brand"/>
+		<Item key="formExportPresetModeData.microphoneModel" value="Microphone model"/>
+		<Item key="formExportPresetModeData.wirelessMicrophoneRecommendedVolumeCannotBeZero" value="Wireless microphone recommended volume cannot be 0 !"/>
+		<Item key="formExportPresetModeData.selectAtLeastOneModeFile" value="You need to select at least one mode file and mode name!"/>
+		<Item key="formExportPresetModeData.modeFileNotExist" value="The mode file {0} does not exist!"/>
+		<Item key="formExportPresetModeData.askForOverwriteFile" value="This mode file already exists, do you want to overwrite the existing file?"/>
+		<Item key="formExportPresetModeData.exportPresetModeDataSuccessfully" value="Export preset mode data file {0} successfully"/>
+		<Item key="formExportPresetModeData.failedToExportPresetModeData" value="Failed to export preset mode data file {0} !"/>
+		
+		<Item key="formCommSettings" value="Communication Settings"/>
+		<Item key="formCommSettings.autoConnection" value="Auto connection"/>
+		<Item key="formCommSettings.commMethod" value="Communication method"/>
+    <Item key="formCommSettings.selectOneMethodAtLeast" value="Please select one connection method at least!"/>
+		<Item key="formCommSettings.defaultSerialPort" value="RS232 Default serial port"/>
+    <Item key="formCommSettings.commRetransmission" value="Retransmission"/>
+		<Item key="formCommSettings.serialPortManualMode" value="RS232 port manual mode"/>
+		<Item key="formCommSettings.on" value="On"/>
+		<Item key="formCommSettings.off" value="Off"/>
+		<Item key="formCommSettings.priorityUseOfSerialPort" value="Priority use of serial port"/>
+		<Item key="formCommSettings.onlyUseOfSerialPort" value="Only use serial port"/>
+		<Item key="formCommSettings.onlyUseOfUDP" value="Only use UDP"/>
+		<Item key="formCommSettings.priorityUseOfUDP" value="Priority use of UDP"/>
+		<Item key="formCommSettings.autoMode" value="Auto"/>
+		<Item key="formCommSettings.manualMode" value="Manual"/>
+    <Item key="formCommSettings.ipAddress" value="IP Address"/>
+    <Item key="formCommSettings.port" value="Port"/>
+    <Item key="formCommSettings.help" value="Help"/>
+		<Item key="formCommSettings.restoreToDefault" value="Restore to Default"/>
+		<Item key="formCommSettings.close" value="Close"/>
+
+    <Item key="formRS232ToWifiConverter" value="RS232 to WiFi Converter"/>
+    <Item key="formRS232ToWifiConverter.deviceIp" value="Device IP"/>
+    <Item key="formRS232ToWifiConverter.refreshDevice" value="Refresh"/>
+    <Item key="formRS232ToWifiConverter.deviceInfo" value="Device Info"/>
+    <Item key="formRS232ToWifiConverter.baudRate" value="Baud Rate"/>
+    <Item key="formRS232ToWifiConverter.update" value="Update"/>
+    <Item key="formRS232ToWifiConverter.deviceModel" value="Model"/>
+    <Item key="formRS232ToWifiConverter.deviceFirmwareVersion" value="Version"/>
+    <Item key="formRS232ToWifiConverter.deviceMacAddress" value="MAC Address"/>
+    <Item key="formRS232ToWifiConverter.deviceSocketName" value="Socket Name"/>
+    <Item key="formRS232ToWifiConverter.deviceSocketProtocol" value="Protocol"/>
+    <Item key="formRS232ToWifiConverter.deviceSocketPort" value="Port"/>
+    <Item key="formRS232ToWifiConverter.deviceUartDataBits" value="Data Bits"/>
+    <Item key="formRS232ToWifiConverter.deviceUartStopBits" value="Stop Bits"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParity" value="Parity"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParityNone" value="None"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParityOdd" value="Odd"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParityEven" value="Even"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParityOther" value="Other"/>
+    <Item key="formRS232ToWifiConverter.deviceUserName" value="User Name"/>
+    <Item key="formRS232ToWifiConverter.devicePassword" value="Password"/>
+    <Item key="formRS232ToWifiConverter.restoreConfigToDefault" value="Click to restore configuration to default"/>
+    <Item key="formRS232ToWifiConverter.baudRateNotMatch" value="The device baud rate does not match the system. Click to update the baud rate"/>
+    <Item key="formRS232ToWifiConverter.socketNotMatch" value="Detected that the connection parameters do not match the system. It is recommended to synchronize the current device parameters to the system settings. Do you want to synchronize the settings?"/>
+
+    <Item key="formPreferences" value="Preferences"/>
+    <Item key="formPreferences.deviceModelWhenStarts" value="Device Model When Starts"/>
+    <Item key="formPreferences.useLastConnectedDeviceModel" value="Last Connected Device Model"/>
+
+    <Item key="formOnlineHelp" value="Online Help"/>
+    <Item key="formOnlineHelp.auto" value="Auto"/>
+    <Item key="formOnlineHelp.commInterface" value="Comm Interface"/>
+    <Item key="formOnlineHelp.port" value="Port"/>
+    <Item key="formOnlineHelp.baudRate" value="Baud Rate"/>
+    <Item key="formOnlineHelp.ipAddress" value="IP Address"/>
+    <Item key="formOnlineHelp.run" value="Run"/>
+
+    <Item key="formFirmwareUpdate" value="Firmware Update"/>
+    <Item key="formFirmwareUpdate.port" value="Port"/>
+    <Item key="formFirmwareUpdate.auto" value="Auto"/>
+    <Item key="formFirmwareUpdate.baudRate" value="Baud Rate"/>
+    <Item key="formFirmwareUpdate.refresh" value="Refresh"/>
+    <Item key="formFirmwareUpdate.key" value="Key"/>
+    <Item key="formFirmwareUpdate.file" value="File"/>
+    <Item key="formFirmwareUpdate.update" value="Update"/>
+    <Item key="formFirmwareUpdate.info" value="Info"/>
+    <Item key="formFirmwareUpdate.progress" value="Progress"/>
+    <Item key="formFirmwareUpdate.keyDataError" value="Key Data Error!"/>
+    <Item key="formFirmwareUpdate.getFileHashError" value="Get File Hash Error!"/>
+    <Item key="formFirmwareUpdate.fileHash" value="File Hash : {0}"/>
+    <Item key="formFirmwareUpdate.firmwareVersion" value="Firmware Version"/>
+    <Item key="formFirmwareUpdate.bluetoothName" value="Bluetooth Name"/>
+    <Item key="formFirmwareUpdate.rename" value="Rename"/>
+    <Item key="formFirmwareUpdate.output" value="Output"/>
+    
+    <Item key="formActivateDevice" value="Activate Device"/>
+    <Item key="formActivateDevice.commInterface" value="Comm Interface"/>
+    <Item key="formActivateDevice.port" value="Port"/>
+    <Item key="formActivateDevice.baudRate" value="Baud Rate"/>
+    <Item key="formActivateDevice.ipAddress" value="IP Address"/>
+    <Item key="formActivateDevice.activate" value="Activate"/>
+
+    <Item key="formActivation" value="Activation"/>
+    <Item key="formActivation.machineCode" value="Machine Code"/>
+    <Item key="formActivation.requestCode" value="Request Code"/>
+    <Item key="formActivation.activationCode" value="Activation Code"/>
+    <Item key="formActivation.whetherToCancelTheLicense" value="Whether to cancel the license?"/>
+    
+    <Item key="formAbout" value="About"/>
+    <Item key="formAbout.supportModels" value="Support Device Models : {0}"/>
+		
+		<Item key="rta.FailedToStartCapturingAudio" value="Failed to start capturing audio data : {0}"/>
+		<Item key="rta.FailedToStartAudioOut" value="Failed to start audio out : {0}"/>
+		<Item key="formRTAOptions" value="RTA Options"/>
+		<Item key="formRTAOptions.spectrum" value="Spectrum"/>
+		<Item key="formRTAOptions.transferFunction" value="Transfer Function"/>
+		<Item key="formRTAOptions.audioIO" value="Audio IO"/>
+		<Item key="formRTAOptions.audioInDevice" value="Audio Input Device"/>
+		<Item key="formRTAOptions.sampleRate" value="Sample Rate"/>
+		<Item key="formRTAOptions.sampleBitDepth" value="Sample Bit Depth"/>
+		<Item key="formRTAOptions.audioOutDevice" value="Audio Output Device"/>		
+		<Item key="formRTAOptions.rtaParams" value="RTA Params"/>
+		<Item key="formRTAOptions.fftSize" value="FFT Size"/>
+		<Item key="formRTAOptions.windowFunction" value="Window Function"/>
+		<Item key="formRTAOptions.average" value="Average"/>
+		<Item key="formRTAOptions.smooth" value="Smooth"/>
+		<Item key="formRTAOptions.scale" value="Scale"/>
+		<Item key="formRTAOptions.spectrumGraph" value="Spectrum Graph"/>
+		<Item key="formRTAOptions.doubleCh" value="Double Chs"/>
+		<Item key="formRTAOptions.leftCh" value="Left Ch"/>
+		<Item key="formRTAOptions.rightCh" value="Right Ch"/>
+		<Item key="formRTAOptions.ampOffset" value="Amp Offset"/>
+		<Item key="formRTAOptions.freqRespGraph" value="Freq Resp Graph"/>
+		<Item key="formRTAOptions.ampAndPhaseResp" value="Amp And Phase Resp"/>
+		<Item key="formRTAOptions.ampResp" value="Amp Resp"/>
+		<Item key="formRTAOptions.phaseResp" value="Phase Resp"/>
+		<Item key="formRTAOptions.signalLevel" value="Signal Level"/>
+		<Item key="formRTAOptions.signalLeftCh" value="Left Ch ( Meas Signal )"/>
+		<Item key="formRTAOptions.signalRightCh" value="Right Ch ( Ref Signal )"/>
+		<Item key="formRTAOptions.delay" value="Delay"/>
+		<Item key="formRTAOptions.measDelay" value="Meas Delay"/>
+		<Item key="formRTAOptions.measDelayResult" value="Meas Result"/>
+		<Item key="formRTAOptions.applyMeasResult" value="Apply"/>
+		<Item key="formRTAOptions.declineMeasResult" value="Decline"/>
+		<Item key="formRTAOptions.signalGenerator" value="Signal Generator"/>
+		<Item key="formRTAOptions.signal" value="Signal"/>
+		<Item key="formRTAOptions.level" value="Level"/>
+		<Item key="formRTAOptions.sineFreq" value="Freq"/>
+		<Item key="formRTAOptions.sine1Level" value="Level 1"/>
+		<Item key="formRTAOptions.sine1Freq" value="Freq 1"/>
+		<Item key="formRTAOptions.sine2Level" value="Level 2"/>
+		<Item key="formRTAOptions.sine2Freq" value="Freq 2"/>
+		<Item key="formRTAOptions.refTrace" value="Ref Trace"/>
+		<Item key="formRTAOptions.capture" value="Capture"/>
+		<Item key="formRTAOptions.delete" value="Delete"/>		
+		<Item key="formRTAOptions.hannWindow" value="Hann Window"/>
+		<Item key="formRTAOptions.hammingWindow" value="Hamming Window"/>
+		<Item key="formRTAOptions.rectangleWindow" value="Rectangle Window"/>
+		<Item key="formRTAOptions.gaussianWindow" value="Gaussian Window"/>
+		<Item key="formRTAOptions.blackmanWindow" value="Blackman Window"/>
+		<Item key="formRTAOptions.blackmanHarrisWindow" value="Blackman-Harris Window"/>
+		<Item key="formRTAOptions.flatTopWindow" value="Flat Top Window"/>
+		<Item key="formRTAOptions.averageInf" value="Inf"/>
+		<Item key="formRTAOptions.averageFast" value="Fast"/>
+		<Item key="formRTAOptions.averageSlow" value="Slow"/>
+		<Item key="formRTAOptions.smoothNone" value="None"/>
+		<Item key="formRTAOptions.smooth3Pt" value="3 Point"/>
+		<Item key="formRTAOptions.smooth5Pt" value="5 Point"/>
+		<Item key="formRTAOptions.smooth7Pt" value="7 Point"/>
+		<Item key="formRTAOptions.smooth9Pt" value="9 Point"/>
+		<Item key="formRTAOptions.pinkNoise" value="Pink Noise"/>
+		<Item key="formRTAOptions.pinkSweep" value="Pink Sweep"/>
+		<Item key="formRTAOptions.sine" value="Sine"/>
+		<Item key="formRTAOptions.dualSine" value="Dual Sine"/>
+		
+		<Item key="formComm.connectAndLoadData" value="Connect And Load Data"/>
+		<Item key="formComm.uploadData" value="Upload Data"/>
+		<Item key="formComm.callModeData" value="Call Mode Data"/>
+		<Item key="formComm.deviceIsNotActivated" value="Device Is Not Activated"/>
+		<Item key="formComm.pleaseActivateTheDeviceFirst" value="The device is not activated, please activate it before using it!"/>
+		<Item key="formComm.deviceIsLocked" value="Device Is Locked"/>
+		<Item key="formComm.pleaseInputPasswordToUnlockSystem" value="The device is locked, please enter {0} digits password to unlock"/>
+		<Item key="formComm.inputAdminPassword" value="Please enter {0} administrator password to unlock"/>
+		<Item key="formComm.inputPasswordError" value="The entered password is wrong, please try again!"/>
+		<Item key="formComm.error" value="Error"/>
+		<Item key="formComm.password" value="Password"/>
+		<Item key="formComm.ok" value="OK"/>
+		<Item key="formComm.close" value="Close"/>
+		<Item key="formComm.disconnect" value="Disconnect"/>
+
+    <Item key="comm.noUSBHIDAvailable" value="No connected USB-HID device detected in the system!"/>
+		<Item key="comm.noPortAvailable" value="No COM port available detected in the system!"/>
+		<Item key="comm.successful" value="Successful"/>
+		<Item key="comm.failed" value="Failed! "/>
+		<Item key="comm.openPort" value="Open {0} ..."/>
+    <Item key="comm.initUdpClient" value="Init UDP，（Destination IP:{0}, Port:{1}）..."/>
+		<Item key="comm.sendConnectionRequest" value="Send handshake request..."/>
+		<Item key="comm.checkResponseSuccessful" value="Check the response data successfully."/>
+		<Item key="comm.checkResponseFailed" value="Failed to check response data!"/>
+		<Item key="comm.loadDeviceInfo" value="Load device info..."/>
+		<Item key="comm.loadXModuleData" value="Load {0} module data..."/>		
+		<Item key="comm.musicModule" value="Music"/>
+    <Item key="comm.micModule" value="Mic"/>
+		<Item key="comm.micAModule" value="Mic A"/>
+    <Item key="comm.micBModule" value="Mic B"/>
+    <Item key="comm.musicDeqModule" value="Music DEQ"/>
+    <Item key="comm.micDeqModule" value="Mic DEQ"/>
+		<Item key="comm.dEffectModule" value="Dynamic Effect"/>
+		<Item key="comm.echoModule" value="Echo"/>
+		<Item key="comm.reverbModule" value="Reverb"/>
+		<Item key="comm.mainOutputModule" value="Main Output"/>
+		<Item key="comm.aux1OutputModule" value="Aux1 Output"/>
+		<Item key="comm.aux2OutputModule" value="Aux2 Output"/>
+		<Item key="comm.surOutputModule" value="Sur Output"/>
+		<Item key="comm.loadSystemXData" value="Load system {0} data..."/>
+		<Item key="comm.musicStartVolume" value="Music Start Volume"/>
+		<Item key="comm.musicMaxVolume" value="Music Max Volume"/>
+		<Item key="comm.micStartVolume" value="Mic Start Volume"/>
+		<Item key="comm.micMaxVolume" value="Mic Max Volume"/>
+		<Item key="comm.effectStartVolume" value="Effect Start Volume"/>
+		<Item key="comm.effectMaxVolume" value="Effect Max Volume"/>
+		<Item key="comm.musicVolume" value="Music Volume"/>
+		<Item key="comm.micVolume" value="Mic Volume"/>
+		<Item key="comm.effectVolume" value="Effect Volume"/>
+    <Item key="comm.timbre" value="Timbre"/>
+    <Item key="comm.clarity" value="Clarity"/>
+    <Item key="comm.deviceWorkMode" value="Device Work Mode"/>
+		<Item key="comm.musicMute" value="Music Mute"/>
+		<Item key="comm.micMute" value="Mic Mute"/>
+		<Item key="comm.effectMute" value="Effect Mute"/>
+		<Item key="comm.musicInputGain" value="Music Input Gain"/>
+		<Item key="comm.musicInputPort" value="Music Input Port"/>
+		<Item key="comm.systemPassword" value="System Admin Password"/>
+		<Item key="comm.keyboardLockPassword" value="Keyboard Lock Password"/>
+		<Item key="comm.user" value="System User"/>
+		<Item key="comm.isLockKeyboard" value="Keyboard Lock Bit"/>
+		<Item key="comm.isEnableRomoteControl" value="Infrared Remote Control Bit"/>
+		<Item key="comm.deviceModeSave" value="Device Mode (Save)"/>
+		<Item key="comm.deviceModeCall" value="Device Mode (Call)"/>
+    <Item key="comm.deviceId" value="Device Id"/>
+    <Item key="comm.deviceModel" value="Device Model Identity"/>
+    <Item key="comm.prototypeModel" value="Device Prototype"/>
+    <Item key="comm.firmwareVersion" value="Firmware Version"/>
+    <Item key="comm.firmwareBuildNumbers" value="Firmware Build Numbers"/>
+    <Item key="comm.isEnableCustomDeviceInfo" value="Device Info Enable"/>
+    <Item key="comm.customDeviceInfoData" value="Device Info"/>
+    <Item key="comm.deviceHardwareState" value="Hardware State"/>
+    <Item key="comm.deviceName" value="Device Name"/>
+    <Item key="comm.usageLimitLock" value="Usage Limit Lock"/>
+		<Item key="comm.loadSystemModeXNameData" value="Load system Mode {0} Name data..."/>
+		<Item key="comm.loadSystemData" value="Load system data..."/>
+		<Item key="comm.uploadXModuleData" value="Upload {0} module data..."/>
+		<Item key="comm.uploadSystemXData" value="Upload system {0} data..."/>
+		<Item key="comm.failedToLoadData" value="Failed to load data!"/>
+		<Item key="comm.failedToUploadData" value="Failed to upload data!"/>
+		<Item key="comm.failedToCallModeData" value="Failed to call mode data!"/>
+		<Item key="comm.updateDeviceModeIndexData" value="Update device mode (call) index data..."/>
+		<Item key="comm.updateXModeData" value="Upload {0} mode data..."/>
+    <Item key="comm.saveXDataToYMode" value="Save {0} mode data to mode {1}..."/>
+    <Item key="comm.initializingUI" value="Initializing the user interface..."/>
+    <Item key="comm.unknownDeviceModelIdentity" value="Unknown Device Model Identity: {0} !"/>
+    <Item key="comm.unsupportedDeviceModelIdentity" value="Unsupported Device Model Identity: {0} !"/>
+
+    <Item key="formControlTheOtherParty" value="Remotely control the other party"/>
+    <Item key="formControlTheOtherParty.remoteId" value="Remote Id"/>
+    <Item key="formControlTheOtherParty.remoteVerificationCode" value="Remote Verification Code"/>
+    <Item key="formControlTheOtherParty.disconnectRemoteControl" value="Disconnect"/>
+    <Item key="formControlTheOtherParty.remoteControlConnect" value="Connect"/>
+    <Item key="formControlTheOtherParty.remoteControlConnecting" value="Connecting..."/>
+    <Item key="formControlTheOtherParty.disconnectRemoteControl" value="Disconnect"/>
+    <Item key="formControlTheOtherParty.disconnectingRemoteControl" value="Disconnecting..."/>
+    <Item key="formControlTheOtherParty.failedToConnectToRemoteClient" value="Failed to connect to the remote client {0} : {1}"/>
+    <Item key="formControlTheOtherParty.remoteControl" value="Remote Control"/>
+    <Item key="formControlTheOtherParty.idCodeError" value="The identification code is entered incorrectly!"/>
+    <Item key="formControlTheOtherParty.verificationCodeError" value="The verification  code is entered incorrectly!"/>
+    <Item key="formControlTheOtherParty.enterNonLocalIdCode" value="Please enter a non-local identification code!"/>
+    
+    <Item key="formControlledRemotely" value="Request remotely control this machine"/>
+    <Item key="formControlledRemotely.localId" value="Native Id"/>
+    <Item key="formControlledRemotely.localVerificationCode" value="Native Verification Code"/>
+    <Item key="formControlledRemotely.disconnectRemoteControl" value="Disconnect"/>
+    <Item key="formControlledRemotely.disconnectingRemoteControl" value="Disconnecting"/>
+    <Item key="formControlledRemotely.allowToBeControlled" value="Allow to be controlled"/>
+
+    <Item key="formRCSettings" value="Settings"/>
+    <Item key="formRCSettings.serverIPAddress" value="Server IP Address"/>
+    <Item key="formRCSettings.serverPort" value="Port"/>
+    <Item key="formRCSettings.enterCorrentIP" value="Please enter the correct IP address!"/>
+    <Item key="formRCSettings.enterCorrentPort" value="Please enter the correct port!"/>
+    <Item key="formRCSettings.restoreToDefault" value="Restore to default"/>
+    <Item key="formRCSettings.close" value="Close"/>
+
+    <Item key="panelNetworkConnectionStatus.notConnectedToTheServer" value="Not connected to the server"/>
+    <Item key="panelNetworkConnectionStatus.connectingToTheServer" value="connecting to the server"/>
+    <Item key="panelNetworkConnectionStatus.successfullyConnectedToTheServer" value="Successfully connected to the server"/>
+    <Item key="panelNetworkConnectionStatus.failedToConnectToTheServer" value="Failed to connect to the server{0}!"/>
+    <Item key="panelNetworkConnectionStatus.disconnectFromTheServer" value="Disconnect from the server"/>
+    <Item key="panelNetworkConnectionStatus.connectionToTheServerIsInterrupted" value="The connection to the server is interrupted!"/>
+    <Item key="panelNetworkConnectionStatus.reconnectToTheServer" value="Reconnect to the server"/>
+
+    <Item key="remoteControl.connectResponse.unknown" value="Unknown!"/>
+    <Item key="remoteControl.connectResponse.targetNotOnline" value="The remote host is not online!"/>
+    <Item key="remoteControl.connectResponse.verificationCodeError" value="Verification code error!"/>
+    <Item key="remoteControl.connectResponse.notAllowedToBeControlled" value="The remote host is not allowed to be controlled remotely!"/>
+    <Item key="remoteControl.connectResponse.remoteClientBusy" value="The remote host is busy!"/>
+
+    <Item key="remoteControl.remoteClientDisconnect" value="Remote client disconnect!"/>
+    
+		<Item key="formEasyMode.importFromFile" value="Import From File"/>
+		<Item key="formEasyMode.skip" value="Skip"/>
+		<Item key="formEasyMode.importData" value="Generate Data"/>
+		<Item key="formEasyMode.back" value="Back"/>
+		<Item key="formEasyMode.save" value="Save"/>
+		<Item key="formEasyMode.fileDataError" value="File data error!"/>
+		
+		<Item key="formViewImportAudioSystem" value="Import Data"/>
+		<Item key="formViewImportAudioSystem.dataAdaptedToAudioSystem" value="Data adapted to the following audio systems"/>
+		<Item key="formViewImportAudioSystem.audioSystem" value="Audio system"/>
+		<Item key="formViewImportAudioSystem.modes" value="Mode-"/>
+		<Item key="formViewImportAudioSystem.askForImportMode" value="This set of data contains the following {0} modes:{1}. Click &quot;{2}&quot; to overwrite the data to the device:{3}, Are you sure you want to continue ?"/>
+		
+		<Item key="easyModeControlPanel.systemStatus" value="System Status"/>
+		<Item key="easyModeControlPanel.currentVolume" value="Current Volume"/>
+		<Item key="easyModeControlPanel.startVolume" value="Start Volume"/>
+		<Item key="easyModeControlPanel.limitVolume" value="Max Volume"/>
+		<Item key="easyModeControlPanel.mute" value="Mute"/>
+		<Item key="easyModeControlPanel.preset" value="Preset Mode"/>
+		<Item key="easyModeControlPanel.other" value="Other Mode"/>
+		<Item key="easyModeControlPanel.modex" value="Mode {0}"/>
+    <Item key="easyModeControlPanel.empty" value="(Empty)"/>
+
+    <Item key="licenseType.unauthorized" value="Unauthorized"/>
+    <Item key="licenseType.temporary" value="Temporary Authorization"/>
+    <Item key="licenseType.limited" value="Limited Authorization"/>
+    <Item key="licenseType.unlimited" value="Unlimited Authorization"/>
+
+    <Item key="firmwareUpdate.yes" value="Yes"/>
+    <Item key="firmwareUpdate.no" value="No"/>
+    <Item key="firmwareUpdate.dataIsInvalid" value="Data Is Invalid"/>
+    <Item key="firmwareUpdate.firmwareType" value="Firmware Type : {0}"/>
+    <Item key="firmwareUpdate.whetherToUpdate" value="Whether to Update : {0}"/>
+    <Item key="firmwareUpdate.dataLength" value="Data Length : {0}"/>
+    <Item key="firmwareUpdate.updateTime" value="Update Time : {0}"/>
+    <Item key="firmwareUpdate.dataHash" value="Data Hash : {0}"/>
+    <Item key="firmwareUpdate.whetherToUpdateFlashAllData" value="Whether to update flash all data ? {0}"/>
+    <Item key="firmwareUpdate.flashAllData" value="Flash all data, Address : {0}, Length : {1}"/>
+    <Item key="firmwareUpdate.whetherToUpdateCustomDeviceInfo" value="Whether to update custom device info ? {0}"/>
+    <Item key="firmwareUpdate.customDeviceInfo" value="Custom device info[{0}], Address : {1}, Length : {2}"/>
+    <Item key="firmwareUpdate.whetherToUpdatePresetData" value="Whether to update preset data ? {0}"/>
+    <Item key="firmwareUpdate.presetData" value="Preset Data, Address : {0}, Length : {1}"/>
+    <Item key="firmwareUpdate.updatedSuccessfully" value="Updated successfully."/>
+    <Item key="firmwareUpdate.failedToUpdate" value="Failed to update!"/>
+
+    <Item key="usageLimitLock" value="Usage Limit Lock"/>
+    <Item key="usageLimitLock.management" value="Usage Limit Lock Management"/>
+    <Item key="usageLimitLock.management.notSupport" value="Usage Limit Lock Management, This feature is not supported on current devices!"/>
+    <Item key="usageLimitLock.deviceId" value="Device ID"/>
+    <Item key="usageLimitLock.deviceName" value="Device Name"/>
+    <Item key="usageLimitLock.randKey" value="Random Key"/>
+    <Item key="usageLimitLock.passwordManagement" value="Password MGT"/>
+    <Item key="usageLimitLock.lockTaskManagement" value="Lock Task MGT"/>
+    <Item key="usageLimitLock.forgotPassword" value="Forgot Password"/>
+    <Item key="usageLimitLock.taskFilePath" value="Lock Task File"/>
+    <Item key="usageLimitLock.setting" value="Setting"/>
+    <Item key="usageLimitLock.copy" value="Copy"/>
+    <Item key="usageLimitLock.clear" value="Clear"/>
+    <Item key="usageLimitLock.import" value="Import"/>
+    <Item key="usageLimitLock.export" value="Export"/>
+    <Item key="usageLimitLock.currentState" value="Current State"/>
+    <Item key="usageLimitLock.remainderUsage" value="Remainder usage"/>
+    <Item key="usageLimitLock.currentPassword" value="Current Password"/>
+    <Item key="usageLimitLock.ok" value="OK"/>
+    <Item key="usageLimitLock.newPassword" value="New Password"/>
+    <Item key="usageLimitLock.confirmNewPassword" value="Confirm Password"/>
+    <Item key="usageLimitLock.useCurrentPassword" value="Use Current Password"/>
+    <Item key="usageLimitLock.state" value="State"/>
+    <Item key="usageLimitLock.usageCount" value="Usage Count"/>
+    <Item key="usageLimitLock.newPasswordLengthLessThan6" value="The new password is less than 6 digits long!"/>
+    <Item key="usageLimitLock.confirmNewPasswordLengthLessThan6" value="Confirm new password is less than 6 digits long!"/>
+    <Item key="usageLimitLock.passwordEnteredInconsistent" value="The passwords entered is inconsistent. please re-enter!"/>
+    <Item key="usageLimitLock.usageCountEnteredIncorrectly" value="The input of usage count is incorrect, please re-enter it!"/>
+    <Item key="usageLimitLock.usageCountEnteredExceedsMaximum" value="The entered usage count of {0} exceeds the upper limit of {1}. Please re-enter!"/>
+    <Item key="usageLimitLock.PasswordsMustBeNumeric" value="The password must consist of numbers only!"/>
+    <Item key="usageLimitLock.random" value="Random"/>
+    <Item key="usageLimitLock.lockXPassword" value="Lock {0} Password"/>
+    <Item key="usageLimitLock.lockX" value="Lock {0}"/>
+    <Item key="usageLimitLock.oldPassword" value="Old Password"/>
+    <Item key="usageLimitLock.isUpdate" value="Is Update"/>
+    <Item key="usageLimitLock.isEnable" value="Is Enable"/>
+    <Item key="usageLimitLock.lockXIsUpdated" value="#{0} Lock hash been updated : {1}"/>
+    <Item key="usageLimitLock.lockToString" value="{0}, Usage Count : {1}, Password : {2}"/>
+    <Item key="usageLimitLock.taskFileXNotExist" value="Task File {0} ！does not exist!"/>
+    <Item key="usageLimitLock.noLockWillToBeUpdated" value="No lock will be updated!"/>
+    <Item key="usageLimitLock.lockXPasswordNotMatch" value="# {0} Lock password does not match!"/>
+    <Item key="usageLimitLock.theFollowingLocksWillToBeUpdated" value="The following locks will be updated:"/>
+    <Item key="usageLimitLock.lockTaskToString" value="#{0} Lock: Old Password : {1}, {2}, Usage Count : {3}, New Password : {4}"/>
+    <Item key="usageLimitLock.enable" value="Enable"/>
+    <Item key="usageLimitLock.disable" value="Disable"/>
+
+    <Item key="FormUnlockOutput" value="Unlock Params"/>
+    <Item key="FormUnlockOutput.password" value="Password"/>
+    <Item key="FormUnlockOutput.unlock" value="Unlock"/>
+    <Item key="FormUnlockOutput.passwordIncorrect" value="Incorrect password!"/>
+	</Content>
+</Localization>

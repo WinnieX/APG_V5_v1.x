@@ -1,0 +1,101 @@
+syntax = "proto2";
+
+package AEC.RemoteControl.Message;
+option java_package = "com.maudio.aec.rcs.message";
+option java_outer_classname = "CommEventArgs";
+
+message RCCommEvent{
+  required string event_name = 1; //事件名称
+  optional bytes args = 2;        //参数值
+}
+
+message RCCommStateChangedArgs {
+  required uint32 comm_status = 1;
+}
+
+message RCCommProgressUpdatedArgs {
+  required string msg = 1;
+  required bool end = 2;
+  required float progress_increment = 3;
+  required bool failed = 4;
+}
+
+message RCCommLoadEffectorModelCompletedArgs {
+  required uint32 effector_model = 1;
+}
+
+message RCCommCompletedArgs {
+  required uint32 process = 1;
+  required bool success = 2;
+}
+
+message RCCommOutputLimiterStatusLoadedArgs {
+  message LimiterStatus {
+    required float level = 1;
+    required float ratio = 2;
+  }
+
+  repeated LimiterStatus status = 1;
+}
+
+message RCDataParamChangedArgs {
+  required int32 module_index = 1;
+  required int32 addr = 2;
+  required int32 max = 3;
+  required int32 value = 4;
+}
+
+message RCEQChangedArgs {
+  required int32 module_index = 1;
+  required int32 eq_index = 2;
+  required int32 eq_type = 3;
+  required int32 eq_freq = 4;
+  required int32 eq_gain = 5;
+  required int32 eq_q = 6;
+  required int32 eq_s = 7;
+}
+
+message RCPasswordChangedArgs {
+  required int32 addr = 1;
+  required string password = 2;
+}
+
+message RCSaveDeviceModeArgs {
+  required int32 mode_index = 1;
+  required string mode_name = 2;
+}
+
+message RCUpdateModuleAllDataArgs {
+  required int32 module_index = 1;
+  repeated int32 data_list = 2;
+}
+
+message RCLoadDataCompletedArgs {
+  required bytes data = 1;
+  required int32 comm_process = 2;
+}
+
+message RCCallDeviceModeCompletedArgs {
+  required bytes data = 1;
+  required int32 comm_process = 2;
+  required int32 device_mode_call_index = 3;
+}
+
+message RCDeviceModeIndexArgs{
+  required int32 index = 1;    //模式索引编号
+}
+
+message RCDeviceModeDataArgs {
+  required bytes data = 1;
+  required bool encrypted = 2;
+}
+
+message RCDeviceModeArgs {
+  required string name = 1;
+  required bytes data = 2;
+  required bool encrypted = 3;
+}
+
+message RCMultiDeviceModesArgs {
+  repeated RCDeviceModeArgs device_mode = 1;
+}

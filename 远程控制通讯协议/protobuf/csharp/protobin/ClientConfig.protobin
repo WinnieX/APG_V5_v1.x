@@ -1,0 +1,11 @@
+
+è
+proto/ClientConfig.protoAEC.RemoteControl.Message"„
+Configuration
+lang (	Rlang4
+comm_connection_method (RcommConnectionMethod6
+comm_default_serialPort (	RcommDefaultSerialPort-
+comm_sp_manual_mode (RcommSpManualMode
+comm_tcp_ip (	R	commTcpIp"
+comm_tcp_port (RcommTcpPortB*
+com.maudio.aec.rcs.messageBClientConfig

@@ -1,0 +1,7 @@
+
+Ï
+proto/RemoteClientUpdate.protoAEC.RemoteControl.Message"Å
+RemoteClientUpdateRequest+
+verification_code (RverificationCode7
+allowed_to_be_controlled (RallowedToBeControlledB+
+com.meng.aecs.messageBRemoteClientUpdate

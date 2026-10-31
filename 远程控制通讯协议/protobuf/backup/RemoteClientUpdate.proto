@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package AEC.RemoteControl.Message;
+option java_package = "com.meng.aecs.message";
+option java_outer_classname = "RemoteClientUpdate";
+//option csharp_namespace = "AEC.RemoteControl.Message";
+
+message RemoteClientUpdateRequest{
+  optional uint32 verification_code = 1;  //远程主机更新验证码
+  optional bool allowed_to_be_controlled = 2; //是否允许被远程控制
+}

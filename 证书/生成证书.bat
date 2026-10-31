@@ -1,0 +1,1 @@
+d:\program files (x86)\microsoft visual studio 12.0\vc\bin>makecert -r -pe -ss MengAudioCertStore -n "CN=MengAudioCert" MengAudioCert.cer

@@ -1,0 +1,11 @@
+
+Ü
+proto/RemoteControl.protoAEC.RemoteControl.Message":
+	RCRequest
+cmd_name (	RcmdName
+data (Rdata";
+
+RCResponse
+cmd_name (	RcmdName
+data (RdataB+
+com.maudio.aec.rcs.messageBRemoteControl

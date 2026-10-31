@@ -1,0 +1,3406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5618BE6-AC64-4A2C-9C07-056C8B86E6C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AEC</RootNamespace>
+    <AssemblyName>APG AEC</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\AECPackage\Resources\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icons\icon_app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UNENCRYPTED_COMM|AnyCPU'">
+    <OutputPath>bin\UNENCRYPTED_COMM\</OutputPath>
+    <DefineConstants>TRACE;UNENCRYPTED_COMM</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\AECPackage\Resources\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UNENCRYPTED_COMM|x86'">
+    <OutputPath>..\AECPackage\Resources\</OutputPath>
+    <DefineConstants>TRACE;UNENCRYPTED_COMM</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>libs\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net20-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectSound.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net20\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivationCode.cs" />
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="AudioProducts\AudicProductBase.cs" />
+    <Compile Include="AudioProducts\AudioProductManagement.cs" />
+    <Compile Include="AudioProducts\AudioSystem.cs" />
+    <Compile Include="AudioProducts\Loudspeaker.cs" />
+    <Compile Include="AudioProducts\Microphone.cs" />
+    <Compile Include="AudioProducts\PowerAmplifier.cs" />
+    <Compile Include="Common\AutoWorkMode.cs" />
+    <Compile Include="Common\DataBackup.cs" />
+    <Compile Include="Common\CustomModeDataFileManager.cs" />
+    <Compile Include="Common\DeviceStatus.cs" />
+    <Compile Include="Common\ExtendedFunctionData.cs" />
+    <Compile Include="Common\ExtendedFunctionState.cs" />
+    <Compile Include="Common\LinearLevelSmoother.cs" />
+    <Compile Include="Common\LimiterStatus.cs" />
+    <Compile Include="Common\LimiterStatusUIValue.cs" />
+    <Compile Include="Common\MEffector.cs" />
+    <Compile Include="Common\EffectorModelBase.cs" />
+    <Compile Include="Common\EQGraphic.cs" />
+    <Compile Include="Common\FilePathModeNamePair.cs" />
+    <Compile Include="Common\MDeviceMode.cs" />
+    <Compile Include="Common\MPresetDeviceMode.cs" />
+    <Compile Include="Common\PeakValueHolder.cs" />
+    <Compile Include="Common\QuadChannelLimiterStatus.cs" />
+    <Compile Include="Common\ULLTask.cs" />
+    <Compile Include="Common\ULLPasswordGroup.cs" />
+    <Compile Include="Common\UsageLimitLock.cs" />
+    <Compile Include="Common\UsageLimitLockHelper.cs" />
+    <Compile Include="Common\X5Mixer.cs" />
+    <Compile Include="Comm\ActivateDevice\ActivateDeviceController.cs" />
+    <Compile Include="Comm\ActivateDevice\DeviceActivateCode.cs" />
+    <Compile Include="Comm\CentralControl\CentralControlCmd.cs" />
+    <Compile Include="Comm\CentralControl\CentralControlProtocol.cs" />
+    <Compile Include="Comm\CentralControl\CentralControlService.cs" />
+    <Compile Include="Comm\CentralControl\CentralControlDeviceBase.cs" />
+    <Compile Include="Comm\CommDevices\CommInterface.cs" />
+    <Compile Include="Comm\CommEventArgs\CommOutputMessageArgs.cs" />
+    <Compile Include="Comm\CommEventArgs\CommWrokCompletedArgs.cs" />
+    <Compile Include="Comm\CommEventArgs\CommUSBInterfaceNotFoundArgs.cs" />
+    <Compile Include="Comm\CommTest\CommTestController.cs" />
+    <Compile Include="Comm\CommTest\CommProtocolVKx.cs" />
+    <Compile Include="Comm\CommTest\DeviceModelLoadedEventArgs.cs" />
+    <Compile Include="Comm\FirmwareUpdate\BitHelper.cs" />
+    <Compile Include="Comm\FirmwareUpdate\BluetoothRename.cs" />
+    <Compile Include="Comm\FirmwareUpdate\BTDeviceInfo.cs" />
+    <Compile Include="Comm\FirmwareUpdate\ByteArrayEncoding.cs" />
+    <Compile Include="Comm\FirmwareUpdate\DataBlock.cs" />
+    <Compile Include="Comm\FirmwareUpdate\DeviceID.cs" />
+    <Compile Include="Comm\FirmwareUpdate\DSPEfuse.cs" />
+    <Compile Include="Comm\FirmwareUpdate\DSPFirmwareInfo.cs" />
+    <Compile Include="Comm\FirmwareUpdate\DSPFirmwarePackage.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FirmwareBin.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FirmwarePackage.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FirmwareUpdateTask.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FirmwareUpdateWrokerArgs.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FirmwareUpdateDevice.cs" />
+    <Compile Include="Comm\CommDevices\HIDDevice.cs" />
+    <Compile Include="Comm\CommDevices\HID\HIDInterface.cs" />
+    <Compile Include="Comm\CommDevices\HID\HIDProtocol.cs" />
+    <Compile Include="Comm\CommPort.cs" />
+    <Compile Include="Comm\CommPortType.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FirmwareUpdateService.cs" />
+    <Compile Include="Comm\FirmwareUpdate\CrcImageHelper.cs" />
+    <Compile Include="Comm\FirmwareUpdate\DownloadTask.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FirmwareUpdateProtocol.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FirmwareUpdateProcess.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FirmwareUpgradeArgs.cs" />
+    <Compile Include="Comm\FirmwareUpdate\MCUFirmware.cs" />
+    <Compile Include="Comm\FirmwareUpdate\FlashSR.cs" />
+    <Compile Include="Comm\Utils.cs" />
+    <Compile Include="Comm\FirmwareUpdate\MCUFlashData.cs" />
+    <Compile Include="Comm\VKxPIIComm\VKxPIICommProtocol.cs" />
+    <Compile Include="Comm\VKxPIIComm\VKxPIICommService.cs" />
+    <Compile Include="Comm\VKxPIIDCMComm\VKxPIIDCMCommProtocol.cs" />
+    <Compile Include="Comm\VKxPIIDCMComm\VKxPIIDCMCommService.cs" />
+    <Compile Include="Comm\KXComm\KXCommProtocol.cs" />
+    <Compile Include="Comm\KXComm\KXCommService.cs" />
+    <Compile Include="Comm\VKxDMComm\VKxDMCommProtocol.cs" />
+    <Compile Include="Comm\VKxDMComm\VKxDMCommService.cs" />
+    <Compile Include="Comm\VKxDCMComm\VKxDCMCommProtocol.cs" />
+    <Compile Include="Comm\VKxDCMComm\VKxDCMCommService.cs" />
+    <Compile Include="Comm\VKxSCMComm\VKxSCMCommProtocol.cs" />
+    <Compile Include="Comm\VKxSCMComm\VKxSCMCommService.cs" />
+    <Compile Include="Comm\X5Comm\X5CommProtocol.cs" />
+    <Compile Include="Comm\X5Comm\X5CommService.cs" />
+    <Compile Include="Comm\Net\UDPClient.cs" />
+    <Compile Include="Comm\CommDevices\UDPDevice.cs" />
+    <Compile Include="Comm\VKxSComm\VKxSCommProtocol.cs" />
+    <Compile Include="Comm\VKxSComm\VKxSCommService.cs" />
+    <Compile Include="Core\MEventBus.cs" />
+    <Compile Include="Core\SwitchWorkMode.cs" />
+    <Compile Include="Core\DataConverter.cs" />
+    <Compile Include="Core\DEQGroup.cs" />
+    <Compile Include="Core\DSP\AnalogFilterPrototype.cs" />
+    <Compile Include="Core\DSP\AnalogFilterPrototyperFactory.cs" />
+    <Compile Include="Core\DSP\FilterCoefficientFactory.cs" />
+    <Compile Include="Core\EQ.cs" />
+    <Compile Include="Core\EQGroup.cs" />
+    <Compile Include="Core\HighPassFilter.cs" />
+    <Compile Include="Comm\FirmwareUpdate\DspProgrammerDownloadParams.cs" />
+    <Compile Include="Core\ShortParam.cs" />
+    <Compile Include="Core\ToneControlBoostConverter.cs" />
+    <Compile Include="Core\ToneControlFilter.cs" />
+    <Compile Include="Core\XPFilterFactory.cs" />
+    <Compile Include="Core\LowPassFilter.cs" />
+    <Compile Include="Core\MShort.cs" />
+    <Compile Include="Core\XPFilterBase.cs" />
+    <Compile Include="Core\MAudioSystem.cs" />
+    <Compile Include="Core\MFilterBase.cs" />
+    <Compile Include="Core\XPFilterConverterBase.cs" />
+    <Compile Include="Core\XPFilterFreqConverter.cs" />
+    <Compile Include="Core\XPFilterFreqConverterFactory.cs" />
+    <Compile Include="Core\XPFilterQConverter.cs" />
+    <Compile Include="Core\XPFilterQConverterFactory.cs" />
+    <Compile Include="Core\XPFilterTypeConverter.cs" />
+    <Compile Include="Core\XPFilterTypeConverterFactory.cs" />
+    <Compile Include="Common\OutputChannel.cs" />
+    <Compile Include="Effectors\CheckPresetModel.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\MicExciterModule.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\VKxPIIDCMDataStorage.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\VKxPIIDCMEffectorModel.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\VKxPIIDCMDataParam.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\MicModule.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\MonoOutputModule.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\StereoOutputModule.cs" />
+    <Compile Include="Effectors\VKxPIIDCM\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\KX\KXDataStorage.cs" />
+    <Compile Include="Effectors\KX\KXEffectorModel.cs" />
+    <Compile Include="Effectors\KX\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\KX\Modules\KXDataParam.cs" />
+    <Compile Include="Effectors\KX\Modules\MicModule.cs" />
+    <Compile Include="Effectors\KX\Modules\MonoOutputModule.cs" />
+    <Compile Include="Effectors\KX\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\KX\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\KX\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\KX\Modules\StereoOutputModule.cs" />
+    <Compile Include="Effectors\KX\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\MEffectorFeatures.cs" />
+    <Compile Include="Effectors\IGetProductFeatures.cs" />
+    <Compile Include="Effectors\VKxDM\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\VKxDM\Modules\MicModule.cs" />
+    <Compile Include="Effectors\VKxDM\Modules\MonoOutputModule.cs" />
+    <Compile Include="Effectors\VKxDM\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\VKxDM\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\VKxDM\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\VKxDM\Modules\StereoOutputModule.cs" />
+    <Compile Include="Effectors\VKxDM\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\VKxDM\Modules\VKxDMDataParam.cs" />
+    <Compile Include="Effectors\VKxDM\VKxDMDataStorage.cs" />
+    <Compile Include="Effectors\VKxDM\VKxDMEffectorModel.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\MicExciterModule.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\MicModule.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\MonoOutputModule.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\StereoOutputModule.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\VKxDCM\Modules\VKxDCMDataParam.cs" />
+    <Compile Include="Effectors\VKxDCM\VKxDCMDataStorage.cs" />
+    <Compile Include="Effectors\VKxDCM\VKxDCMEffectorModel.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\MicExciterModule.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\MicModule.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\MonoOutputModule.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\StereoOutputModule.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\VKxPII\Modules\VKxPIIDataParam.cs" />
+    <Compile Include="Effectors\VKxPII\VKxPIIDataStorage.cs" />
+    <Compile Include="Effectors\VKxPII\VKxPIIEffectorModel.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\MicExciterModule.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\MicModule.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\MonoOutputModule.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\StereoOutputModule.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\VKxSCM\Modules\VKxPIIDataParam.cs" />
+    <Compile Include="Effectors\VKxSCM\VKxSCMDataStorage.cs" />
+    <Compile Include="Effectors\VKxSCM\VKxSCMEffectorModel.cs" />
+    <Compile Include="Effectors\X5\X5DataStorage.cs" />
+    <Compile Include="Effectors\X5\X5EffectorModel.cs" />
+    <Compile Include="Effectors\X5\Modules\SubOutputModule.cs" />
+    <Compile Include="Effectors\X5\Modules\SurOutputModule.cs" />
+    <Compile Include="Effectors\X5\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\X5\Modules\CenterOutputModule.cs" />
+    <Compile Include="Effectors\X5\Modules\MainOutputModule.cs" />
+    <Compile Include="Effectors\X5\Modules\X5DataParam.cs" />
+    <Compile Include="Effectors\X5\Modules\MicModule.cs" />
+    <Compile Include="Effectors\X5\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\X5\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\X5\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\X5\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\MaxLevel.cs" />
+    <Compile Include="Effectors\MEffectorModeDataProvider.cs" />
+    <Compile Include="Common\MusicModuleBase.cs" />
+    <Compile Include="Common\ParamGetIndexHelper.cs" />
+    <Compile Include="Common\ParamGetLabelHelper.cs" />
+    <Compile Include="Comm\AbstractCommService.cs" />
+    <Compile Include="Comm\CommArge.cs" />
+    <Compile Include="Comm\CommProcess.cs" />
+    <Compile Include="Comm\CommProtocolDetector.cs" />
+    <Compile Include="Comm\CommResult.cs" />
+    <Compile Include="Comm\CommState.cs" />
+    <Compile Include="Comm\MCommService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Comm\MXComm\MXCommProtocol.cs" />
+    <Compile Include="Comm\MXComm\MXCommService.cs" />
+    <Compile Include="Comm\SystemParamComment.cs" />
+    <Compile Include="Comm\VXComm\VXCommService.cs" />
+    <Compile Include="Comm\VXComm\VXCommProtocol.cs" />
+    <Compile Include="Effectors\EffectorModel.cs" />
+    <Compile Include="Comm\CommDevices\TCPDevice.cs" />
+    <Compile Include="Comm\Net\TCPClient.cs" />
+    <Compile Include="Core\DSP\FilterCoefficient.cs" />
+    <Compile Include="Core\LevelPeak.cs" />
+    <Compile Include="Comm\CommCmd.cs" />
+    <Compile Include="Comm\CommDevices\CommDevice.cs" />
+    <Compile Include="Comm\CmdQueue.cs" />
+    <Compile Include="Comm\CommProtocolBase.cs" />
+    <Compile Include="Comm\CommServiceBase.cs" />
+    <Compile Include="Comm\CommKeyPair.cs" />
+    <Compile Include="Comm\CommDevices\SerialPort.cs" />
+    <Compile Include="Effectors\MEffectorFamily.cs" />
+    <Compile Include="Core\PeakHolder.cs" />
+    <Compile Include="Effectors\FactoryPresetsModeData.cs" />
+    <Compile Include="Effectors\MAudioEffectorModel.cs" />
+    <Compile Include="Effectors\MEffectorSeralizer.cs" />
+    <Compile Include="Effectors\MEffectorThreshold.cs" />
+    <Compile Include="Effectors\MX\MXDataStorage.cs" />
+    <Compile Include="Effectors\MX\Modules\AuxModule.cs" />
+    <Compile Include="Effectors\MX\Modules\DeqModule.cs" />
+    <Compile Include="Effectors\MX\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\MX\Modules\MicModule.cs" />
+    <Compile Include="Effectors\MX\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\MX\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\MX\Modules\OutputModule.cs" />
+    <Compile Include="Effectors\MX\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\MX\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\MX\Modules\MXDataParam.cs" />
+    <Compile Include="Effectors\MX\MXEffectorModel.cs" />
+    <Compile Include="Effectors\BuildInPresetModeData.cs" />
+    <Compile Include="Effectors\VKxS\Modules\MonoOutputModule.cs" />
+    <Compile Include="Effectors\VKxS\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\VKxS\Modules\MicModule.cs" />
+    <Compile Include="Effectors\VKxS\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\VKxS\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\VKxS\Modules\StereoOutputModule.cs" />
+    <Compile Include="Effectors\VKxS\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\VKxS\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\VKxS\Modules\VKSxDataParam.cs" />
+    <Compile Include="Effectors\VKxS\VKxSDataStorage.cs" />
+    <Compile Include="Effectors\VKxS\VKxSEffectorModel.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="MController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Misc\Config.cs" />
+    <Compile Include="Misc\Localization.cs" />
+    <Compile Include="ProductsConfig.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteControl\LocalClient.cs" />
+    <Compile Include="RemoteControl\Message\ClientAudioDevice.cs" />
+    <Compile Include="RemoteControl\Message\ClientConfig.cs" />
+    <Compile Include="RemoteControl\Message\Handshake.cs" />
+    <Compile Include="RemoteControl\Message\LcConnectToRc.cs" />
+    <Compile Include="RemoteControl\Message\RCCommEventArgs.cs" />
+    <Compile Include="RemoteControl\Message\RemoteControl.cs" />
+    <Compile Include="RemoteControl\RCClientEngine.cs" />
+    <Compile Include="RemoteControl\RCCommEventName.cs" />
+    <Compile Include="RemoteControl\RemoteClient.cs" />
+    <Compile Include="RemoteControl\Utility\SignatureCodeHelper.cs" />
+    <Compile Include="RemoteControl\Message\MessageType.cs" />
+    <Compile Include="RemoteControl\Protocol\BufferLengthHelper.cs" />
+    <Compile Include="RemoteControl\Protocol\ChecksumHelper.cs" />
+    <Compile Include="RemoteControl\Protocol\CommMessage.cs" />
+    <Compile Include="RemoteControl\Protocol\FrameDecoder.cs" />
+    <Compile Include="RemoteControl\Protocol\FrameEncoder.cs" />
+    <Compile Include="RemoteControl\Protocol\StringBufferHelper.cs" />
+    <Compile Include="RemoteControl\Protocol\Test.cs" />
+    <Compile Include="RemoteControl\RCClient.cs" />
+    <Compile Include="RemoteControl\RCConfig.cs" />
+    <Compile Include="RemoteControl\Log.cs" />
+    <Compile Include="RemoteControl\Utility\VerificationCodeHelper.cs" />
+    <Compile Include="RTA\AudioAnalysis.cs" />
+    <Compile Include="RTA\AudioBuffer.cs" />
+    <Compile Include="RTA\AudioDevice.cs" />
+    <Compile Include="RTA\AudioOut.cs" />
+    <Compile Include="RTA\AudioRTA.cs" />
+    <Compile Include="RTA\Core\AudioChannel.cs" />
+    <Compile Include="RTA\Core\Averager.cs" />
+    <Compile Include="RTA\Core\BitsPerSample.cs" />
+    <Compile Include="RTA\Core\BufferedWaveProvider.cs" />
+    <Compile Include="RTA\Core\CaptureFormat.cs" />
+    <Compile Include="RTA\Core\AudioRTAParam.cs" />
+    <Compile Include="RTA\Core\CircularBuffer.cs" />
+    <Compile Include="RTA\Core\Delay.cs" />
+    <Compile Include="RTA\Core\DelayOffset.cs" />
+    <Compile Include="RTA\Core\FFT.cs" />
+    <Compile Include="RTA\Core\FFTSize.cs" />
+    <Compile Include="RTA\Core\FPPO.cs" />
+    <Compile Include="RTA\Core\FreqDomainSignal.cs" />
+    <Compile Include="RTA\Core\FreqRespMap.cs" />
+    <Compile Include="RTA\Core\FrequencyResponse.cs" />
+    <Compile Include="RTA\Core\InputSignal.cs" />
+    <Compile Include="RTA\Core\MeasDelayAudioDataBuffer.cs" />
+    <Compile Include="RTA\Core\MeasureDelay.cs" />
+    <Compile Include="RTA\Core\Octave.cs" />
+    <Compile Include="RTA\Core\OutputSignalLevel.cs" />
+    <Compile Include="RTA\Core\OutputSineSignalFreq.cs" />
+    <Compile Include="RTA\Core\ReferenceTrace.cs" />
+    <Compile Include="RTA\Core\RTAContext.cs" />
+    <Compile Include="RTA\Core\RTAMode.cs" />
+    <Compile Include="RTA\Core\RTASample.cs" />
+    <Compile Include="RTA\Core\SignalGenerator.cs" />
+    <Compile Include="RTA\Core\SignalLevel.cs" />
+    <Compile Include="RTA\Core\SignalMag.cs" />
+    <Compile Include="RTA\Core\SignalWindow.cs" />
+    <Compile Include="RTA\Core\Smoother.cs" />
+    <Compile Include="RTA\Core\SpectrumMap.cs" />
+    <Compile Include="RTA\Core\SpectrumScale.cs" />
+    <Compile Include="RTA\Core\StereoBuffer.cs" />
+    <Compile Include="RTA\Core\StereoFFTHelper.cs" />
+    <Compile Include="RTA\Core\StereoFFTResult.cs" />
+    <Compile Include="RTA\Core\StereoOctaveLevel.cs" />
+    <Compile Include="RTA\Core\SteroLevel.cs" />
+    <Compile Include="RTA\Core\WindowFunction.cs" />
+    <Compile Include="RTA\Display.cs" />
+    <Compile Include="RTA\FFTW\FFTWInterop.cs" />
+    <Compile Include="RTA\FFTW\FFTWManaged.cs" />
+    <Compile Include="RTA\Utils\FixedPointHelper.cs" />
+    <Compile Include="RTA\Utils\Thread.cs" />
+    <Compile Include="RTA\AudioIn.cs" />
+    <Compile Include="RTA\Utils\Utility.cs" />
+    <Compile Include="Tools\ByteArrayHelper.cs" />
+    <Compile Include="Tools\CompressHelper.cs" />
+    <Compile Include="Tools\DateTimeHelper.cs" />
+    <Compile Include="Tools\EncryptHelper.cs" />
+    <Compile Include="Tools\FileHelper.cs" />
+    <Compile Include="Tools\HashHelper.cs" />
+    <Compile Include="Tools\LogHelper.cs" />
+    <Compile Include="Tools\MachineIDHelper.cs" />
+    <Compile Include="Tools\OSVersionHelper.cs" />
+    <Compile Include="Tools\RandNumberHelper.cs" />
+    <Compile Include="Tools\StopWatch.cs" />
+    <Compile Include="Tools\StringHelper.cs" />
+    <Compile Include="Tools\TimeStampHelper.cs" />
+    <Compile Include="Tools\VersionHelper.cs" />
+    <Compile Include="UI\BluetoothName\FormBluetoothRename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BluetoothName\FormBluetoothRename.Designer.cs">
+      <DependentUpon>FormBluetoothRename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Common\NavigationRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Common\OutputSignalMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Common\OutputSignalMixerPanel.Designer.cs">
+      <DependentUpon>OutputSignalMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\MEditableLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MEditableLabel.designer.cs">
+      <DependentUpon>MEditableLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\MImageCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormExportDspFirmwarePackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormExportDspFirmwarePackage.Designer.cs">
+      <DependentUpon>FormExportDspFirmwarePackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AudioSystemListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\AudioSystemListBox.Designer.cs">
+      <DependentUpon>AudioSystemListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChangePasswordPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ChangePasswordPanel.Designer.cs">
+      <DependentUpon>ChangePasswordPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CircleProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CircleProgress.Designer.cs">
+      <DependentUpon>CircleProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ChannelDelayParamLabelProvider.cs" />
+    <Compile Include="UI\Common\X5OutputSignalMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Common\X5OutputSignalMixerPanel.Designer.cs">
+      <DependentUpon>X5OutputSignalMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Common\PopMenuChannelDelayUint.cs" />
+    <Compile Include="UI\Common\PopMenuMixerLevelUint.cs" />
+    <Compile Include="UI\Common\PopMenuThresholdUint.cs" />
+    <Compile Include="UI\Controls\DUIControlBase.cs" />
+    <Compile Include="UI\Controls\DUILabel.cs" />
+    <Compile Include="UI\Controls\DUIPicture.cs" />
+    <Compile Include="UI\Controls\MButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MButtonState.cs" />
+    <Compile Include="UI\Controls\MCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MContainerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MContainerControl.designer.cs">
+      <DependentUpon>MContainerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\MControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MControl.designer.cs">
+      <DependentUpon>MControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\MLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MLabel.designer.cs">
+      <DependentUpon>MLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\MPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MPanel.designer.cs">
+      <DependentUpon>MPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\MProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MStatefulButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\SwitchDisplayOrder.cs" />
+    <Compile Include="UI\EQAdjuster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\EQAdjuster.Designer.cs">
+      <DependentUpon>EQAdjuster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EQGroupPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\EQGroupPanel.Designer.cs">
+      <DependentUpon>EQGroupPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EQIndexLabel.cs" />
+    <Compile Include="UI\Controls\EQThumbnail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\EQThumbnail.Designer.cs">
+      <DependentUpon>EQThumbnail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExportMode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ExportMode.Designer.cs">
+      <DependentUpon>ExportMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FontHelper.cs" />
+    <Compile Include="UI\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormCentralControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormCentralControl.Designer.cs">
+      <DependentUpon>FormCentralControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormCommSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormCommSettings.Designer.cs">
+      <DependentUpon>FormCommSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormDspProgrammer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormDspProgrammer.Designer.cs">
+      <DependentUpon>FormDspProgrammer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormImportExternalFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormImportExternalFile.Designer.cs">
+      <DependentUpon>FormImportExternalFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMask.Designer.cs">
+      <DependentUpon>FormMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormPreferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormPreferences.Designer.cs">
+      <DependentUpon>FormPreferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormActivateDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormActivateDevice.Designer.cs">
+      <DependentUpon>FormActivateDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormActivation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormActivation.designer.cs">
+      <DependentUpon>FormActivation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormExportFirmwarePackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormExportFirmwarePackage.Designer.cs">
+      <DependentUpon>FormExportFirmwarePackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormFirmwareUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormFirmwareUpdate.Designer.cs">
+      <DependentUpon>FormFirmwareUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormMCUFlashData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormMCUFlashData.Designer.cs">
+      <DependentUpon>FormMCUFlashData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormOnlineHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormOnlineHelp.Designer.cs">
+      <DependentUpon>FormOnlineHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormUnlockOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormUnlockOutput.designer.cs">
+      <DependentUpon>FormUnlockOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormForgotPassword.Designer.cs">
+      <DependentUpon>FormForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\ULLUsageCountGroupPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\ULLUsageCountGroupPanel.Designer.cs">
+      <DependentUpon>ULLUsageCountGroupPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormLockManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormLockManagement.Designer.cs">
+      <DependentUpon>FormLockManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormPasswordManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormPasswordManagement.Designer.cs">
+      <DependentUpon>FormPasswordManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormRS232ToWifiConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormRS232ToWifiConverter.designer.cs">
+      <DependentUpon>FormRS232ToWifiConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormUsageLimitLockManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormUsageLimitLockManagement.Designer.cs">
+      <DependentUpon>FormUsageLimitLockManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormUsageLimitLockDynamicPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\FormUsageLimitLockDynamicPassword.Designer.cs">
+      <DependentUpon>FormUsageLimitLockDynamicPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FromEncryptFirmwarePackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FromEncryptFirmwarePackage.Designer.cs">
+      <DependentUpon>FromEncryptFirmwarePackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\gtComboBox.Designer.cs">
+      <DependentUpon>gtComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\gtDataGridView.Designer.cs">
+      <DependentUpon>gtDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\gtFlowLayoutPanel.Designer.cs">
+      <DependentUpon>gtFlowLayoutPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\gtLabel.Designer.cs">
+      <DependentUpon>gtLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\gtMessageBox.Designer.cs">
+      <DependentUpon>gtMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\gtPanel.Designer.cs">
+      <DependentUpon>gtPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\gtTextBox.Designer.cs">
+      <DependentUpon>gtTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\HScrollbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\HScrollbar.Designer.cs">
+      <DependentUpon>HScrollbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HSliderParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\HSliderParam.Designer.cs">
+      <DependentUpon>HSliderParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GainSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\GainSlider.Designer.cs">
+      <DependentUpon>GainSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\gtButton.Designer.cs">
+      <DependentUpon>gtButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\gtCheckBox.Designer.cs">
+      <DependentUpon>gtCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\gtRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\gtRadioButton.Designer.cs">
+      <DependentUpon>gtRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\HSlider.Designer.cs">
+      <DependentUpon>HSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\DUILevelMeter.cs" />
+    <Compile Include="UI\UsageLimitLocks\UsageLimitLockPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\UsageLimitLockPanel.Designer.cs">
+      <DependentUpon>UsageLimitLockPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\ULLPasswordGroupPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UsageLimitLocks\ULLPasswordGroupPanel.Designer.cs">
+      <DependentUpon>ULLPasswordGroupPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMLimiterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMLimiterPanel.Designer.cs">
+      <DependentUpon>VKxDCMLimiterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMNavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMNavigationBar.Designer.cs">
+      <DependentUpon>VKxPIIDCMNavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMonoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMonoOutputPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMMonoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMReverbPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMReverbPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMReverbPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMExciterPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMBassExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMBassExciterPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMBassExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMCompressorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMCompressorPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMCompressorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMEchoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMEchoPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMEchoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMicExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMicExciterPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMMicExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMicPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMixerPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMMusicPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMOutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMOutputBasePanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMOutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMOutputLevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMStereoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMStereoOutputPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMStereoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\DualLinearLevelIndicator.cs" />
+    <Compile Include="UI\KX\DUILevelMeter.cs" />
+    <Compile Include="UI\KX\DynamicValueIndicator.cs" />
+    <Compile Include="UI\KX\KXAuxOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXAuxOutputPanel.Designer.cs">
+      <DependentUpon>KXAuxOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXCLPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXCLPanel.designer.cs">
+      <DependentUpon>KXCLPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXCompressorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXCompressorPanel.Designer.cs">
+      <DependentUpon>KXCompressorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXEffectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXEffectPanel.Designer.cs">
+      <DependentUpon>KXEffectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXLevelMeterImageProvider.cs" />
+    <Compile Include="UI\KX\KXLimiterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXLimiterPanel.Designer.cs">
+      <DependentUpon>KXLimiterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMicPanel.Designer.cs">
+      <DependentUpon>KXMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMixerPanel.Designer.cs">
+      <DependentUpon>KXMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitor.cs" />
+    <Compile Include="UI\KX\KXMonitorMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorMicPanel.Designer.cs">
+      <DependentUpon>KXMonitorMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorModulePanelBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorModulePanelBase.Designer.cs">
+      <DependentUpon>KXMonitorModulePanelBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorMonoOutputControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorMonoOutputControlPanel.designer.cs">
+      <DependentUpon>KXMonitorMonoOutputControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorMusicPanel.Designer.cs">
+      <DependentUpon>KXMonitorMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorOutputPanelBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorOutputPanelBase.Designer.cs">
+      <DependentUpon>KXMonitorOutputPanelBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorPanel.Designer.cs">
+      <DependentUpon>KXMonitorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorStereoOutputControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMonitorStereoOutputControlPanel.designer.cs">
+      <DependentUpon>KXMonitorStereoOutputControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXMusicPanel.Designer.cs">
+      <DependentUpon>KXMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXNavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXNavigationBar.Designer.cs">
+      <DependentUpon>KXNavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXOutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXOutputBasePanel.Designer.cs">
+      <DependentUpon>KXOutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\KXOutputLevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KX\KXOutputPanel.Designer.cs">
+      <DependentUpon>KXOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KX\LinearLevelIndicator.cs" />
+    <Compile Include="UI\SignalMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SignalMixerPanel.Designer.cs">
+      <DependentUpon>SignalMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skin\SkinThemeLight.cs" />
+    <Compile Include="UI\VKxDM\VKxDMCLPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMCLPanel.designer.cs">
+      <DependentUpon>VKxDMCLPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMCompressorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMCompressorPanel.Designer.cs">
+      <DependentUpon>VKxDMCompressorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMEffectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMEffectPanel.Designer.cs">
+      <DependentUpon>VKxDMEffectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMLimiterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMLimiterPanel.Designer.cs">
+      <DependentUpon>VKxDMLimiterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMMicPanel.Designer.cs">
+      <DependentUpon>VKxDMMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMMixerPanel.Designer.cs">
+      <DependentUpon>VKxDMMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMMonoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMMonoOutputPanel.Designer.cs">
+      <DependentUpon>VKxDMMonoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMMusicPanel.Designer.cs">
+      <DependentUpon>VKxDMMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMNavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMNavigationBar.Designer.cs">
+      <DependentUpon>VKxDMNavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMOutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMOutputBasePanel.Designer.cs">
+      <DependentUpon>VKxDMOutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMOutputLevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMStereoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDM\VKxDMStereoOutputPanel.Designer.cs">
+      <DependentUpon>VKxDMStereoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMBassExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMBassExciterPanel.Designer.cs">
+      <DependentUpon>VKxDCMBassExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMCompressorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMCompressorPanel.Designer.cs">
+      <DependentUpon>VKxDCMCompressorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMEchoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMEchoPanel.Designer.cs">
+      <DependentUpon>VKxDCMEchoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMExciterPanel.Designer.cs">
+      <DependentUpon>VKxDCMExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMicExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMicExciterPanel.Designer.cs">
+      <DependentUpon>VKxDCMMicExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMicPanel.Designer.cs">
+      <DependentUpon>VKxDCMMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMixerPanel.Designer.cs">
+      <DependentUpon>VKxDCMMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMonoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMonoOutputPanel.designer.cs">
+      <DependentUpon>VKxDCMMonoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMMusicPanel.Designer.cs">
+      <DependentUpon>VKxDCMMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMNavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMNavigationBar.Designer.cs">
+      <DependentUpon>VKxDCMNavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMOutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMOutputBasePanel.Designer.cs">
+      <DependentUpon>VKxDCMOutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMOutputLevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMReverbPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMReverbPanel.Designer.cs">
+      <DependentUpon>VKxDCMReverbPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMStereoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxDCM\VKxDCMStereoOutputPanel.Designer.cs">
+      <DependentUpon>VKxDCMStereoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMLimiterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPIIDCM\VKxPIIDCMLimiterPanel.Designer.cs">
+      <DependentUpon>VKxPIIDCMLimiterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIBassExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIBassExciterPanel.Designer.cs">
+      <DependentUpon>VKxPIIBassExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIICompressorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIICompressorPanel.Designer.cs">
+      <DependentUpon>VKxPIICompressorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIEchoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIEchoPanel.Designer.cs">
+      <DependentUpon>VKxPIIEchoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIExciterPanel.Designer.cs">
+      <DependentUpon>VKxPIIExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMicExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMicExciterPanel.Designer.cs">
+      <DependentUpon>VKxPIIMicExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMicPanel.Designer.cs">
+      <DependentUpon>VKxPIIMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMixerPanel.Designer.cs">
+      <DependentUpon>VKxPIIMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMonoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMonoOutputPanel.Designer.cs">
+      <DependentUpon>VKxPIIMonoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIMusicPanel.Designer.cs">
+      <DependentUpon>VKxPIIMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIINavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIINavigationBar.Designer.cs">
+      <DependentUpon>VKxPIINavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIOutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIOutputBasePanel.Designer.cs">
+      <DependentUpon>VKxPIIOutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIOutputLevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIReverbPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIReverbPanel.Designer.cs">
+      <DependentUpon>VKxPIIReverbPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIStereoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIIStereoOutputPanel.Designer.cs">
+      <DependentUpon>VKxPIIStereoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIILimiterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxPII\VKxPIILimiterPanel.Designer.cs">
+      <DependentUpon>VKxPIILimiterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMBassExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMBassExciterPanel.Designer.cs">
+      <DependentUpon>VKxSCMBassExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMCompressorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMCompressorPanel.Designer.cs">
+      <DependentUpon>VKxSCMCompressorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMEchoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMEchoPanel.Designer.cs">
+      <DependentUpon>VKxSCMEchoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMExciterPanel.Designer.cs">
+      <DependentUpon>VKxSCMExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMLimiterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMLimiterPanel.Designer.cs">
+      <DependentUpon>VKxSCMLimiterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMicExciterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMicExciterPanel.Designer.cs">
+      <DependentUpon>VKxSCMMicExciterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMicPanel.Designer.cs">
+      <DependentUpon>VKxSCMMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMixerPanel.Designer.cs">
+      <DependentUpon>VKxSCMMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMonoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMonoOutputPanel.designer.cs">
+      <DependentUpon>VKxSCMMonoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMMusicPanel.Designer.cs">
+      <DependentUpon>VKxSCMMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMNavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMNavigationBar.Designer.cs">
+      <DependentUpon>VKxSCMNavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMOutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMOutputBasePanel.Designer.cs">
+      <DependentUpon>VKxSCMOutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMOutputLevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMReverbPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMReverbPanel.Designer.cs">
+      <DependentUpon>VKxSCMReverbPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMStereoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxSCM\VKxSCMStereoOutputPanel.Designer.cs">
+      <DependentUpon>VKxSCMStereoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5OutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5OutputBasePanel.Designer.cs">
+      <DependentUpon>X5OutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5SurOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5SurOutputPanel.Designer.cs">
+      <DependentUpon>X5SurOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5SubOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5SubOutputPanel.Designer.cs">
+      <DependentUpon>X5SubOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5CenterOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5CenterOutputPanel.Designer.cs">
+      <DependentUpon>X5CenterOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5MixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5MixerPanel.Designer.cs">
+      <DependentUpon>X5MixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5MainOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5MainOutputPanel.Designer.cs">
+      <DependentUpon>X5MainOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5EffectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5EffectPanel.Designer.cs">
+      <DependentUpon>X5EffectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5CompAndLimiterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5CompAndLimiterPanel.Designer.cs">
+      <DependentUpon>X5CompAndLimiterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5MicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5MicPanel.Designer.cs">
+      <DependentUpon>X5MicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5MusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5MusicPanel.Designer.cs">
+      <DependentUpon>X5MusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\X5\X5NavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\X5\X5NavigationBar.Designer.cs">
+      <DependentUpon>X5NavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LevelMeter\LevelMeterLEDLightImageModel.cs" />
+    <Compile Include="UI\LevelMeter\LevelMeterImageFactory.cs" />
+    <Compile Include="UI\LevelIndicator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\LevelIndicator.Designer.cs">
+      <DependentUpon>LevelIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LevelMeter\LevelMeterTicksModel.cs" />
+    <Compile Include="UI\LevelMeter\LevelMeterTickStyle.cs" />
+    <Compile Include="UI\MaskLayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\MaskLayer.Designer.cs">
+      <DependentUpon>MaskLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MFormBase.Designer.cs">
+      <DependentUpon>MFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXEffectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXEffectPanel.Designer.cs">
+      <DependentUpon>MXEffectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXNavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXNavigationBar.Designer.cs">
+      <DependentUpon>MXNavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXMusicPanel.Designer.cs">
+      <DependentUpon>MXMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXMicPanel.Designer.cs">
+      <DependentUpon>MXMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXOutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXOutputBasePanel.Designer.cs">
+      <DependentUpon>MXOutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXMixerPanel.Designer.cs">
+      <DependentUpon>MXMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXCompressorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXCompressorPanel.Designer.cs">
+      <DependentUpon>MXCompressorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXOutputLevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXOutputPanel.Designer.cs">
+      <DependentUpon>MXOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXAuxOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXAuxOutputPanel.Designer.cs">
+      <DependentUpon>MXAuxOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MX\MXDeqPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MX\MXDeqPanel.Designer.cs">
+      <DependentUpon>MXDeqPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NavigationBarBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\NavigationBarBase.Designer.cs">
+      <DependentUpon>NavigationBarBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NumberKeysHelper.cs" />
+    <Compile Include="UI\LevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\LevelPhase.Designer.cs">
+      <DependentUpon>LevelPhase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelDspFirmwareInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PanelDspFirmwareInfo.Designer.cs">
+      <DependentUpon>PanelDspFirmwareInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelWithTitle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PanelWithTitle.Designer.cs">
+      <DependentUpon>PanelWithTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ParamLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamLabel.Designer.cs">
+      <DependentUpon>ParamLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\QRCodePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\QRCodePanel.Designer.cs">
+      <DependentUpon>QRCodePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RemoteControl\FormControlledRemotelyByTheOtherParty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RemoteControl\FormControlledRemotelyByTheOtherParty.Designer.cs">
+      <DependentUpon>FormControlledRemotelyByTheOtherParty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RemoteControl\FormControlTheOtherParty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RemoteControl\FormControlTheOtherParty.Designer.cs">
+      <DependentUpon>FormControlTheOtherParty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RemoteControl\FormRCSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RemoteControl\FormRCSettings.Designer.cs">
+      <DependentUpon>FormRCSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RemoteControl\NetworkConnectionStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\RemoteControl\NetworkConnectionStatus.Designer.cs">
+      <DependentUpon>NetworkConnectionStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RemoteControl\RemoteControlTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RemoteControl\RemoteControlTest.Designer.cs">
+      <DependentUpon>RemoteControlTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RemoteControl\StatusLight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\RemoteControl\StatusLight.Designer.cs">
+      <DependentUpon>StatusLight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RoundedPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\RoundedPanel.Designer.cs">
+      <DependentUpon>RoundedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RTASwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\RTA\AudioInputLevel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\RTA\AudioInputLevel.Designer.cs">
+      <DependentUpon>AudioInputLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RTA\FormRTAOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RTA\FormRTAOptions.designer.cs">
+      <DependentUpon>FormRTAOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RTA\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\RTA\ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RTA\RTARadio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\RTA\RTARadio.Designer.cs">
+      <DependentUpon>RTARadio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RTA\TraceGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\RTA\TraceGroup.Designer.cs">
+      <DependentUpon>TraceGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SelectAudioSystemPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SelectAudioSystemPanel.designer.cs">
+      <DependentUpon>SelectAudioSystemPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SelectAudioSystemProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SelectAudioSystemProduct.designer.cs">
+      <DependentUpon>SelectAudioSystemProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skin\EnumTheme.cs" />
+    <Compile Include="UI\Skin\SkinManager.cs" />
+    <Compile Include="UI\Skin\SkinTheme.cs" />
+    <Compile Include="UI\Skin\SkinThemeBlueSea.cs" />
+    <Compile Include="UI\Skin\SkinThemeDefault.cs" />
+    <Compile Include="UI\SplitLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\SplitLine.Designer.cs">
+      <DependentUpon>SplitLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TimbrePnael.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TimbrePnael.Designer.cs">
+      <DependentUpon>TimbrePnael.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Title.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Title.Designer.cs">
+      <DependentUpon>Title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSMonoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSMonoOutputPanel.Designer.cs">
+      <DependentUpon>VKxSMonoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSCLPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSCLPanel.designer.cs">
+      <DependentUpon>VKxSCLPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSCompressorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSCompressorPanel.Designer.cs">
+      <DependentUpon>VKxSCompressorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSEffectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSEffectPanel.Designer.cs">
+      <DependentUpon>VKxSEffectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSLimiterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSLimiterPanel.Designer.cs">
+      <DependentUpon>VKxSLimiterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSMicPanel.Designer.cs">
+      <DependentUpon>VKxSMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSMixerPanel.Designer.cs">
+      <DependentUpon>VKxSMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSMusicPanel.Designer.cs">
+      <DependentUpon>VKxSMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSNavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSNavigationBar.Designer.cs">
+      <DependentUpon>VKxSNavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSOutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSOutputBasePanel.Designer.cs">
+      <DependentUpon>VKxSOutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSOutputLevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSStereoOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VKxS\VKxSStereoOutputPanel.Designer.cs">
+      <DependentUpon>VKxSStereoOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utility\ColorScheme.cs" />
+    <Compile Include="UI\Utility\ControlHelper.cs" />
+    <Compile Include="UI\Utility\Enums.cs" />
+    <Compile Include="UI\Utility\GDIHelper.cs" />
+    <Compile Include="UI\Utility\RectangleHelper.cs" />
+    <Compile Include="UI\Utility\RoundRectangle.cs" />
+    <Compile Include="UI\Utility\Structs.cs" />
+    <Compile Include="UI\Utility\TextRenderHelper.cs" />
+    <Compile Include="UI\VX\VXAuxOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXAuxOutputPanel.Designer.cs">
+      <DependentUpon>VXAuxOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXCLPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXCLPanel.designer.cs">
+      <DependentUpon>VXCLPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormSuperUserPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormSuperUserPermission.designer.cs">
+      <DependentUpon>FormSuperUserPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXLimiterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXLimiterPanel.Designer.cs">
+      <DependentUpon>VXLimiterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXCompressorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXCompressorPanel.Designer.cs">
+      <DependentUpon>VXCompressorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ConnectButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ConnectButton.Designer.cs">
+      <DependentUpon>ConnectButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataBackupMgtPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DataBackupMgtPanel.Designer.cs">
+      <DependentUpon>DataBackupMgtPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DeviceModePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DeviceModePanel.Designer.cs">
+      <DependentUpon>DeviceModePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXEffectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXEffectPanel.Designer.cs">
+      <DependentUpon>VXEffectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EncryptButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\EncryptButton.Designer.cs">
+      <DependentUpon>EncryptButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EQResetAndByPassPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\EQResetAndByPassPanel.Designer.cs">
+      <DependentUpon>EQResetAndByPassPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormComm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormComm.Designer.cs">
+      <DependentUpon>FormComm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormModeOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormModeOperation.Designer.cs">
+      <DependentUpon>FormModeOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MicParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MicParam.Designer.cs">
+      <DependentUpon>MicParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXMicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXMicPanel.Designer.cs">
+      <DependentUpon>VXMicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXMixerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXMixerPanel.Designer.cs">
+      <DependentUpon>VXMixerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXMonitorSingleChOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXMonitorSingleChOutputPanel.designer.cs">
+      <DependentUpon>VXMonitorSingleChOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXMonitorDualChOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXMonitorDualChOutputPanel.designer.cs">
+      <DependentUpon>VXMonitorDualChOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXMonitorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXMonitorPanel.Designer.cs">
+      <DependentUpon>VXMonitorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXMusicPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXMusicPanel.Designer.cs">
+      <DependentUpon>VXMusicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXNavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXNavigationBar.Designer.cs">
+      <DependentUpon>VXNavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXOutputBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXOutputBasePanel.Designer.cs">
+      <DependentUpon>VXOutputBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VX\VXOutputLevelPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXOutputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VX\VXOutputPanel.Designer.cs">
+      <DependentUpon>VXOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PageItem.cs" />
+    <Compile Include="UI\PanelBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PanelBase.Designer.cs">
+      <DependentUpon>PanelBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SystemPanel.Designer.cs">
+      <DependentUpon>SystemPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VolMgtPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VolMgtPanel.Designer.cs">
+      <DependentUpon>VolMgtPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemParamControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SystemParamControlPanel.designer.cs">
+      <DependentUpon>SystemParamControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DEQAdjuster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DEQAdjuster.Designer.cs">
+      <DependentUpon>DEQAdjuster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WorkModePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WorkModePanel.Designer.cs">
+      <DependentUpon>WorkModePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VolumePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VolumePanel.Designer.cs">
+      <DependentUpon>VolumePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VScrollbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\VScrollbar.Designer.cs">
+      <DependentUpon>VScrollbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Win32\Win32.cs" />
+    <Compile Include="Core\DataType.cs" />
+    <Compile Include="Core\DSP\BiQuadFilter.cs" />
+    <Compile Include="Core\DSP\Complex.cs" />
+    <Compile Include="Core\DSP\DSPHelper.cs" />
+    <Compile Include="Core\DSP\FreqResp.cs" />
+    <Compile Include="Core\DSP\IIRFilter.cs" />
+    <Compile Include="Core\DataUtils.cs" />
+    <Compile Include="Core\EQGraphicHelper.cs" />
+    <Compile Include="Core\EQGraphicPoint.cs" />
+    <Compile Include="Core\EventBus.cs" />
+    <Compile Include="Common\ModuleBase.cs" />
+    <Compile Include="Comm\SystemCommProtocol.cs" />
+    <Compile Include="Common\SystemModuleBase.cs" />
+    <Compile Include="Core\TestEQUtils.cs" />
+    <Compile Include="Core\Utils.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\DictTest.cs" />
+    <Compile Include="Test\PrintTest.cs" />
+    <Compile Include="UITest\FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITest\FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CustomControl1.Designer.cs">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EQGraphicPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\EQGraphicPanel.Designer.cs">
+      <DependentUpon>EQGraphicPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormProMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormProMode.Designer.cs">
+      <DependentUpon>FormProMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Effectors\VX\VXDataStorage.cs" />
+    <Compile Include="Effectors\VX\Modules\AuxModule.cs" />
+    <Compile Include="Effectors\VX\Modules\DEffectModule.cs" />
+    <Compile Include="Effectors\VX\VXEffectorModel.cs" />
+    <Compile Include="Effectors\VX\Modules\EchoModule.cs" />
+    <Compile Include="Effectors\VX\Modules\MicModule.cs" />
+    <Compile Include="Effectors\VX\Modules\MusicModule.cs" />
+    <Compile Include="Effectors\VX\Modules\OutputBaseModule.cs" />
+    <Compile Include="Effectors\VX\Modules\OutputModule.cs" />
+    <Compile Include="Effectors\VX\Modules\ReverbModule.cs" />
+    <Compile Include="Effectors\VX\Modules\SystemModule.cs" />
+    <Compile Include="Effectors\VX\Modules\VXDataParam.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BluetoothName\FormBluetoothRename.resx">
+      <DependentUpon>FormBluetoothRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\MEditableLabel.resx">
+      <DependentUpon>MEditableLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormExportDspFirmwarePackage.resx">
+      <DependentUpon>FormExportDspFirmwarePackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITest\FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChangePasswordPanel.resx">
+      <DependentUpon>ChangePasswordPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\MContainerControl.resx">
+      <DependentUpon>MContainerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\MPanel.resx">
+      <DependentUpon>MPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DEQAdjuster.resx">
+      <DependentUpon>DEQAdjuster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EQAdjuster.resx">
+      <DependentUpon>EQAdjuster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EQGroupPanel.resx">
+      <DependentUpon>EQGroupPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExportMode.resx">
+      <DependentUpon>ExportMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormCentralControl.resx">
+      <DependentUpon>FormCentralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormCommSettings.resx">
+      <DependentUpon>FormCommSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormDspProgrammer.resx">
+      <DependentUpon>FormDspProgrammer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormImportExternalFile.resx">
+      <DependentUpon>FormImportExternalFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMask.resx">
+      <DependentUpon>FormMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormPreferences.resx">
+      <DependentUpon>FormPreferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormActivateDevice.resx">
+      <DependentUpon>FormActivateDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormActivation.resx">
+      <DependentUpon>FormActivation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormExportFirmwarePackage.resx">
+      <DependentUpon>FormExportFirmwarePackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormFirmwareUpdate.resx">
+      <DependentUpon>FormFirmwareUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormMCUFlashData.resx">
+      <DependentUpon>FormMCUFlashData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormOnlineHelp.resx">
+      <DependentUpon>FormOnlineHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormUnlockOutput.resx">
+      <DependentUpon>FormUnlockOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UsageLimitLocks\FormForgotPassword.resx">
+      <DependentUpon>FormForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UsageLimitLocks\ULLUsageCountGroupPanel.resx">
+      <DependentUpon>ULLUsageCountGroupPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UsageLimitLocks\FormLockManagement.resx">
+      <DependentUpon>FormLockManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UsageLimitLocks\FormPasswordManagement.resx">
+      <DependentUpon>FormPasswordManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormRS232ToWifiConverter.resx">
+      <DependentUpon>FormRS232ToWifiConverter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UsageLimitLocks\FormUsageLimitLockManagement.resx">
+      <DependentUpon>FormUsageLimitLockManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UsageLimitLocks\FormUsageLimitLockDynamicPassword.resx">
+      <DependentUpon>FormUsageLimitLockDynamicPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FromEncryptFirmwarePackage.resx">
+      <DependentUpon>FromEncryptFirmwarePackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\gtMessageBox.resx">
+      <DependentUpon>gtMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\gtTextBox.resx">
+      <DependentUpon>gtTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HSliderParam.resx">
+      <DependentUpon>HSliderParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UsageLimitLocks\UsageLimitLockPanel.resx">
+      <DependentUpon>UsageLimitLockPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UsageLimitLocks\ULLPasswordGroupPanel.resx">
+      <DependentUpon>ULLPasswordGroupPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMLimiterPanel.resx">
+      <DependentUpon>VKxDCMLimiterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMNavigationBar.resx">
+      <DependentUpon>VKxPIIDCMNavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMMonoOutputPanel.resx">
+      <DependentUpon>VKxPIIDCMMonoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMReverbPanel.resx">
+      <DependentUpon>VKxPIIDCMReverbPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMExciterPanel.resx">
+      <DependentUpon>VKxPIIDCMExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMBassExciterPanel.resx">
+      <DependentUpon>VKxPIIDCMBassExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMCompressorPanel.resx">
+      <DependentUpon>VKxPIIDCMCompressorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMEchoPanel.resx">
+      <DependentUpon>VKxPIIDCMEchoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMMicExciterPanel.resx">
+      <DependentUpon>VKxPIIDCMMicExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMMicPanel.resx">
+      <DependentUpon>VKxPIIDCMMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMMixerPanel.resx">
+      <DependentUpon>VKxPIIDCMMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMMusicPanel.resx">
+      <DependentUpon>VKxPIIDCMMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMOutputBasePanel.resx">
+      <DependentUpon>VKxPIIDCMOutputBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMStereoOutputPanel.resx">
+      <DependentUpon>VKxPIIDCMStereoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXAuxOutputPanel.resx">
+      <DependentUpon>KXAuxOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXCLPanel.resx">
+      <DependentUpon>KXCLPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXCompressorPanel.resx">
+      <DependentUpon>KXCompressorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXEffectPanel.resx">
+      <DependentUpon>KXEffectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXLimiterPanel.resx">
+      <DependentUpon>KXLimiterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXMicPanel.resx">
+      <DependentUpon>KXMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXMixerPanel.resx">
+      <DependentUpon>KXMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXMonitorMicPanel.resx">
+      <DependentUpon>KXMonitorMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXMonitorModulePanelBase.resx">
+      <DependentUpon>KXMonitorModulePanelBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXMonitorMonoOutputControlPanel.resx">
+      <DependentUpon>KXMonitorMonoOutputControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXMonitorMusicPanel.resx">
+      <DependentUpon>KXMonitorMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXMonitorPanel.resx">
+      <DependentUpon>KXMonitorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXMonitorStereoOutputControlPanel.resx">
+      <DependentUpon>KXMonitorStereoOutputControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXMusicPanel.resx">
+      <DependentUpon>KXMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXNavigationBar.resx">
+      <DependentUpon>KXNavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXOutputBasePanel.resx">
+      <DependentUpon>KXOutputBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KX\KXOutputPanel.resx">
+      <DependentUpon>KXOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SignalMixerPanel.resx">
+      <DependentUpon>SignalMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMCLPanel.resx">
+      <DependentUpon>VKxDMCLPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMCompressorPanel.resx">
+      <DependentUpon>VKxDMCompressorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMEffectPanel.resx">
+      <DependentUpon>VKxDMEffectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMLimiterPanel.resx">
+      <DependentUpon>VKxDMLimiterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMMicPanel.resx">
+      <DependentUpon>VKxDMMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMMixerPanel.resx">
+      <DependentUpon>VKxDMMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMMonoOutputPanel.resx">
+      <DependentUpon>VKxDMMonoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMMusicPanel.resx">
+      <DependentUpon>VKxDMMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMNavigationBar.resx">
+      <DependentUpon>VKxDMNavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMOutputBasePanel.resx">
+      <DependentUpon>VKxDMOutputBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDM\VKxDMStereoOutputPanel.resx">
+      <DependentUpon>VKxDMStereoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMBassExciterPanel.resx">
+      <DependentUpon>VKxDCMBassExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMCompressorPanel.resx">
+      <DependentUpon>VKxDCMCompressorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMEchoPanel.resx">
+      <DependentUpon>VKxDCMEchoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMExciterPanel.resx">
+      <DependentUpon>VKxDCMExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMMicExciterPanel.resx">
+      <DependentUpon>VKxDCMMicExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMMicPanel.resx">
+      <DependentUpon>VKxDCMMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMMixerPanel.resx">
+      <DependentUpon>VKxDCMMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMMonoOutputPanel.resx">
+      <DependentUpon>VKxDCMMonoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMMusicPanel.resx">
+      <DependentUpon>VKxDCMMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMNavigationBar.resx">
+      <DependentUpon>VKxDCMNavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMOutputBasePanel.resx">
+      <DependentUpon>VKxDCMOutputBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMReverbPanel.resx">
+      <DependentUpon>VKxDCMReverbPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxDCM\VKxDCMStereoOutputPanel.resx">
+      <DependentUpon>VKxDCMStereoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPIIDCM\VKxPIIDCMLimiterPanel.resx">
+      <DependentUpon>VKxPIIDCMLimiterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIBassExciterPanel.resx">
+      <DependentUpon>VKxPIIBassExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIICompressorPanel.resx">
+      <DependentUpon>VKxPIICompressorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIEchoPanel.resx">
+      <DependentUpon>VKxPIIEchoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIExciterPanel.resx">
+      <DependentUpon>VKxPIIExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIMicExciterPanel.resx">
+      <DependentUpon>VKxPIIMicExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIMicPanel.resx">
+      <DependentUpon>VKxPIIMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIMixerPanel.resx">
+      <DependentUpon>VKxPIIMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIMonoOutputPanel.resx">
+      <DependentUpon>VKxPIIMonoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIMusicPanel.resx">
+      <DependentUpon>VKxPIIMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIINavigationBar.resx">
+      <DependentUpon>VKxPIINavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIOutputBasePanel.resx">
+      <DependentUpon>VKxPIIOutputBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIReverbPanel.resx">
+      <DependentUpon>VKxPIIReverbPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIIStereoOutputPanel.resx">
+      <DependentUpon>VKxPIIStereoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxPII\VKxPIILimiterPanel.resx">
+      <DependentUpon>VKxPIILimiterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMBassExciterPanel.resx">
+      <DependentUpon>VKxSCMBassExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMCompressorPanel.resx">
+      <DependentUpon>VKxSCMCompressorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMEchoPanel.resx">
+      <DependentUpon>VKxSCMEchoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMExciterPanel.resx">
+      <DependentUpon>VKxSCMExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMLimiterPanel.resx">
+      <DependentUpon>VKxSCMLimiterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMMicExciterPanel.resx">
+      <DependentUpon>VKxSCMMicExciterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMMicPanel.resx">
+      <DependentUpon>VKxSCMMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMMixerPanel.resx">
+      <DependentUpon>VKxSCMMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMMonoOutputPanel.resx">
+      <DependentUpon>VKxSCMMonoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMMusicPanel.resx">
+      <DependentUpon>VKxSCMMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMNavigationBar.resx">
+      <DependentUpon>VKxSCMNavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMOutputBasePanel.resx">
+      <DependentUpon>VKxSCMOutputBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMReverbPanel.resx">
+      <DependentUpon>VKxSCMReverbPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxSCM\VKxSCMStereoOutputPanel.resx">
+      <DependentUpon>VKxSCMStereoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5SurOutputPanel.resx">
+      <DependentUpon>X5SurOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5SubOutputPanel.resx">
+      <DependentUpon>X5SubOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5CenterOutputPanel.resx">
+      <DependentUpon>X5CenterOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5MixerPanel.resx">
+      <DependentUpon>X5MixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5MainOutputPanel.resx">
+      <DependentUpon>X5MainOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5EffectPanel.resx">
+      <DependentUpon>X5EffectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5CompAndLimiterPanel.resx">
+      <DependentUpon>X5CompAndLimiterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5MicPanel.resx">
+      <DependentUpon>X5MicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5MusicPanel.resx">
+      <DependentUpon>X5MusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\X5\X5NavigationBar.resx">
+      <DependentUpon>X5NavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LevelPhase.resx">
+      <DependentUpon>LevelPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MFormBase.resx">
+      <DependentUpon>MFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXEffectPanel.resx">
+      <DependentUpon>MXEffectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXNavigationBar.resx">
+      <DependentUpon>MXNavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXMusicPanel.resx">
+      <DependentUpon>MXMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXMicPanel.resx">
+      <DependentUpon>MXMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXOutputBasePanel.resx">
+      <DependentUpon>MXOutputBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXMixerPanel.resx">
+      <DependentUpon>MXMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXCompressorPanel.resx">
+      <DependentUpon>MXCompressorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXOutputPanel.resx">
+      <DependentUpon>MXOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXAuxOutputPanel.resx">
+      <DependentUpon>MXAuxOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MX\MXDeqPanel.resx">
+      <DependentUpon>MXDeqPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NavigationBarBase.resx">
+      <DependentUpon>NavigationBarBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelDspFirmwareInfo.resx">
+      <DependentUpon>PanelDspFirmwareInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelWithTitle.resx">
+      <DependentUpon>PanelWithTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ParamLabel.resx">
+      <DependentUpon>ParamLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\QRCodePanel.resx">
+      <DependentUpon>QRCodePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RemoteControl\FormControlledRemotelyByTheOtherParty.resx">
+      <DependentUpon>FormControlledRemotelyByTheOtherParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RemoteControl\FormControlTheOtherParty.resx">
+      <DependentUpon>FormControlTheOtherParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RemoteControl\FormRCSettings.resx">
+      <DependentUpon>FormRCSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RemoteControl\NetworkConnectionStatus.resx">
+      <DependentUpon>NetworkConnectionStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RemoteControl\RemoteControlTest.resx">
+      <DependentUpon>RemoteControlTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RTA\FormRTAOptions.resx">
+      <DependentUpon>FormRTAOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RTA\TraceGroup.resx">
+      <DependentUpon>TraceGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SelectAudioSystemPanel.resx">
+      <DependentUpon>SelectAudioSystemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SelectAudioSystemProduct.resx">
+      <DependentUpon>SelectAudioSystemProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SplitLine.resx">
+      <DependentUpon>SplitLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TimbrePnael.resx">
+      <DependentUpon>TimbrePnael.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Title.resx">
+      <DependentUpon>Title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSMonoOutputPanel.resx">
+      <DependentUpon>VKxSMonoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSCLPanel.resx">
+      <DependentUpon>VKxSCLPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSCompressorPanel.resx">
+      <DependentUpon>VKxSCompressorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSEffectPanel.resx">
+      <DependentUpon>VKxSEffectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSLimiterPanel.resx">
+      <DependentUpon>VKxSLimiterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSMicPanel.resx">
+      <DependentUpon>VKxSMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSMixerPanel.resx">
+      <DependentUpon>VKxSMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSMusicPanel.resx">
+      <DependentUpon>VKxSMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSNavigationBar.resx">
+      <DependentUpon>VKxSNavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSOutputBasePanel.resx">
+      <DependentUpon>VKxSOutputBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VKxS\VKxSStereoOutputPanel.resx">
+      <DependentUpon>VKxSStereoOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXAuxOutputPanel.resx">
+      <DependentUpon>VXAuxOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXCLPanel.resx">
+      <DependentUpon>VXCLPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormSuperUserPermission.resx">
+      <DependentUpon>FormSuperUserPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXLimiterPanel.resx">
+      <DependentUpon>VXLimiterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXCompressorPanel.resx">
+      <DependentUpon>VXCompressorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataBackupMgtPanel.resx">
+      <DependentUpon>DataBackupMgtPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DeviceModePanel.resx">
+      <DependentUpon>DeviceModePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXEffectPanel.resx">
+      <DependentUpon>VXEffectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EQResetAndByPassPanel.resx">
+      <DependentUpon>EQResetAndByPassPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormComm.resx">
+      <DependentUpon>FormComm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormModeOperation.resx">
+      <DependentUpon>FormModeOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormProMode.resx">
+      <DependentUpon>FormProMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MicParam.resx">
+      <DependentUpon>MicParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXMicPanel.resx">
+      <DependentUpon>VXMicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXMixerPanel.resx">
+      <DependentUpon>VXMixerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXMonitorSingleChOutputPanel.resx">
+      <DependentUpon>VXMonitorSingleChOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXMonitorDualChOutputPanel.resx">
+      <DependentUpon>VXMonitorDualChOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXMonitorPanel.resx">
+      <DependentUpon>VXMonitorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXMusicPanel.resx">
+      <DependentUpon>VXMusicPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXNavigationBar.resx">
+      <DependentUpon>VXNavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXOutputBasePanel.resx">
+      <DependentUpon>VXOutputBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VX\VXOutputPanel.resx">
+      <DependentUpon>VXOutputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelBase.resx">
+      <DependentUpon>PanelBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemPanel.resx">
+      <DependentUpon>SystemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VolMgtPanel.resx">
+      <DependentUpon>VolMgtPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemParamControlPanel.resx">
+      <DependentUpon>SystemParamControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WorkModePanel.resx">
+      <DependentUpon>WorkModePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VolumePanel.resx">
+      <DependentUpon>VolumePanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\RTA\pink_sweep_16k.dat" />
+    <None Include="Resources\RTA\pink_sweep_32k.dat" />
+    <None Include="Resources\RTA\pink_sweep_8k.dat" />
+    <None Include="UI\Fonts\迷你简准圆.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\close_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\max_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\max_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\min_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\min_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\EQ_gain_slider_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\EQ_gain_slider_thumb_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\EQ_gain_slider_thumb_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\EQ_gain_slider_thumb_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\EQ_gain_slider_thumb_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\HSliderThumb\HSliderThumbNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\HSliderThumb\HSliderThumbDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\HSliderThumb\HSliderThumbHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\EQ_index_back_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Music\music_EQ_index_back_actived.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\HighShelfChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\HighShelfUnchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\LowShelfChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\LowShelfUnchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\PeakingChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\PeakingUnchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\HighShelfHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\LowShelfHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\PeakingHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\max_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\min_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\menu_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\menu_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\WindowButton\menu_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\down_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\down_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\down_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\down_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\up_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\up_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\up_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\up_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\param_label_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\ParamLabel\param_label_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\HighShelfDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\LowShelfDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\EQ\PeakingDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Connect\connect_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Connect\connect_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Connect\connect_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Connect\connected_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Connect\connected_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Connect\connect_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Music\music_slider_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\fbe_left_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\fbe_left_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\fbe_left_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\fbe_right_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\fbe_right_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\fbe_right_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\fbe_left_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\fbe_right_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\mic_slider_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux1Output\aux1_output_EQ_index_back_actived.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux2Output\aux2_output_EQ_index_back_actived.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Effect\effect_EQ_index_back_actived.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\MainOutput\main_output_EQ_index_back_actived.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\mic_EQ_index_back_actived.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\SurOutput\sur_output_EQ_index_back_actived.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Effect\effect_slider_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Phase\phase_negative_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Phase\phase_negative_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Phase\phase_negative_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Phase\phase_negative_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Phase\phase_positive_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Phase\phase_positive_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Phase\phase_positive_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Phase\phase_positive_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux1Output\aux1_output_mixer_level_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux1Output\aux1_output_slider_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux2Output\aux2_output_mixer_level_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux2Output\aux2_output_slider_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\MainOutput\main_output_mixer_level_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\MainOutput\main_output_slider_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\SurOutput\sur_output_mixer_level_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\SurOutput\sur_output_slider_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Button\btn_mute_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Button\btn_mute_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Button\btn_mute_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Button\btn_mute_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Button\btn_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Button\btn_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Button\btn_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\Button\btn_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\system_slider_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Volume\volume_slider_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Volume\volume_slider_thumb_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Volume\volume_slider_thumb_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Volume\volume_slider_thumb_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Volume\volume_slider_thumb_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Volume\volume_label_mute_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Volume\volume_label_normal_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\RadioButton\rdo_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\RadioButton\rdo_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\RadioButton\rdo_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Common\RadioButton\rdo_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\call_device_mode_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\call_device_mode_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\call_device_mode_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\call_device_mode_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\save_device_mode_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\save_device_mode_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\save_device_mode_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\save_device_mode_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\load_data_to_device_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\load_data_to_device_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\load_data_to_device_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\load_data_to_device_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\save_data_to_file_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\save_data_to_file_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\save_data_to_file_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\save_data_to_file_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMain\main_button_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMain\main_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMain\main_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMain\main_button_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMain\QRCodeVideoTutorial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Music\music_EQ_hs_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Music\music_EQ_hs_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Music\music_EQ_ls_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Music\music_EQ_ls_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Music\music_EQ_peak_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\mic_EQ_hs_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\mic_EQ_hs_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\mic_EQ_ls_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\mic_EQ_ls_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\mic_EQ_peak_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\MIC\mic_EQ_peak_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Effect\effect_EQ_hs_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Effect\effect_EQ_hs_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Effect\effect_EQ_ls_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Effect\effect_EQ_ls_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\MainOutput\main_output_EQ_hs_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\MainOutput\main_output_EQ_hs_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\MainOutput\main_output_EQ_ls_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\MainOutput\main_output_EQ_ls_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\MainOutput\main_output_EQ_peak_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\MainOutput\main_output_EQ_peak_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux1Output\aux1_output_EQ_hs_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux1Output\aux1_output_EQ_hs_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux1Output\aux1_output_EQ_ls_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux1Output\aux1_output_EQ_ls_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux1Output\aux1_output_EQ_peak_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux1Output\aux1_output_EQ_peak_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux2Output\aux2_output_EQ_hs_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux2Output\aux2_output_EQ_hs_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux2Output\aux2_output_EQ_ls_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux2Output\aux2_output_EQ_ls_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux2Output\aux2_output_EQ_peak_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\Aux2Output\aux2_output_EQ_peak_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\SurOutput\sur_output_EQ_hs_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\SurOutput\sur_output_EQ_hs_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\SurOutput\sur_output_EQ_ls_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\SurOutput\sur_output_EQ_ls_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\SurOutput\sur_output_EQ_peak_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\SurOutput\sur_output_EQ_peak_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\Output\output_mixer_level_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMain\btn_close_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMain\btn_close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMain\btn_close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMain\btn_close_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\mode_locked_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\mode_unlock_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\mode_unlock_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\mode_unlock_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\mode_locked_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormController\System\mode_unlock_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\IAP\" />
+    <Folder Include="UI\Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RTA\group_a_checked.png" />
+    <None Include="Resources\RTA\group_a_unchecked.png" />
+    <None Include="Resources\RTA\group_b_checked.png" />
+    <None Include="Resources\RTA\group_b_unchecked.png" />
+    <None Include="Resources\RTA\group_c_checked.png" />
+    <None Include="Resources\RTA\group_c_unchecked.png" />
+    <None Include="Resources\RTA\group_d_checked.png" />
+    <None Include="Resources\RTA\group_d_unchecked.png" />
+    <None Include="Resources\RTA\group_e_checked.png" />
+    <None Include="Resources\RTA\group_e_unchecked.png" />
+    <None Include="Resources\RTA\rta_trace_ng_checked.png" />
+    <None Include="Resources\RTA\rta_trace_ng_unchecked.png" />
+    <None Include="Resources\RTA\rta_trace_ok_checked.png" />
+    <None Include="Resources\RTA\rta_trace_ok_unchecked.png" />
+    <None Include="Resources\RTA\rta_refresh_disabled.png" />
+    <None Include="Resources\RTA\rta_refresh_hover.png" />
+    <None Include="Resources\RTA\rta_refresh_normal.png" />
+    <None Include="Resources\RTA\rta_refresh_pressed.png" />
+    <None Include="Resources\RTA\rta_on_closed_hover.png" />
+    <None Include="Resources\RTA\rta_on_closed_normal.png" />
+    <None Include="Resources\RTA\rta_on_closed_pressed.png" />
+    <None Include="Resources\RTA\rta_on_disabled.png" />
+    <None Include="Resources\RTA\rta_on_opened_hover.png" />
+    <None Include="Resources\RTA\rta_on_opened_normal.png" />
+    <None Include="Resources\RTA\rta_on_opened_pressed.png" />
+    <None Include="Resources\RTA\rta_sp_checked.png" />
+    <None Include="Resources\RTA\rta_sp_disabled.png" />
+    <None Include="Resources\RTA\rta_sp_hover.png" />
+    <None Include="Resources\RTA\rta_sp_normal.png" />
+    <None Include="Resources\RTA\rta_tf_checked.png" />
+    <None Include="Resources\RTA\rta_tf_disabled.png" />
+    <None Include="Resources\RTA\rta_tf_hover.png" />
+    <None Include="Resources\RTA\rta_tf_normal.png" />
+    <None Include="Resources\RTA\rta_bitdepth_checked.png" />
+    <None Include="Resources\RTA\rta_bitdepth_disabled.png" />
+    <None Include="Resources\RTA\rta_bitdepth_hover.png" />
+    <None Include="Resources\RTA\rta_bitdepth_normal.png" />
+    <None Include="Resources\RTA\rta_graph_checked.png" />
+    <None Include="Resources\RTA\rta_graph_disabled.png" />
+    <None Include="Resources\RTA\rta_graph_hover.png" />
+    <None Include="Resources\RTA\rta_graph_normal.png" />
+    <None Include="Resources\RTA\rta_switch2_disabled.png" />
+    <None Include="Resources\RTA\rta_switch2_off_hover.png" />
+    <None Include="Resources\RTA\rta_switch2_off_normal.png" />
+    <None Include="Resources\RTA\rta_switch2_off_pressed.png" />
+    <None Include="Resources\RTA\rta_switch2_on_hover.png" />
+    <None Include="Resources\RTA\rta_switch2_on_normal.png" />
+    <None Include="Resources\RTA\rta_switch2_on_pressed.png" />
+    <None Include="Resources\RTA\rta_continue_hover.png" />
+    <None Include="Resources\RTA\rta_continue_normal.png" />
+    <None Include="Resources\RTA\rta_continue_pressed.png" />
+    <None Include="Resources\RTA\rta_pause_disabled.png" />
+    <None Include="Resources\RTA\rta_pause_hover.png" />
+    <None Include="Resources\RTA\rta_pause_normal.png" />
+    <None Include="Resources\RTA\rta_pause_pressed.png" />
+    <None Include="Resources\RTA\rta_switch1_disabled.png" />
+    <None Include="Resources\RTA\rta_switch1_off_hover.png" />
+    <None Include="Resources\RTA\rta_switch1_off_normal.png" />
+    <None Include="Resources\RTA\rta_switch1_off_pressed.png" />
+    <None Include="Resources\RTA\rta_switch1_on_hover.png" />
+    <None Include="Resources\RTA\rta_switch1_on_normal.png" />
+    <None Include="Resources\RTA\rta_switch1_on_pressed.png" />
+    <None Include="Resources\Languages\lang_en-US.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Languages\lang_zh-CN.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\MessageBox\error.png" />
+    <None Include="Resources\MessageBox\question.png" />
+    <None Include="Resources\MessageBox\warning.png" />
+    <None Include="Resources\MessageBox\information.png" />
+    <None Include="Resources\FormController\Monitor\Limiter\limiter_level_light_off.png" />
+    <None Include="Resources\FormController\Monitor\Limiter\limiter_level_light_on.png" />
+    <None Include="Resources\FormController\Monitor\Limiter\limiter_level_tick.png" />
+    <None Include="Resources\FormController\Monitor\Limiter\limiter_ratio_light_off.png" />
+    <None Include="Resources\FormController\Monitor\Limiter\limiter_ratio_light_on.png" />
+    <None Include="Resources\FormController\Monitor\Limiter\limiter_ratio_tick.png" />
+    <None Include="Resources\FormController\Output\output_slider_disabled.png" />
+    <None Include="Resources\FormController\Monitor\auto_btn_pressed.png" />
+    <None Include="Resources\FormController\Monitor\switch_unit_disabled.png" />
+    <None Include="Resources\FormController\Monitor\switch_unit_hover.png" />
+    <None Include="Resources\FormController\Monitor\switch_unit_normal.png" />
+    <None Include="Resources\FormController\Monitor\switch_unit_pressed.png" />
+    <None Include="Resources\RemoteControl\rc_setting_normal.png" />
+    <None Include="Resources\FormController\DEQ\deq_slider_back_disabled.png" />
+    <None Include="Resources\FormController\DEQ\MusicDEQ\music_deq_slider_back_normal.png" />
+    <None Include="Resources\FormController\DEQ\MicDEQ\mic_deq_slider_back_normal.png" />
+    <None Include="Resources\FactoryPresets\M5Pro\Factory_M5Pro_Meng-Echo.xml" />
+    <None Include="Resources\FactoryPresets\A100\Factory_A100_Meng-Echo.xml" />
+    <None Include="Resources\FormController\Music\music_slider_back_disabled.png" />
+    <None Include="Resources\FormController\Common\RadioButton\rdo_cm_disabled.png" />
+    <None Include="Resources\FormController\Common\RadioButton\rdo_cm_hover.png" />
+    <None Include="Resources\FormController\Common\RadioButton\rdo_cm_normal.png" />
+    <None Include="Resources\FormController\Common\RadioButton\rdo_cm_pressed.png" />
+    <None Include="Resources\FormController\DEQ\AmpSen\btn_amp_sen_disabled.png" />
+    <None Include="Resources\FormController\DEQ\AmpSen\btn_amp_sen_hover.png" />
+    <None Include="Resources\FormController\DEQ\AmpSen\btn_amp_sen_normal.png" />
+    <None Include="Resources\FormController\DEQ\AmpSen\btn_amp_sen_pressed.png" />
+    <None Include="Resources\FormController\DEQ\DM\rdo_dm_above_hover.png" />
+    <None Include="Resources\FormController\DEQ\DM\rdo_dm_above_normal.png" />
+    <None Include="Resources\FormController\DEQ\DM\rdo_dm_above_pressed.png" />
+    <None Include="Resources\FormController\DEQ\DM\rdo_dm_below_hover.png" />
+    <None Include="Resources\FormController\DEQ\DM\rdo_dm_below_normal.png" />
+    <None Include="Resources\FormController\DEQ\DM\rdo_dm_below_pressed.png" />
+    <None Include="Resources\FormController\DEQ\DM\rdo_dm_off_hover.png" />
+    <None Include="Resources\FormController\DEQ\DM\rdo_dm_off_normal.png" />
+    <None Include="Resources\FormController\DEQ\DM\rdo_dm_off-pressed.png" />
+    <None Include="Resources\FormController\Output\MainOutput\rdo_main_output_eqcm_linkage_hover.png" />
+    <None Include="Resources\FormController\Output\MainOutput\rdo_main_output_eqcm_linkage_pressed.png" />
+    <None Include="Resources\FormController\Output\SurOutput\rdo_sur_output_eqcm_linkage_hover.png" />
+    <None Include="Resources\FormController\Output\SurOutput\rdo_sur_output_eqcm_linkage_pressed.png" />
+    <None Include="Resources\FormController\Output\rdo_output_eqcm_left_hover.png" />
+    <None Include="Resources\FormController\Output\rdo_output_eqcm_left_pressed.png" />
+    <None Include="Resources\FormController\Output\rdo_output_eqcm_normal.png" />
+    <None Include="Resources\FormController\Output\rdo_output_eqcm_right_hover.png" />
+    <None Include="Resources\FormController\Output\rdo_output_eqcm_right_pressed.png" />
+    <None Include="Resources\FactoryPresets\VHi\Factory_VHi_LG-Echo+Rev_1.xml" />
+    <None Include="Resources\FactoryPresets\VHi\Factory_VHi_LG-Echo+Rev_2.xml" />
+    <None Include="Resources\FactoryPresets\VHi\Factory_VHi_LG-Echo+Rev_3.xml" />
+    <None Include="Resources\FactoryPresets\VHi\Factory_VHi_Meng-Echo.xml" />
+    <None Include="Resources\FactoryPresets\VHi\Factory_VHi_PT-Echo.xml" />
+    <None Include="Resources\FactoryPresets\VHi\Factory_VHi_PT-Echo+Rev_4.xml" />
+    <None Include="Resources\FactoryPresets\VHi\Factory_VHi_PT-Reverb.xml" />
+    <None Include="Resources\FactoryPresets\V5\Factory_V5_LG-Echo+Rev_1.xml" />
+    <None Include="Resources\FactoryPresets\V5\Factory_V5_LG-Echo+Rev_2.xml" />
+    <None Include="Resources\FactoryPresets\V5\Factory_V5_LG-Echo+Rev_3.xml" />
+    <None Include="Resources\FactoryPresets\V5\Factory_V5_Meng-Echo.xml" />
+    <None Include="Resources\FactoryPresets\V5\Factory_V5_PT-Echo.xml" />
+    <None Include="Resources\FactoryPresets\V5\Factory_V5_PT-Echo+Rev_4.xml" />
+    <None Include="Resources\FactoryPresets\V5\Factory_V5_PT-Reverb.xml" />
+    <None Include="Resources\FactoryPresets\E300\Factory_E300_LG-Echo+Rev_1.xml" />
+    <None Include="Resources\FactoryPresets\E300\Factory_E300_LG-Echo+Rev_2.xml" />
+    <None Include="Resources\FactoryPresets\E300\Factory_E300_LG-Echo+Rev_3.xml" />
+    <None Include="Resources\FactoryPresets\E300\Factory_E300_Meng-Echo.xml" />
+    <None Include="Resources\FactoryPresets\E300\Factory_E300_PT-Echo.xml" />
+    <None Include="Resources\FactoryPresets\E300\Factory_E300_PT-Echo+Rev_4.xml" />
+    <None Include="Resources\FactoryPresets\E300\Factory_E300_PT-Reverb.xml" />
+    <None Include="Resources\FormController\Effect\reverb_module_slider_back.png" />
+    <None Include="Resources\Icons\icon_64.png" />
+    <None Include="Resources\Icons\icon_app.ico" />
+    <None Include="Resources\Icons\icon_form_mask.png" />
+    <None Include="Resources\FactoryPresets\VKx\Factory_VKx_Echo_1.xml" />
+    <None Include="Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_1.xml" />
+    <None Include="Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_2.xml" />
+    <None Include="Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_3.xml" />
+    <None Include="Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_4.xml" />
+    <None Include="Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_5.xml" />
+    <None Include="Resources\FactoryPresets\VKx\Factory_VKx_Reverb_1.xml" />
+    <None Include="Resources\FactoryPresets\VKx\Factory_VKx_Reverb_2.xml" />
+    <None Include="Resources\FormController\Music\music_rdo_checked.png" />
+    <None Include="Resources\FormController\Music\music_rdo_disabled.png" />
+    <None Include="Resources\FormController\Music\music_rdo_hover.png" />
+    <None Include="Resources\FormController\Music\music_rdo_normal.png" />
+    <None Include="Resources\FactoryPresets\X5\Factory_X5_Factory Preset.xml" />
+    <None Include="Resources\Extend\WiFiToRS232\M_DSP_57600.xml" />
+    <None Include="Resources\Extend\WiFiToRS232\M_DSP_115200.xml" />
+    <None Include="Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_1.xml" />
+    <None Include="Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_MT.xml" />
+    <None Include="Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_1.xml" />
+    <None Include="Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_2.xml" />
+    <None Include="Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_3.xml" />
+    <None Include="Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_4.xml" />
+    <None Include="Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_5.xml" />
+    <None Include="Resources\FactoryPresets\VKxS\Factory_VKxS_Reverb_1.xml" />
+    <None Include="Resources\FactoryPresets\VKxS\Factory_VKxS_Reverb_2.xml" />
+    <None Include="Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_1.xml" />
+    <None Include="Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_MT.xml" />
+    <None Include="Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_1.xml" />
+    <None Include="Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_2.xml" />
+    <None Include="Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_3.xml" />
+    <None Include="Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_4.xml" />
+    <None Include="Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_5.xml" />
+    <None Include="Resources\FactoryPresets\VKxDM\Factory_VKxDM_Reverb_1.xml" />
+    <None Include="Resources\FactoryPresets\VKxDM\Factory_VKxDM_Reverb_2.xml" />
+    <None Include="Resources\FactoryPresets\VKx\Factory_VKx_Echo_MT.xml" />
+    <None Include="Resources\FormController\Reverb\reverb_EQ_hs_checked.png" />
+    <None Include="Resources\FormController\Reverb\reverb_EQ_hs_hover.png" />
+    <None Include="Resources\FormController\Reverb\reverb_EQ_index_back_actived.png" />
+    <None Include="Resources\FormController\Reverb\reverb_EQ_ls_checked.png" />
+    <None Include="Resources\FormController\Reverb\reverb_EQ_ls_hover.png" />
+    <None Include="Resources\FormController\Reverb\reverb_EQ_peak_checked.png" />
+    <None Include="Resources\FormController\Reverb\reverb_EQ_peak_hover.png" />
+    <None Include="Resources\FormController\Common\Button\btn_unvisible_hover.png" />
+    <None Include="Resources\FormController\Common\Button\btn_unvisible_normal.png" />
+    <None Include="Resources\FormController\Common\Button\btn_unvisible_pressed.png" />
+    <None Include="Resources\FormController\Common\Button\btn_visible_hover.png" />
+    <None Include="Resources\FormController\Common\Button\btn_visible_normal.png" />
+    <None Include="Resources\FormController\Common\Button\btn_visible_pressed.png" />
+    <None Include="Resources\FormController\Common\Button\btn_unvisible_disabled.png" />
+    <None Include="Resources\FormController\Common\Button\btn_visible_disabled.png" />
+    <None Include="Resources\FormController\System\system_usage_limit_lock.png" />
+    <None Include="Resources\FormController\System\usage_limit_lock_enable.png" />
+    <None Include="Resources\FormController\MIC\mic_ab_linked_disabled.png" />
+    <None Include="Resources\FormController\MIC\mic_ab_linked_hover.png" />
+    <None Include="Resources\FormController\MIC\mic_ab_linked_normal.png" />
+    <None Include="Resources\FormController\MIC\mic_ab_linked_pressed.png" />
+    <None Include="Resources\FormController\MIC\mic_ab_unlinked_disabled.png" />
+    <None Include="Resources\FormController\MIC\mic_ab_unlinked_hover.png" />
+    <None Include="Resources\FormController\MIC\mic_ab_unlinked_normal.png" />
+    <None Include="Resources\FormController\MIC\mic_ab_unlinked_pressed.png" />
+    <Content Include="RTA\lib\libfftw3-3.dll" />
+    <Content Include="RTA\lib\Microsoft.DirectX.DirectSound.dll" />
+    <Content Include="RTA\lib\Microsoft.DirectX.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

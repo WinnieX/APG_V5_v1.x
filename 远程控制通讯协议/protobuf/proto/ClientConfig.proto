@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package AEC.RemoteControl.Message;
+option java_package = "com.maudio.aec.rcs.message";
+option java_outer_classname = "ClientConfig";
+
+message Configuration{
+  required string lang = 1;                     //语言
+  required int32 comm_connection_method = 2;   //联机方式
+  required string comm_default_serialPort = 3;   //默认端口
+  required bool comm_sp_manual_mode = 4;   //手动模式方式
+  required string comm_tcp_ip = 5;    //IP地址
+  required uint32 comm_tcp_port = 6;  //端口
+}

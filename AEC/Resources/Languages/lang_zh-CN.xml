@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Localization>
+	<Language name="中文(简体)" code="zh-CN"/>
+	<Content>
+		<Item key="formEasyMode" value="易调模式"/>
+		<Item key="formProMode" value="专业模式"/>
+    <Item key="formMain.remoteControl" value="远程控制"/>
+    <Item key="formMain.controlTheOtherParty" value="远程控制对方"/>
+    <Item key="formMain.controlledRemotelyByTheOtherParty" value="请求对方远程控制本机"/>
+		<Item key="formMain.videoTutorial" value="视频教学"/>
+		<Item key="formMain.openVideoTutorial" value="打开在线视频教程"/>
+		<Item key="formMain.showTutorialQRCode" value="显示教程二维码"/>
+		<Item key="formMain.scanQRCode" value="扫一扫打开在线视频教程"/>
+		
+		<Item key="ok" value="确定"/>
+		<Item key="cancel" value="取消"/>
+		<Item key="buttonConnection.connect" value="联机"/>
+		<Item key="buttonConnection.disconnect" value="断开"/>
+		<Item key="systemIsBusyAndTryAgain" value="系统忙碌中,请稍后重试！"/>
+		<Item key="commInterrupted" value="通讯中断！"/>
+		<Item key="musicVol" value="音乐"/>
+		<Item key="micVol" value="话筒"/>
+		<Item key="effectVol" value="效果"/>
+    <Item key="timbre" value="音色"/>
+		
+		<Item key="formProMode.proMode" value="专业模式"/>		
+		<Item key="formProMode.music" value="音乐"/>
+    <Item key="formProMode.musicDeq" value="DEQ"/>
+    <Item key="formProMode.mic" value="麦克风"/>
+    <Item key="formProMode.micA" value="麦克风A"/>
+    <Item key="formProMode.micB" value="麦克风B"/>
+    <Item key="formProMode.micAPlusB" value="麦克风A+B"/>
+    <Item key="formProMode.micDeq" value="DEQ"/>
+    <Item key="formProMode.micExciter" value="电子管"/>
+		<Item key="formProMode.effect" value="效果"/>
+    <Item key="formProMode.echo" value="回声"/>
+    <Item key="formProMode.reverb" value="混响"/>
+		<Item key="formProMode.mainOutput" value="主输出"/>
+		<Item key="formProMode.aux1Output" value="辅助输出1"/>
+		<Item key="formProMode.aux2Output" value="辅助输出2"/>
+    <Item key="formProMode.centerOutput" value="中置输出"/>
+		<Item key="formProMode.subOutput" value="超低输出"/>
+		<Item key="formProMode.surOutput" value="后置输出"/>
+		<Item key="formProMode.system" value="系统"/>
+    <Item key="formProMode.monitor" value="监视"/>
+
+    <Item key="formProMode.deviceModels" value="设备型号"/>
+    <Item key="formProMode.rtaOptions" value="RTA 选项"/>
+		<Item key="formProMode.commSettings" value="通讯设置"/>
+    <Item key="formProMode.preferences" value="首选项"/>
+		<Item key="formProMode.language" value="语言/Language"/>
+		<Item key="formProMode.help" value="帮助"/>
+		<Item key="formProMode.viewHelp" value="查看帮助"/>
+    <Item key="formProMode.onlineHelp" value="联机帮助"/>
+    <Item key="formProMode.bluetoothRename" value="蓝牙重命名"/>
+    <Item key="formProMode.firmwareUpdate" value="固件升级"/>
+    <Item key="formProMode.activateDevice" value="激活设备"/>
+    <Item key="formProMode.openLogFileLocation" value="打开日志文件目录"/>
+		<Item key="formProMode.about" value="关于"/>
+
+    <Item key="eq.type" value="类型"/>
+    <Item key="eq.gain" value="增益"/>
+    <Item key="eq.freq" value="频率"/>
+    <Item key="eq.q" value="Q值"/>
+    <Item key="deq.cm" value="模式"/>
+    <Item key="deq.ampSen" value="功放灵敏度"/>
+    <Item key="deq.threshold" value="启动电平"/>
+    <Item key="deq.attack" value="启动时间"/>
+    <Item key="deq.release" value="恢复时间"/>
+    <Item key="deq.ratio" value="动态比例"/>
+    <Item key="deq.dm" value="动态模式"/>
+    
+		<Item key="eqGroupPanel.xBandEq" value="{0} 段EQ"/>
+		<Item key="eqGroupPanel.xBandEchoEq" value="{0} 段回声EQ"/>
+		
+		<Item key="eqReset" value="EQ重置"/>
+		<Item key="autoMode" value="自动"/>
+		<Item key="manualMode" value="手动"/>
+		<Item key="singMode" value="唱歌"/>
+		<Item key="discoMode" value="热舞"/>
+		<Item key="eqReset.tips" value="此操作将全部EQ恢复至默认值, 是否继续？"/>
+    <Item key="deqReset" value="DEQ重置"/>
+    <Item key="deqReset.tips" value="此操作将重置DEQ参数，是否继续？"/>
+		
+		<Item key="compressorPanel.threshold" value="压缩启动电平"/>
+		<Item key="compressorPanel.attack" value="压缩启动时间"/>
+		<Item key="compressorPanel.release" value="压缩恢复时间"/>
+    <Item key="compressorPanel.ratio" value="压缩比例"/>
+    <Item key="compressorPanel.mode" value="压缩比例"/>
+
+    <Item key="x5.compAndLimiterPanel.threshold" value="启动电平"/>
+    <Item key="x5.compAndLimiterPanel.attack" value="启动时间"/>
+    <Item key="x5.compAndLimiterPanel.release" value="释放时间"/>
+    <Item key="x5.compAndLimiterPanel.ratio" value="压限比例"/>
+
+    <Item key="fastMode" value="快速"/>
+    <Item key="mediumMode" value="中速"/>
+    <Item key="slowMode" value="慢速"/>
+
+    <Item key="limiterPanel" value="限幅器"/>
+    <Item key="limiterPanel.threshold" value="启动电平"/>
+    <Item key="limiterPanel.attack" value="启动时间"/>
+    <Item key="limiterPanel.release" value="恢复时间"/>
+    <Item key="limiterPanel.clipThreshold" value="削波启动电平"/>
+    <Item key="limiterPanel.clipRelease" value="削波恢复时间"/>
+    <Item key="limiterPanel.ratio" value="压限比例"/>
+    <Item key="limiterPanel.mode" value="压限模式"/>
+ 
+		<Item key="mixerPanel.musicLevel" value="音乐电平"/>
+		<Item key="mixerPanel.micLevel" value="麦克风电平"/>
+		<Item key="mixerPanel.echoLevel" value="回声电平"/>
+		<Item key="mixerPanel.reverbLevel" value="混响电平"/>
+		
+    <Item key="exciterPanel.freq" value="频率"/>
+    <Item key="exciterPanel.xoverfreq" value="分频点"/>
+    <Item key="exciterPanel.bandWidth" value="带宽"/>
+    <Item key="exciterPanel.fbGain" value="深度"/>
+    <Item key="exciterPanel.boostLevel" value="电平"/>
+    <Item key="exciterPanel.bassExciter" value="低音"/>
+    <Item key="exciterPanel.exciter" value="频段"/>
+    <Item key="exciterPanel.micExciter1" value="麦克风电子管 1"/>
+    <Item key="exciterPanel.micExciter2" value="麦克风电子管 2"/>
+    
+		<Item key="panelMusic.musicInput" value="音乐输入"/>
+		<Item key="panelMusic.musicInputPort" value="音乐输入端口"/>
+    <Item key="panelMusic.musicInputGain" value="音乐输入增益"/>
+    <Item key="panelMusic.musicInputPort3Gain" value="端口 3 输入增益"/>
+		<Item key="panelMusic.port" value="端口"/>
+    <Item key="panelMusic.bt" value="蓝牙"/>
+    <Item key="panelMusic.spdif" value="光纤"/>
+    <Item key="panelMusic.fiberPort" value="（光纤端口为自动识别）"/>
+    <Item key="panelMusic.musicHpf" value="音乐高通"/>
+    <Item key="panelMusic.musicHpfType" value="滤波器类型"/>
+    <Item key="panelMusic.musicToMainOutHpf" value="音乐至主输出高通"/>
+    <Item key="panelMusic.musicToMainOutHpfSlope" value="滤波器斜率"/>
+    <Item key="panelMusic.superBass" value="电子管低音"/>
+
+    <Item key="panelMic.micInput" value="麦克风输入"/>
+    <Item key="panelMic.micInput.ab.mixed" value="A+B 混合"/>
+    <Item key="panelMic.micInput.single.a" value="单端 A"/>
+    <Item key="panelMic.micInput.single.b" value="单端 B"/>    
+		<Item key="panelMic.micFBE" value="FBE"/>
+    <Item key="panelMic.micNoiseGate" value="噪声门"/>
+		<Item key="panelMic.micHpf" value="麦克风高通"/>
+    <Item key="panelMic.micLpf" value="麦克风低通"/>
+    <Item key="panelMic.micLpfType" value="低通类型"/>
+    <Item key="panelMic.micLevel" value="麦克风电平"/>
+    <Item key="panelMic.effectLevel" value="效果电平"/>
+    <Item key="panelMic.micABLink" value="MIC A+B 联调"/>
+    <Item key="panelMic.micABLink.tips" value="联动操作会将麦克风 {0} 的数据同步到麦克风 {1}，是否继续？"/>
+		
+		<Item key="panelEffect.echo.echoLevel" value="回声效果电平"/>
+		<Item key="panelEffect.echo.echoDirectLevel" value="回声直达电平"/>
+		<Item key="panelEffect.echo.hpf" value="回声高通"/>
+    <Item key="panelEffect.echo.hpfType" value="回声高通斜率"/>
+		<Item key="panelEffect.echo.lpf" value="回声低通"/>
+		<Item key="panelEffect.echo.lpfQ" value="回声低通斜率"/>
+    <Item key="panelEffect.echo.lpfType" value="回声低通斜率"/>
+		<Item key="panelEffect.echo.preDelay" value="回声预延时"/>
+		<Item key="panelEffect.echo.delay" value="回声延时"/>
+		<Item key="panelEffect.echo.repeat" value="回声重复比例"/>
+		<Item key="panelEffect.echo.rChPreDelay" value="回声右通道预延时"/>
+		<Item key="panelEffect.echo.rChDelay" value="回声右通道延时"/>
+		
+		<Item key="panelEffect.reverb.reverbLevel" value="混响效果电平"/>
+		<Item key="panelEffect.reverb.reverbDirectLevel" value="混响直达电平"/>
+    <Item key="panelEffect.reverb.hpf" value="混响高通"/>
+    <Item key="panelEffect.reverb.hpfType" value="混响高通斜率"/>
+    <Item key="panelEffect.reverb.lpf" value="混响低通"/>
+    <Item key="panelEffect.reverb.lpfType" value="混响低通斜率"/>
+		<Item key="panelEffect.reverb.micHpf" value="混响麦克风高通"/>
+		<Item key="panelEffect.reverb.micLpf" value="混响麦克风低通"/>
+    <Item key="panelEffect.reverb.musicHpf" value="混响音乐高通"/>
+    <Item key="panelEffect.reverb.musicLpf" value="混响音乐低通"/>
+		<Item key="panelEffect.reverb.preDelay" value="混响预延时"/>
+		<Item key="panelEffect.reverb.delay" value="混响时间"/>
+		<Item key="panelEffect.reverb.bassDamp" value="混响低音衰减"/>
+    <Item key="panelEffect.reverb.trebleDamp" value="混响高音衰减"/>
+    <Item key="panelEffect.reverb.musicReverbLevel" value="音乐至混响"/>
+		
+		<Item key="panelEffect.dEffect.threshold" value="启动电平"/>
+		<Item key="panelEffect.dEffect.gain" value="动态增益"/>
+		
+		<Item key="panelOutput.hpfFreq" value="高通"/>
+		<Item key="panelOutput.hpfQ" value="高通Q值"/>
+		<Item key="panelOutput.hpfMode" value="高通滤波器类型"/>
+		<Item key="panelOutput.lpfFreq" value="低通"/>
+		<Item key="panelOutput.lpfQ" value="低通Q值"/>
+		<Item key="panelOutput.lpfMode" value="低通滤波器类型"/>
+		<Item key="panelOutput.leftChDelay" value="左通道延时"/>
+		<Item key="panelOutput.rightChDelay" value="右通道延时"/>
+		<Item key="panelOutput.leftChMute" value="左通道静音"/>
+		<Item key="panelOutput.rightChMute" value="右通道静音"/>
+    <Item key="panelOutput.leftChPhase" value="左通道相位"/>
+    <Item key="panelOutput.rightChPhase" value="右通道相位"/>
+		<Item key="panelOutput.delay" value="延时"/>
+		<Item key="panelOutput.mute" value="静音"/>
+    <Item key="panelOutput.phase" value="相位"/>
+    <Item key="panelOutput.linkage" value="联调"/>
+    <Item key="panelOutput.leftCh" value="左"/>
+    <Item key="panelOutput.rightCh" value="右"/>
+		
+		<Item key="panelSystem.volMgt" value="音量控制"/>
+		<Item key="panelSystem.volMgt.musicStartVolume" value="音乐起始音量"/>
+		<Item key="panelSystem.volMgt.musicMaxVolume" value="音乐最大音量"/>
+		<Item key="panelSystem.volMgt.micStartVolume" value="话筒起始音量"/>
+		<Item key="panelSystem.volMgt.micMaxVolume" value="话筒最大音量"/>
+		<Item key="panelSystem.volMgt.effectStartVolume" value="效果起始音量"/>
+		<Item key="panelSystem.volMgt.effectMaxVolume" value="效果最大音量"/>
+		<Item key="panelSystem.volMgt.quickSettings" value="快捷设置"/>
+		
+		<Item key="panelSystem.autoLockKeyboard" value="键盘锁"/>
+		<Item key="panelSystem.enabled" value="开启"/>
+		<Item key="panelSystem.disabled" value="禁用"/>
+		
+		<Item key="panelSystem.systemUser" value="系统用户设置"/>
+		<Item key="panelSystem.systemPassword" value="系统权限密码"/>
+		<Item key="panelSystem.ok" value="确定"/>
+		<Item key="panelSystem.normalUser" value="用户"/>
+		<Item key="panelSystem.admin" value="管理员"/>
+		
+		<Item key="panelSystem.passowrd.changeKeyboardLockPassowrd" value="修改键盘锁密码"/>
+		<Item key="panelSystem.passowrd.changeSystemUserPassowrd" value="修改系统密码"/>
+		<Item key="panelSystem.passowrd.oldPassowrd" value="旧密码"/>
+		<Item key="panelSystem.passowrd.newPassowrd" value="新密码"/>
+		<Item key="panelSystem.passowrd.confirmPassowrd" value="确认新密码"/>
+		<Item key="panelSystem.passowrd.inputError" value="输入有误"/>
+		<Item key="panelSystem.passowrd.invalidInput" value="无效输入 ！"/>
+		<Item key="panelSystem.passowrd.askForChangeKeyboardPassword" value="是否修改键盘锁密码 ？"/>
+		<Item key="panelSystem.passowrd.askForChangeSystemPassword" value="是否修改管理员密码 ？"/>
+		
+		<Item key="panelSystem.dataBackupMgt" value="数据备份管理"/>
+		<Item key="panelSystem.dataBackupMgt.number" value="序号"/>
+		<Item key="panelSystem.dataBackupMgt.dataName" value="数据名称"/>
+		<Item key="panelSystem.dataBackupMgt.backupFileName" value="备份文件名"/>
+		<Item key="panelSystem.dataBackupMgt.save" value="保存数据到本地文件"/>
+		<Item key="panelSystem.dataBackupMgt.load" value="从本地文件加载数据"/>
+		<Item key="panelSystem.dataBackupMgt.loadData" value="加载数据"/>
+		<Item key="panelSystem.dataBackupMgt.openFileLocation" value="打开所在目录"/>
+		<Item key="panelSystem.dataBackupMgt.delete" value="删除"/>
+		<Item key="panelSystem.dataBackupMgt.factoryMode" value="出厂模式数据"/>
+    <Item key="panelSystem.dataBackupMgt.userData" value="用户数据"/>
+		<Item key="panelSystem.dataBackupMgt.userDataInfo" value="{0}型号：{1}路径：{2}修改日期：{3}"/>		
+		<Item key="panelSystem.dataBackupMgt.askForSaveAndOverwriteFile" value="模式文件 {0} 已经存在, 是否覆盖现有文件 ？"/>
+		<Item key="panelSystem.dataBackupMgt.failedToLoadDataAndFileNotExist" value="加载数据失败, 文件不存在 ！"/>
+		<Item key="panelSystem.dataBackupMgt.askForLoadAndOverwriteData" value="加载 {0} 数据将会覆盖当前数据, 是否继续 ？"/>
+		<Item key="panelSystem.dataBackupMgt.askForContinueLoadingData" value="系统未联机, 是否继续加载 {0} 数据 ？"/>
+		<Item key="panelSystem.dataBackupMgt.failedToLoadDataAndFileDataError" value="加载数据失败, 文件数据错误 ！"/>
+		<Item key="panelSystem.dataBackupMgt.fileNotExist" value="文件 {0} 不存在, 可能已经被移除, 是否从列表中删除 ？"/>
+    <Item key="panelSystem.dataBackupMgt.deleteFile" value="删除文件"/>
+    <Item key="panelSystem.dataBackupMgt.askForDeleteDataFile" value="确实要删除此数据文件吗？{0}"/>
+		<Item key="panelSystem.dataBackupMgt.fileTypeError" value="文件类型错误 ！"/>
+		<Item key="panelSystem.dataBackupMgt.fileDataError" value="文件数据错误 ！"/>
+		<Item key="panelSystem.dataBackupMgt.failedToCopyFile" value="拷贝文件失败:（{0}）！"/>
+		<Item key="panelSystem.dataBackupMgt.dataIsEncryptedAndCannotBeExported" value="数据已经加密，无法导出！"/>
+		<Item key="panelSystem.dataBackupMgt.failedToSaveFile" value="保存文件失败：({0}) ！"/>
+		
+		<Item key="panelSystem.deviceModeMgt" value="设备模式管理"/>
+		<Item key="panelSystem.deviceModeMgt.deviceMode" value="设备模式"/>
+		<Item key="panelSystem.deviceModeMgt.currDeviceMode" value="当前模式："/>
+		<Item key="panelSystem.deviceModeMgt.modeName" value="模式名称"/>
+		<Item key="panelSystem.deviceModeMgt.saveMode" value="保存设备模式"/>
+		<Item key="panelSystem.deviceModeMgt.callMode" value="调用设备模式"/>		
+		<Item key="panelSystem.deviceModeMgt.askForCallModeData" value="是否调用模式{0}: {1} ?"/>
+		<Item key="panelSystem.deviceModeMgt.cannotSave" value="当前用户无法执行保存操作！"/>
+		<Item key="panelSystem.deviceModeMgt.askForSaveModeData" value="是否保存 模式{0}: {1} ?"/>
+		<Item key="panelSystem.deviceModeMgt.askForEncrpyData" value="建议先备份数据, 此加密操作不可撤销, 是否继续 ?"/>
+		<Item key="panelSystem.deviceModeMgt.encrpyCurrModeData" value="加密当前模式数据"/>
+		<Item key="panelSystem.deviceModeMgt.factoryPresetCannotBeSaved" value="无法保存到出厂预设模式"/>
+		
+		<Item key="panelSystem.infraredRemoteControl" value="红外遥控管理"/>
+    <Item key="panelSystem.timbreSelect" value="音色选择"/>
+    <Item key="panelSystem.timbrePro" value="专业"/>
+    <Item key="panelSystem.timbreClassics" value="经典"/>
+    <Item key="panelSystem.deviceWorkMode" value="设备工作模式"/>
+    <Item key="panelSystem.deviceWorkMode.standard" value="标准模式"/>
+    <Item key="panelSystem.deviceWorkMode.x5" value="X5模式"/>
+    
+    <Item key="panelSystem.clarity" value="清晰度"/>
+    <Item key="panelSystem.clarity.SDA" value="标准A"/>
+    <Item key="panelSystem.clarity.SDB" value="标准B"/>
+    <Item key="panelSystem.clarity.HDA" value="高清A"/>
+    <Item key="panelSystem.clarity.HDB" value="高清B"/>
+    <Item key="panelSystem.clarity.UHDA" value="超高清A"/>
+    <Item key="panelSystem.clarity.UHDB" value="超高清B"/>
+    <Item key="panelSystem.clarity.note" value="选择清晰度档位 A 时，其超高音频段要比选择档位 B 时更丰富。"/>
+    
+    <Item key="panelSystem.deviceInfo" value="设备信息"/>
+    <Item key="panelSystem.deviceID" value="设备ID："/>
+    <Item key="panelSystem.devicePrototype" value="原型"/>
+    <Item key="panelSystem.deviceFirmwareVersion" value="固件版本"/>
+    <Item key="panelSystem.deviceFirmwareBuildNumber" value="构建号"/>
+    
+    <Item key="popMenu.thresholdUnit" value="启动电平单位：{0}"/>
+    <Item key="popMenu.mixerLevelUnit" value="混音电平单位：{0}"/>
+    <Item key="popMenu.channelDelayUnit" value="输出延时单位：{0}"/>
+		
+		<Item key="formModeQuickOperation" value="模式快捷操作"/>
+		
+		<Item key="panelSystemSelection" value="系统选择"/>
+		<Item key="panelSystemSelection.loudspeaker" value="音箱"/>
+		<Item key="panelSystemSelection.powerAmplifier" value="功放"/>
+		<Item key="panelSystemSelection.microphone" value="麦克风"/>
+		<Item key="panelSystemSelection.brand" value="品牌"/>
+		<Item key="panelSystemSelection.model" value="型号"/>
+		<Item key="panelSystemSelection.power" value="功率"/>
+		<Item key="panelSystemSelection.size" value="尺寸"/>
+		<Item key="panelSystemSelection.impedance" value="阻抗"/>
+		<Item key="panelSystemSelection.sensitivity" value="灵敏度"/>
+		<Item key="panelSystemSelection.wired" value="有线"/>
+		<Item key="panelSystemSelection.wireless" value="无线"/>
+		<Item key="panelSystemSelection.recommendedVolume" value="建议音量"/>
+		<Item key="panelSystemSelection.clear" value="清除"/>
+		<Item key="panelSystemSelection.all" value="全部"/>
+		<Item key="panelSystemSelection.buildIn" value="内置"/>
+		<Item key="panelSystemSelection.customer" value="外部"/>
+		<Item key="panelSystemSelection.selectedItem" value="选中项"/>
+    <Item key="panelSystemSelection.theExactMatchCouldNotBeFound" value="找不到完全匹配项"/>
+		
+		<Item key="formExportPresetModeData" value="导出预设模式数据"/>
+		<Item key="formExportPresetModeData.modeFileName" value="模式文件名"/>
+		<Item key="formExportPresetModeData.modeName" value="模式名"/>
+		<Item key="formExportPresetModeData.export" value="导出"/>
+		<Item key="formExportPresetModeData.openFileLocation" value="打开所在目录"/>
+		<Item key="formExportPresetModeData.cannotBeEmpty" value="不能为空！"/>
+		<Item key="formExportPresetModeData.loudspeakerBrand" value="音箱品牌"/>
+		<Item key="formExportPresetModeData.loudspeakerModel" value="音箱型号"/>
+		<Item key="formExportPresetModeData.powerAmplifierBrand" value="功放品牌"/>
+		<Item key="formExportPresetModeData.powerAmplifierModel" value="功放型号"/>
+		<Item key="formExportPresetModeData.powerAmplifierSensitivity" value="功放灵敏度"/>
+		<Item key="formExportPresetModeData.powerAmplifierSensitivityInputError" value="功放灵敏度输入有误！"/>
+		<Item key="formExportPresetModeData.microphoneBrand" value="麦克风品牌"/>
+		<Item key="formExportPresetModeData.microphoneModel" value="麦克风型号"/>
+		<Item key="formExportPresetModeData.wirelessMicrophoneRecommendedVolumeCannotBeZero" value="无线麦克风建议音量不能为0！"/>
+		<Item key="formExportPresetModeData.selectAtLeastOneModeFile" value="需要至少选择一个模式文件和模式名！"/>
+		<Item key="formExportPresetModeData.modeFileNotExist" value="模式文件 {0} 不存在！"/>
+		<Item key="formExportPresetModeData.askForOverwriteFile" value="此模式文件已经存在, 是否覆盖现有文件？"/>
+		<Item key="formExportPresetModeData.exportPresetModeDataSuccessfully" value="导出预设模式文件 {0} 成功"/>
+		<Item key="formExportPresetModeData.failedToExportPresetModeData" value="导出预设模式文件 {0} 失败！"/>
+		
+		<Item key="formCommSettings" value="通讯设置"/>
+		<Item key="formCommSettings.autoConnection" value="启动后自动联机"/>
+		<Item key="formCommSettings.commMethod" value="通讯方式"/>
+    <Item key="formCommSettings.selectOneMethodAtLeast" value="请至少选择一种通讯方式！"/>
+		<Item key="formCommSettings.defaultSerialPort" value="RS232 默认端口号"/>
+    <Item key="formCommSettings.commRetransmission" value="通讯重传次数"/>
+		<Item key="formCommSettings.serialPortManualMode" value="RS232 端口手动模式"/>
+		<Item key="formCommSettings.on" value="打开"/>
+		<Item key="formCommSettings.off" value="关闭"/>
+		<Item key="formCommSettings.priorityUseOfSerialPort" value="串口通讯优先"/>
+		<Item key="formCommSettings.onlyUseOfSerialPort" value="仅使用串口通讯"/>
+		<Item key="formCommSettings.onlyUseOfUDP" value="仅使用 UDP 通讯"/>
+		<Item key="formCommSettings.priorityUseOfUDP" value="UDP 通讯优先"/>
+		<Item key="formCommSettings.autoMode" value="自动"/>
+		<Item key="formCommSettings.manualMode" value="手动"/>
+    <Item key="formCommSettings.ipAddress" value="IP地址"/>
+    <Item key="formCommSettings.port" value="端口"/>
+    <Item key="formCommSettings.help" value="帮助"/>
+		<Item key="formCommSettings.restoreToDefault" value="恢复默认"/>
+		<Item key="formCommSettings.close" value="关闭"/>
+    
+    <Item key="formRS232ToWifiConverter" value="RS232转WiFi"/>
+    <Item key="formRS232ToWifiConverter.deviceIp" value="设备IP"/>
+    <Item key="formRS232ToWifiConverter.refreshDevice" value="刷新"/>
+    <Item key="formRS232ToWifiConverter.deviceInfo" value="设备信息"/>
+    <Item key="formRS232ToWifiConverter.baudRate" value="波特率"/>
+    <Item key="formRS232ToWifiConverter.update" value="更新"/>
+    <Item key="formRS232ToWifiConverter.deviceModel" value="型号"/>
+    <Item key="formRS232ToWifiConverter.deviceFirmwareVersion" value="版本号"/>
+    <Item key="formRS232ToWifiConverter.deviceMacAddress" value="MAC地址"/>
+    <Item key="formRS232ToWifiConverter.deviceSocketName" value="连接名称"/>
+    <Item key="formRS232ToWifiConverter.deviceSocketProtocol" value="协议类型"/>
+    <Item key="formRS232ToWifiConverter.deviceSocketPort" value="端口号"/>
+    <Item key="formRS232ToWifiConverter.deviceUartDataBits" value="数据位"/>
+    <Item key="formRS232ToWifiConverter.deviceUartStopBits" value="停止位"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParity" value="校验位"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParityNone" value="无"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParityOdd" value="奇校验"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParityEven" value="偶检验"/>
+    <Item key="formRS232ToWifiConverter.deviceUartParityOther" value="其他"/>
+    <Item key="formRS232ToWifiConverter.deviceUserName" value="用户名"/>
+    <Item key="formRS232ToWifiConverter.devicePassword" value="密码"/>
+    <Item key="formRS232ToWifiConverter.restoreConfigToDefault" value="点击恢复默认设置"/>
+    <Item key="formRS232ToWifiConverter.baudRateNotMatch" value="设备波特率与系统不匹配，点击更新波特率"/>
+    <Item key="formRS232ToWifiConverter.socketNotMatch" value="检测到连接参数与系统不匹配，建议同步当前设备参数到系统设置，是否同步设置？"/>
+    
+
+    <Item key="formPreferences" value="首选项"/>
+    <Item key="formPreferences.deviceModelWhenStarts" value="启动时设备型号"/>
+    <Item key="formPreferences.useLastConnectedDeviceModel" value="最后一次联机设备型号"/>
+    
+    <Item key="formOnlineHelp" value="联机帮助"/>
+    <Item key="formOnlineHelp.auto" value="自动"/>
+    <Item key="formOnlineHelp.commInterface" value="通讯接口"/>
+    <Item key="formOnlineHelp.port" value="端口"/>
+    <Item key="formOnlineHelp.baudRate" value="波特率"/>
+    <Item key="formOnlineHelp.ipAddress" value="IP地址"/>
+    <Item key="formOnlineHelp.run" value="运行"/>
+    
+    <Item key="formFirmwareUpdate" value="固件更新"/>
+    <Item key="formFirmwareUpdate.port" value="端口"/>
+    <Item key="formFirmwareUpdate.auto" value="自动"/>
+    <Item key="formFirmwareUpdate.baudRate" value="波特率"/>
+    <Item key="formFirmwareUpdate.refresh" value="刷新"/>
+    <Item key="formFirmwareUpdate.key" value="密钥"/>
+    <Item key="formFirmwareUpdate.file" value="文件"/>
+    <Item key="formFirmwareUpdate.update" value="更新"/>
+    <Item key="formFirmwareUpdate.info" value="信息"/>
+    <Item key="formFirmwareUpdate.progress" value="进度"/>
+    <Item key="formFirmwareUpdate.keyDataError" value="密钥数据有误！"/>
+    <Item key="formFirmwareUpdate.getFileHashError" value="获取文件Hash错误！"/>
+    <Item key="formFirmwareUpdate.fileHash" value="文件Hash：{0}"/>
+    <Item key="formFirmwareUpdate.firmwareVersion" value="固件版本"/>
+    <Item key="formFirmwareUpdate.bluetoothName" value="蓝牙名称"/>
+    <Item key="formFirmwareUpdate.rename" value="重命名"/>
+    <Item key="formFirmwareUpdate.output" value="输出"/>
+
+    <Item key="formActivateDevice" value="激活设备"/>
+    <Item key="formActivateDevice.commInterface" value="通讯接口"/>
+    <Item key="formActivateDevice.port" value="端口"/>
+    <Item key="formActivateDevice.baudRate" value="波特率"/>
+    <Item key="formActivateDevice.ipAddress" value="IP地址"/>
+    <Item key="formActivateDevice.activate" value="激活"/>
+    
+    <Item key="formActivation" value="激活"/>
+    <Item key="formActivation.machineCode" value="机器码"/>
+    <Item key="formActivation.requestCode" value="请求码"/>
+    <Item key="formActivation.activationCode" value="激活码"/>
+    <Item key="formActivation.whetherToCancelTheLicense" value="是否注销许可？"/>
+
+    <Item key="formAbout" value="关于"/>
+    <Item key="formAbout.supportModels" value="支持的设备型号 : {0}"/>
+		
+		<Item key="rta.FailedToStartCapturingAudio" value="启动捕捉音频数据失败：{0}"/>
+		<Item key="rta.FailedToStartAudioOut" value="启动音频输出设备失败：{0}"/>
+		<Item key="formRTAOptions" value="RTA 选项"/>
+		<Item key="formRTAOptions.spectrum" value="频谱"/>
+		<Item key="formRTAOptions.transferFunction" value="传递函数"/>
+		<Item key="formRTAOptions.audioIO" value="音频输入输出"/>
+		<Item key="formRTAOptions.audioInDevice" value="音频输入设备"/>
+		<Item key="formRTAOptions.sampleRate" value="采样频率"/>
+		<Item key="formRTAOptions.sampleBitDepth" value="采样位深度"/>
+		<Item key="formRTAOptions.audioOutDevice" value="音频输出设备"/>		
+		<Item key="formRTAOptions.rtaParams" value="RTA 参数"/>
+		<Item key="formRTAOptions.fftSize" value="FFT 长度"/>
+		<Item key="formRTAOptions.windowFunction" value="窗函数"/>
+		<Item key="formRTAOptions.average" value="均值处理"/>
+		<Item key="formRTAOptions.smooth" value="平滑处理"/>
+		<Item key="formRTAOptions.scale" value="刻度"/>
+		<Item key="formRTAOptions.spectrumGraph" value="频谱图"/>
+		<Item key="formRTAOptions.doubleCh" value="左右声道"/>
+		<Item key="formRTAOptions.leftCh" value="左声道"/>
+		<Item key="formRTAOptions.rightCh" value="右声道"/>
+		<Item key="formRTAOptions.ampOffset" value="幅度偏移"/>
+		<Item key="formRTAOptions.freqRespGraph" value="频率响应曲线"/>
+		<Item key="formRTAOptions.ampAndPhaseResp" value="幅频和相频响应"/>
+		<Item key="formRTAOptions.ampResp" value="幅频响应"/>
+		<Item key="formRTAOptions.phaseResp" value="相频响应"/>
+		<Item key="formRTAOptions.signalLevel" value="信号电平"/>
+		<Item key="formRTAOptions.signalLeftCh" value="左声道（测量信号）"/>
+		<Item key="formRTAOptions.signalRightCh" value="右声道（参考信号）"/>
+		<Item key="formRTAOptions.delay" value="延时"/>
+		<Item key="formRTAOptions.measDelay" value="测量延时"/>
+		<Item key="formRTAOptions.measDelayResult" value="测量结果"/>
+		<Item key="formRTAOptions.applyMeasResult" value="应用"/>
+		<Item key="formRTAOptions.declineMeasResult" value="拒绝"/>
+		<Item key="formRTAOptions.signalGenerator" value="信号发生器"/>
+		<Item key="formRTAOptions.signal" value="信号"/>
+		<Item key="formRTAOptions.level" value="电平"/>
+		<Item key="formRTAOptions.sineFreq" value="频率"/>
+		<Item key="formRTAOptions.sine1Level" value="电平1"/>
+		<Item key="formRTAOptions.sine1Freq" value="频率1"/>
+		<Item key="formRTAOptions.sine2Level" value="电平2"/>
+		<Item key="formRTAOptions.sine2Freq" value="频率2"/>
+		<Item key="formRTAOptions.refTrace" value="参考曲线"/>
+		<Item key="formRTAOptions.capture" value="捕捉"/>
+		<Item key="formRTAOptions.delete" value="删除"/>
+		<Item key="formRTAOptions.hannWindow" value="汉宁窗"/>
+		<Item key="formRTAOptions.hammingWindow" value="海明窗"/>
+		<Item key="formRTAOptions.rectangleWindow" value="矩形窗"/>
+		<Item key="formRTAOptions.gaussianWindow" value="高斯窗"/>
+		<Item key="formRTAOptions.blackmanWindow" value="布莱克曼窗"/>
+		<Item key="formRTAOptions.blackmanHarrisWindow" value="布莱克曼"/>
+		<Item key="formRTAOptions.flatTopWindow" value="平顶窗"/>
+		<Item key="formRTAOptions.averageInf" value="无限"/>
+		<Item key="formRTAOptions.averageFast" value="快速"/>
+		<Item key="formRTAOptions.averageSlow" value="慢速"/>
+		<Item key="formRTAOptions.smoothNone" value="无"/>
+		<Item key="formRTAOptions.smooth3Pt" value="3点"/>
+		<Item key="formRTAOptions.smooth5Pt" value="5点"/>
+		<Item key="formRTAOptions.smooth7Pt" value="7点"/>
+		<Item key="formRTAOptions.smooth9Pt" value="9点"/>
+		<Item key="formRTAOptions.pinkNoise" value="粉噪声"/>
+		<Item key="formRTAOptions.pinkSweep" value="粉扫频"/>
+		<Item key="formRTAOptions.sine" value="正弦"/>
+		<Item key="formRTAOptions.dualSine" value="双正弦"/>
+		
+		<Item key="formComm.connectAndLoadData" value="联机加载数据"/>
+		<Item key="formComm.uploadData" value="上传数据"/>
+		<Item key="formComm.callModeData" value="调用设备模式"/>
+		<Item key="formComm.deviceIsNotActivated" value="设备未激活"/>
+		<Item key="formComm.pleaseActivateTheDeviceFirst" value="设备未激活，请先激活后再使用！"/>
+		<Item key="formComm.deviceIsLocked" value="设备已被锁"/>
+		<Item key="formComm.pleaseInputPasswordToUnlockSystem" value="设备已被锁，请输入{0}位密码解锁"/>
+		<Item key="formComm.inputAdminPassword" value="请输入{0}位管理员密码解锁"/>
+		<Item key="formComm.inputPasswordError" value="输入的密码错误，请重试！"/>
+		<Item key="formComm.error" value="错误"/>
+		<Item key="formComm.password" value="密码"/>
+		<Item key="formComm.ok" value="确定"/>
+		<Item key="formComm.close" value="关闭"/>
+		<Item key="formComm.disconnect" value="断开连接"/>
+
+    <Item key="comm.noUSBHIDAvailable" value="系统中没有检测到已连接的 USB-HID 设备！"/>
+    <Item key="comm.noPortAvailable" value="系统中没有检测到可用 COM 端口！"/>
+		<Item key="comm.successful" value="成功"/>
+		<Item key="comm.failed" value="失败！"/>
+		<Item key="comm.openPort" value="打开 {0} ..."/>
+    <Item key="comm.initUdpClient" value="初始化UDP，（目的IP:{0}, Port:{1}）..."/>
+		<Item key="comm.sendConnectionRequest" value="发送联机握手请求..."/>
+		<Item key="comm.checkResponseSuccessful" value="检测响应成功."/>
+		<Item key="comm.checkResponseFailed" value="检测响应失败！"/>
+		<Item key="comm.loadDeviceInfo" value="加载设备信息..."/>
+		<Item key="comm.loadXModuleData" value="加载 {0} 模块数据..."/>
+		<Item key="comm.musicModule" value="音乐"/>
+		<Item key="comm.micModule" value="麦克风"/>
+    <Item key="comm.micAModule" value="麦克风A"/>
+    <Item key="comm.micBModule" value="麦克风B"/>
+    <Item key="comm.musicDeqModule" value="音乐DEQ"/>
+    <Item key="comm.micDeqModule" value="麦克风DEQ"/>
+		<Item key="comm.dEffectModule" value="动态效果"/>
+		<Item key="comm.echoModule" value="回声"/>
+		<Item key="comm.reverbModule" value="混响"/>
+		<Item key="comm.mainOutputModule" value="主输出"/>
+		<Item key="comm.aux1OutputModule" value="辅助输出1"/>
+		<Item key="comm.aux2OutputModule" value="辅助输出2"/>
+		<Item key="comm.surOutputModule" value="后置输出"/>
+		<Item key="comm.loadSystemXData" value="加载系统 {0} 数据..."/>		
+		<Item key="comm.musicStartVolume" value="音乐起始音量"/>
+		<Item key="comm.musicMaxVolume" value="音乐最大音量"/>
+		<Item key="comm.micStartVolume" value="麦克风起始音量"/>
+		<Item key="comm.micMaxVolume" value="麦克风最大音量"/>
+		<Item key="comm.effectStartVolume" value="效果起始音量"/>
+		<Item key="comm.effectMaxVolume" value="效果最大音量"/>
+		<Item key="comm.musicVolume" value="音乐音量"/>
+		<Item key="comm.micVolume" value="麦克风音量"/>
+		<Item key="comm.effectVolume" value="效果音量"/>
+    <Item key="comm.timbre" value="音色"/>
+    <Item key="comm.clarity" value="清晰度"/>
+    <Item key="comm.deviceWorkMode" value="设备工作模式"/>
+		<Item key="comm.musicMute" value="音乐静音"/>
+		<Item key="comm.micMute" value="麦克风静音"/>
+		<Item key="comm.effectMute" value="效果静音"/>
+		<Item key="comm.musicInputGain" value="音乐输入增益"/>
+		<Item key="comm.musicInputPort" value="音乐输入端口"/>
+		<Item key="comm.systemPassword" value="系统密码"/>
+		<Item key="comm.keyboardLockPassword" value="键盘锁密码"/>
+		<Item key="comm.user" value="系统权限控制位"/>
+		<Item key="comm.isLockKeyboard" value="自动键盘锁控制位"/>
+		<Item key="comm.isEnableRomoteControl" value="遥控使能控制位"/>
+		<Item key="comm.deviceModeSave" value="设备模式（存储）"/>
+		<Item key="comm.deviceModeCall" value="设备模式（调用）"/>
+		<Item key="comm.deviceId" value="设备Id"/>
+		<Item key="comm.deviceModel" value="设备型号标识"/>
+    <Item key="comm.prototypeModel" value="设备原型"/>
+    <Item key="comm.firmwareVersion" value="固件版本"/>
+    <Item key="comm.firmwareBuildNumbers" value="固件构建号"/>
+    <Item key="comm.isEnableCustomDeviceInfo" value="设备信息使能"/>
+    <Item key="comm.customDeviceInfoData" value="设备信息"/>
+    <Item key="comm.deviceHardwareState" value="硬件状态"/>
+    <Item key="comm.deviceName" value="设备名称"/>
+    <Item key="comm.usageLimitLock" value="使用限制锁"/>
+		<Item key="comm.loadSystemModeXNameData" value="加载系统模式 {0} 名称数据..."/>
+		<Item key="comm.loadSystemData" value="加载系统数据..."/>
+		<Item key="comm.uploadXModuleData" value="上传 {0} 模块数据..."/>
+		<Item key="comm.uploadSystemXData" value="上传系统 {0} 数据..."/>
+		<Item key="comm.failedToLoadData" value="联机失败！"/>
+		<Item key="comm.failedToUploadData" value="上传数据失败！"/>
+		<Item key="comm.failedToCallModeData" value="调用设备模式失败！"/>
+		<Item key="comm.updateDeviceModeIndexData" value="更新设备模式（调用）索引数据..."/>
+		<Item key="comm.updateXModeData" value="上传 {0} 模式数据..."/>
+		<Item key="comm.saveXDataToYMode" value="保存 {0} 模式数据至第{1}个模式..."/>
+    <Item key="comm.initializingUI" value="界面初始化中..."/>
+    <Item key="comm.unknownDeviceModelIdentity" value="未知设备型号标识：{0}！"/>
+    <Item key="comm.unsupportedDeviceModelIdentity" value="不支持的设备型号标识：{0}！"/>
+
+    <Item key="formControlTheOtherParty" value="远程控制对方"/>
+    <Item key="formControlTheOtherParty.remoteId" value="对方识别码"/>
+    <Item key="formControlTheOtherParty.remoteVerificationCode" value="对方验证码"/>
+    <Item key="formControlTheOtherParty.remoteControlConnect" value="远程连接"/>
+    <Item key="formControlTheOtherParty.remoteControlConnecting" value="正在连接中..."/>
+    <Item key="formControlTheOtherParty.disconnectRemoteControl" value="断开远程连接"/>
+    <Item key="formControlTheOtherParty.disconnectingRemoteControl" value="正在断开连接..."/>
+    <Item key="formControlTheOtherParty.failedToConnectToRemoteClient" value="连接到远程客户端 {0} 失败:{1}"/>
+    <Item key="formControlTheOtherParty.remoteControl" value="远程控制"/>
+    <Item key="formControlTheOtherParty.idCodeError" value="识别码输入有误！"/>
+    <Item key="formControlTheOtherParty.verificationCodeError" value="验证码码输入有误！"/>
+    <Item key="formControlTheOtherParty.enterNonLocalIdCode" value="请输入非本机识别码！"/>
+
+    <Item key="formControlledRemotely" value="请求对方远程控制本机"/>
+    <Item key="formControlledRemotely.localId" value="本机识别码"/>
+    <Item key="formControlledRemotely.localVerificationCode" value="本机验证码"/>
+    <Item key="formControlledRemotely.disconnectRemoteControl" value="断开远程连接"/>
+    <Item key="formControlledRemotely.disconnectingRemoteControl" value="正在断开..."/>
+    <Item key="formControlledRemotely.allowToBeControlled" value="允许被远程控制"/>
+    
+    <Item key="formRCSettings" value="设置"/>
+    <Item key="formRCSettings.serverIPAddress" value="服务器IP地址"/>
+    <Item key="formRCSettings.serverPort" value="端口"/>
+    <Item key="formRCSettings.enterCorrentIP" value="请输入正确的IP地址！"/>
+    <Item key="formRCSettings.enterCorrentPort" value="请输入正确的端口号！"/>
+    <Item key="formRCSettings.restoreToDefault" value="恢复默认"/>
+    <Item key="formRCSettings.close" value="关闭"/>
+
+    <Item key="panelNetworkConnectionStatus.notConnectedToTheServer" value="未连接到服务器"/>    
+    <Item key="panelNetworkConnectionStatus.connectingToTheServer" value="正在连接服务器..."/>
+    <Item key="panelNetworkConnectionStatus.successfullyConnectedToTheServer" value="连接服务器成功"/>
+    <Item key="panelNetworkConnectionStatus.failedToConnectToTheServer" value="连接服务器 {0} 失败！"/>
+    <Item key="panelNetworkConnectionStatus.disconnectFromTheServer" value="断开与服务器连接"/>
+    <Item key="panelNetworkConnectionStatus.connectionToTheServerIsInterrupted" value="与服务器连接中断！"/>
+    <Item key="panelNetworkConnectionStatus.reconnectToTheServer" value="重连服务器"/>
+
+    <Item key="remoteControl.connectResponse.unknown" value="未知原因！"/>
+    <Item key="remoteControl.connectResponse.targetNotOnline" value="远程主机不在线！"/>
+    <Item key="remoteControl.connectResponse.verificationCodeError" value="验证码错误！"/>
+    <Item key="remoteControl.connectResponse.notAllowedToBeControlled" value="对方不允许被远程控制！"/>
+    <Item key="remoteControl.connectResponse.remoteClientBusy" value="远程主机忙碌中！"/>
+
+    <Item key="remoteControl.remoteClientDisconnect" value="远程客户端断开连接！"/>
+		
+		<Item key="formEasyMode.importFromFile" value="从本地文件导入数据"/>
+		<Item key="formEasyMode.skip" value="跳过"/>
+		<Item key="formEasyMode.importData" value="生成数据"/>
+		<Item key="formEasyMode.back" value="返回"/>
+		<Item key="formEasyMode.save" value="保存"/>
+		<Item key="formEasyMode.fileDataError" value="文件数据错误！"/>
+		
+		<Item key="formViewImportAudioSystem" value="导入数据"/>
+		<Item key="formViewImportAudioSystem.dataAdaptedToAudioSystem" value="数据将适配以下音响系统"/>
+		<Item key="formViewImportAudioSystem.audioSystem" value="音响系统"/>
+		<Item key="formViewImportAudioSystem.modes" value="模式-"/>
+		<Item key="formViewImportAudioSystem.askForImportMode" value="此组数据包含以下 {0} 个模式:{1}。点击 &quot;{2}&quot; 会将数据分别覆盖到设备:{3}， 是否继续？"/>
+		
+		<Item key="easyModeControlPanel.systemStatus" value="系统状态"/>
+		<Item key="easyModeControlPanel.currentVolume" value="当前音量"/>
+		<Item key="easyModeControlPanel.startVolume" value="起始音量"/>
+		<Item key="easyModeControlPanel.limitVolume" value="最大音量"/>
+		<Item key="easyModeControlPanel.mute" value="静音"/>
+		<Item key="easyModeControlPanel.preset" value="预设模式"/>
+		<Item key="easyModeControlPanel.other" value="其他模式"/>
+		<Item key="easyModeControlPanel.modex" value="模式{0}"/>
+    <Item key="easyModeControlPanel.empty" value="（空）"/>
+    
+    <Item key="licenseType.unauthorized" value="未授权"/>
+    <Item key="licenseType.temporary" value="临时许可"/>
+    <Item key="licenseType.limited" value="有限许可"/>
+    <Item key="licenseType.unlimited" value="无限制许可"/>
+
+    <Item key="firmwareUpdate.yes" value="是"/>
+    <Item key="firmwareUpdate.no" value="否"/>
+    <Item key="firmwareUpdate.dataIsInvalid" value="数据无效"/>
+    <Item key="firmwareUpdate.firmwareType" value="固件类型：{0}"/>
+    <Item key="firmwareUpdate.whetherToUpdate" value="是否更新：{0}"/>
+    <Item key="firmwareUpdate.dataLength" value="数据长度：{0}"/>
+    <Item key="firmwareUpdate.updateTime" value="更新时间：{0}"/>
+    <Item key="firmwareUpdate.dataHash" value="数据Hash：{0}"/>
+    <Item key="firmwareUpdate.whetherToUpdateFlashAllData" value="是否更新 Flash 全部数据？{0}"/>
+    <Item key="firmwareUpdate.flashAllData" value="Flash 全部数据, 地址：{0}, 长度：{1}"/>
+    <Item key="firmwareUpdate.whetherToUpdateCustomDeviceInfo" value="是否更新自定义设备信息数据？{0}"/>
+    <Item key="firmwareUpdate.customDeviceInfo" value="自定义设备信息数据[{0}]，地址：{1}，长度：{2}"/>
+    <Item key="firmwareUpdate.whetherToUpdatePresetData" value="是否更新预设数据？{0}"/>
+    <Item key="firmwareUpdate.presetData" value="预设数据，地址：{0}，长度：{1}"/>
+    <Item key="firmwareUpdate.updatedSuccessfully" value="更新成功"/>
+    <Item key="firmwareUpdate.failedToUpdate" value="更新失败！"/>
+  
+    <Item key="usageLimitLock" value="使用限制锁"/>
+    <Item key="usageLimitLock.management" value="使用限制锁管理"/>
+    <Item key="usageLimitLock.management.notSupport" value="限制使用次数锁管理，当前设备不支持此功能！"/>
+    <Item key="usageLimitLock.deviceId" value="设备ID"/>
+    <Item key="usageLimitLock.deviceName" value="设备名称"/>
+    <Item key="usageLimitLock.randKey" value="随机密钥"/>
+    <Item key="usageLimitLock.passwordManagement" value="密码管理"/>
+    <Item key="usageLimitLock.lockTaskManagement" value="锁任务管理"/>
+    <Item key="usageLimitLock.forgotPassword" value="忘记密码"/>
+    <Item key="usageLimitLock.taskFilePath" value="任务文件"/>
+    <Item key="usageLimitLock.setting" value="设置"/>
+    <Item key="usageLimitLock.copy" value="复制"/>
+    <Item key="usageLimitLock.clear" value="清除"/>
+    <Item key="usageLimitLock.import" value="导入"/>
+    <Item key="usageLimitLock.export" value="导出"/>
+    <Item key="usageLimitLock.currentState" value="当前状态"/>
+    <Item key="usageLimitLock.remainderUsage" value="剩余使用次数"/>
+    <Item key="usageLimitLock.currentPassword" value="当前密码"/>
+    <Item key="usageLimitLock.ok" value="确定"/>
+    <Item key="usageLimitLock.newPassword" value="新密码"/>
+    <Item key="usageLimitLock.confirmNewPassword" value="确认新密码"/>
+    <Item key="usageLimitLock.useCurrentPassword" value="使用当前密码"/>
+    <Item key="usageLimitLock.state" value="状态"/>
+    <Item key="usageLimitLock.usageCount" value="使用次数"/>
+    <Item key="usageLimitLock.newPasswordLengthLessThan6" value="新密码长度不足6位！"/>
+    <Item key="usageLimitLock.confirmNewPasswordLengthLessThan6" value="确认新密码长度不足6位数！"/>
+    <Item key="usageLimitLock.passwordEnteredInconsistent" value="密码输入不一致，请重新输入！"/>
+    <Item key="usageLimitLock.usageCountEnteredIncorrectly" value="使用次数输入有误，请重新输入！"/>
+    <Item key="usageLimitLock.usageCountEnteredExceedsMaximum" value="输入的使用次数 {0} 超过上限 {1}，请重新输入！"/>
+    <Item key="usageLimitLock.PasswordsMustBeNumeric" value="密码必须为数字！"/>
+    <Item key="usageLimitLock.random" value="随机"/>
+    <Item key="usageLimitLock.lockXPassword" value="锁 {0} 密码"/>
+    <Item key="usageLimitLock.lockX" value="锁 {0}"/>
+    <Item key="usageLimitLock.oldPassword" value="旧密码"/>
+    <Item key="usageLimitLock.isUpdate" value="是否更新"/>
+    <Item key="usageLimitLock.isEnable" value="是否开启"/>
+    <Item key="usageLimitLock.lockXIsUpdated" value="#{0} 锁 已更新：{1}"/>
+    <Item key="usageLimitLock.lockToString" value="{0}，使用次数：{1}，密码：{2}"/>
+    <Item key="usageLimitLock.taskFileXNotExist" value="锁任务文件 {0} 不存在！"/>
+    <Item key="usageLimitLock.noLockWillToBeUpdated" value="没有锁会被更新！"/>
+    <Item key="usageLimitLock.lockXPasswordNotMatch" value="# {0} 锁 原密码 不匹配"/>
+    <Item key="usageLimitLock.theFollowingLocksWillToBeUpdated" value="将会更新以下锁："/>
+    <Item key="usageLimitLock.lockTaskToString" value="#{0} 锁：旧密码：{1}，{2}，使用次数：{3}，新密码：{4}"/>
+    <Item key="usageLimitLock.enable" value="开启"/>
+    <Item key="usageLimitLock.disable" value="关闭"/>
+
+    <Item key="FormUnlockOutput" value="解锁参数"/>
+    <Item key="FormUnlockOutput.password" value="密码"/>
+    <Item key="FormUnlockOutput.unlock" value="解锁"/>
+    <Item key="FormUnlockOutput.passwordIncorrect" value="密码错误!"/>
+    
+	</Content>
+</Localization>

@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+package AEC.RemoteControl.Message;
+option java_package = "com.maudio.aec.rcs.message";
+option java_outer_classname = "LcConnectToRc";
+
+message LcConnectToRcRequest{
+  required uint32 source_client_id = 1;   //源客户端的id
+  required uint32 target_client_id = 2;   //远程客户端的id
+  required uint32 verification_code = 3;  //控制远程客户端的验证码
+}
+
+message LcConnectToRcToLcResponse{
+  enum StatusCode{
+    Unknown = 0;                          //未知
+    Accept = 1;                           //接受
+    TargetNotOnline = 2;                  //远程客户端不在线
+    NotAllowedToBeControlled = 3;         //不被允许被远程控制
+    RemoteClientBusy = 4;                 //远程客户端正在连接中
+    VerificationCodeError = 5;            //验证码错误
+  }
+
+  required StatusCode status = 1;         //状态码
+  required uint32 source_client_id = 2;   //源客户端的id
+  optional string target_ip = 3;          //远程客户端的IP地址
+}
+
+message LcConnectToRcToRcResponse{
+  required uint32 source_client_id = 1;   //远程客户端的id
+  required string source_ip = 2;          //客户端IP
+}

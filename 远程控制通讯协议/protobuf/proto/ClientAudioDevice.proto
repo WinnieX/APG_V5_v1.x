@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package AEC.RemoteControl.Message;
+option java_package = "com.maudio.aec.rcs.message";
+option java_outer_classname = "ClientAudioDevice";
+
+message AudioDevice{
+  repeated string input_devices = 1;  //音频输入设备
+  repeated string output_devices = 2;  //音频输出设备
+}

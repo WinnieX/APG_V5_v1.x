@@ -1,0 +1,865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AEC model="VKx" version="1.0">
+  <module name="music">
+    <param name="workMode">1</param>
+    <param name="workSelect">0</param>
+    <param name="singHPFFreq">23</param>
+    <param name="discoHPFFreq">0</param>
+    <eqGroup name="singEQGroup">
+      <param name="currEQIndex">0</param>
+      <param name="eqIsPass">0</param>
+      <eqList>
+        <eq index="0">
+          <param name="type">0</param>
+          <param name="freq">96</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="1">
+          <param name="type">0</param>
+          <param name="freq">132</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="2">
+          <param name="type">0</param>
+          <param name="freq">168</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="3">
+          <param name="type">0</param>
+          <param name="freq">204</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="4">
+          <param name="type">0</param>
+          <param name="freq">240</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="5">
+          <param name="type">0</param>
+          <param name="freq">276</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="6">
+          <param name="type">0</param>
+          <param name="freq">312</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+      </eqList>
+    </eqGroup>
+    <eqGroup name="discoEQGroup">
+      <param name="currEQIndex">0</param>
+      <param name="eqIsPass">0</param>
+      <eqList>
+        <eq index="0">
+          <param name="type">0</param>
+          <param name="freq">96</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="1">
+          <param name="type">0</param>
+          <param name="freq">132</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="2">
+          <param name="type">0</param>
+          <param name="freq">168</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="3">
+          <param name="type">0</param>
+          <param name="freq">204</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="4">
+          <param name="type">0</param>
+          <param name="freq">240</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="5">
+          <param name="type">0</param>
+          <param name="freq">276</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="6">
+          <param name="type">0</param>
+          <param name="freq">312</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+      </eqList>
+    </eqGroup>
+  </module>
+  <module name="mic">
+    <param name="noiseGate">1</param>
+    <param name="fbe">4</param>
+    <compressor>
+      <param name="threshold">51</param>
+      <param name="attack">899</param>
+      <param name="release">0</param>
+      <param name="ratio">10</param>
+    </compressor>
+    <param name="hPFFreq">31</param>
+    <param name="lPFFreq">158</param>
+    <param name="lpfType">2</param>
+    <eqGroup>
+      <param name="currEQIndex">0</param>
+      <param name="eqIsPass">0</param>
+      <eqList>
+        <eq index="0">
+          <param name="type">0</param>
+          <param name="freq">49</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="1">
+          <param name="type">0</param>
+          <param name="freq">69</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="2">
+          <param name="type">0</param>
+          <param name="freq">89</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="3">
+          <param name="type">0</param>
+          <param name="freq">109</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="4">
+          <param name="type">0</param>
+          <param name="freq">130</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="5">
+          <param name="type">0</param>
+          <param name="freq">151</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="6">
+          <param name="type">0</param>
+          <param name="freq">172</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="7">
+          <param name="type">0</param>
+          <param name="freq">193</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="8">
+          <param name="type">0</param>
+          <param name="freq">215</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="9">
+          <param name="type">0</param>
+          <param name="freq">234</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="10">
+          <param name="type">0</param>
+          <param name="freq">252</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="11">
+          <param name="type">0</param>
+          <param name="freq">273</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="12">
+          <param name="type">0</param>
+          <param name="freq">294</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="13">
+          <param name="type">0</param>
+          <param name="freq">313</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="14">
+          <param name="type">0</param>
+          <param name="freq">335</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+      </eqList>
+    </eqGroup>
+  </module>
+  <module name="echo">
+    <level name="echoLevel">
+      <param name="level">85</param>
+      <param name="phase">1</param>
+    </level>
+    <level name="directLevel">
+      <param name="level">25</param>
+      <param name="phase">1</param>
+    </level>
+    <param name="hPFFreq">61</param>
+    <param name="hpfType">2</param>
+    <param name="lPFFreq">114</param>
+    <param name="lpfType">3</param>
+    <param name="preDelay">20</param>
+    <param name="delayTime">120</param>
+    <param name="repeat">56</param>
+    <param name="rChDelayTime">55</param>
+    <param name="rChPreDelay">25</param>
+    <eqGroup>
+      <param name="currEQIndex">0</param>
+      <param name="eqIsPass">0</param>
+      <eqList>
+        <eq index="0">
+          <param name="type">0</param>
+          <param name="freq">85</param>
+          <param name="gain">125</param>
+          <param name="q">0</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="1">
+          <param name="type">0</param>
+          <param name="freq">121</param>
+          <param name="gain">130</param>
+          <param name="q">0</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="2">
+          <param name="type">0</param>
+          <param name="freq">249</param>
+          <param name="gain">115</param>
+          <param name="q">0</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="3">
+          <param name="type">0</param>
+          <param name="freq">299</param>
+          <param name="gain">110</param>
+          <param name="q">0</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="4">
+          <param name="type">0</param>
+          <param name="freq">335</param>
+          <param name="gain">105</param>
+          <param name="q">0</param>
+          <param name="s">10</param>
+        </eq>
+      </eqList>
+    </eqGroup>
+  </module>
+  <module name="reverb">
+    <level name="reverbLevel">
+      <param name="level">52</param>
+      <param name="phase">1</param>
+    </level>
+    <level name="directLevel">
+      <param name="level">15</param>
+      <param name="phase">1</param>
+    </level>
+    <param name="delayTime">46</param>
+    <param name="preDelay">46</param>
+    <param name="hPFFreq">68</param>
+    <param name="hpfType">2</param>
+    <param name="lPFFreq">139</param>
+    <param name="lpfType">3</param>
+    <param name="bassDamp">2</param>
+    <param name="trebleDamp">6</param>
+  </module>
+  <module name="mainOutput">
+    <outputLevel name="musicLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="micLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="echoLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="reverbLevel">
+      <level name="sing">
+        <param name="level">340</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">0</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <hpf>
+      <param name="type">7</param>
+      <param name="freq">38</param>
+    </hpf>
+    <lpf>
+      <param name="type">7</param>
+      <param name="freq">362</param>
+    </lpf>
+    <limiter>
+      <param name="threshold">51</param>
+      <param name="attack">449</param>
+      <param name="release">14</param>
+      <param name="clipThreshold">2</param>
+      <param name="clipRelease">14</param>
+    </limiter>
+    <outputChannel name="leftChannel">
+      <param name="delay">0</param>
+      <param name="mute">0</param>
+      <param name="phase">1</param>
+    </outputChannel>
+    <outputChannel name="rightChannel">
+      <param name="delay">0</param>
+      <param name="mute">0</param>
+      <param name="phase">1</param>
+    </outputChannel>
+    <eqGroup>
+      <param name="currEQIndex">0</param>
+      <param name="eqIsPass">0</param>
+      <eqList>
+        <eq index="0">
+          <param name="type">0</param>
+          <param name="freq">24</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="1">
+          <param name="type">0</param>
+          <param name="freq">60</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="2">
+          <param name="type">0</param>
+          <param name="freq">96</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="3">
+          <param name="type">0</param>
+          <param name="freq">132</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="4">
+          <param name="type">0</param>
+          <param name="freq">168</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="5">
+          <param name="type">0</param>
+          <param name="freq">204</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="6">
+          <param name="type">0</param>
+          <param name="freq">240</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="7">
+          <param name="type">0</param>
+          <param name="freq">276</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="8">
+          <param name="type">0</param>
+          <param name="freq">312</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+      </eqList>
+    </eqGroup>
+  </module>
+  <module name="aux1Output">
+    <outputLevel name="musicLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="micLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="echoLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="reverbLevel">
+      <level name="sing">
+        <param name="level">0</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">0</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <hpf>
+      <param name="type">0</param>
+      <param name="freq">0</param>
+    </hpf>
+    <lpf>
+      <param name="type">6</param>
+      <param name="freq">362</param>
+    </lpf>
+    <limiter>
+      <param name="threshold">51</param>
+      <param name="attack">449</param>
+      <param name="release">14</param>
+      <param name="clipThreshold">0</param>
+      <param name="clipRelease">14</param>
+    </limiter>
+    <outputChannel name="monoChannel">
+      <param name="delay">0</param>
+      <param name="mute">0</param>
+      <param name="phase">1</param>
+    </outputChannel>
+    <eqGroup>
+      <param name="currEQIndex">0</param>
+      <param name="eqIsPass">0</param>
+      <eqList>
+        <eq index="0">
+          <param name="type">0</param>
+          <param name="freq">24</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="1">
+          <param name="type">0</param>
+          <param name="freq">60</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="2">
+          <param name="type">0</param>
+          <param name="freq">96</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="3">
+          <param name="type">0</param>
+          <param name="freq">132</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="4">
+          <param name="type">0</param>
+          <param name="freq">168</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="5">
+          <param name="type">0</param>
+          <param name="freq">204</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="6">
+          <param name="type">0</param>
+          <param name="freq">240</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="7">
+          <param name="type">0</param>
+          <param name="freq">276</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="8">
+          <param name="type">0</param>
+          <param name="freq">312</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+      </eqList>
+    </eqGroup>
+  </module>
+  <module name="aux2Output">
+    <outputLevel name="musicLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="micLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="echoLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="reverbLevel">
+      <level name="sing">
+        <param name="level">0</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">0</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <hpf>
+      <param name="type">0</param>
+      <param name="freq">0</param>
+    </hpf>
+    <lpf>
+      <param name="type">7</param>
+      <param name="freq">362</param>
+    </lpf>
+    <limiter>
+      <param name="threshold">51</param>
+      <param name="attack">449</param>
+      <param name="release">14</param>
+      <param name="clipThreshold">0</param>
+      <param name="clipRelease">14</param>
+    </limiter>
+    <outputChannel name="monoChannel">
+      <param name="delay">0</param>
+      <param name="mute">0</param>
+      <param name="phase">1</param>
+    </outputChannel>
+    <eqGroup>
+      <param name="currEQIndex">0</param>
+      <param name="eqIsPass">0</param>
+      <eqList>
+        <eq index="0">
+          <param name="type">0</param>
+          <param name="freq">24</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="1">
+          <param name="type">0</param>
+          <param name="freq">60</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="2">
+          <param name="type">0</param>
+          <param name="freq">96</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="3">
+          <param name="type">0</param>
+          <param name="freq">132</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="4">
+          <param name="type">0</param>
+          <param name="freq">168</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="5">
+          <param name="type">0</param>
+          <param name="freq">204</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="6">
+          <param name="type">0</param>
+          <param name="freq">240</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="7">
+          <param name="type">0</param>
+          <param name="freq">276</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="8">
+          <param name="type">0</param>
+          <param name="freq">312</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+      </eqList>
+    </eqGroup>
+  </module>
+  <module name="surOutput">
+    <outputLevel name="musicLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="micLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="echoLevel">
+      <level name="sing">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">400</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <outputLevel name="reverbLevel">
+      <level name="sing">
+        <param name="level">0</param>
+        <param name="phase">1</param>
+      </level>
+      <level name="disco">
+        <param name="level">0</param>
+        <param name="phase">1</param>
+      </level>
+    </outputLevel>
+    <hpf>
+      <param name="type">0</param>
+      <param name="freq">0</param>
+    </hpf>
+    <lpf>
+      <param name="type">7</param>
+      <param name="freq">362</param>
+    </lpf>
+    <limiter>
+      <param name="threshold">51</param>
+      <param name="attack">449</param>
+      <param name="release">14</param>
+      <param name="clipThreshold">0</param>
+      <param name="clipRelease">14</param>
+    </limiter>
+    <outputChannel name="leftChannel">
+      <param name="delay">0</param>
+      <param name="mute">0</param>
+      <param name="phase">1</param>
+    </outputChannel>
+    <outputChannel name="rightChannel">
+      <param name="delay">0</param>
+      <param name="mute">0</param>
+      <param name="phase">1</param>
+    </outputChannel>
+    <eqGroup>
+      <param name="currEQIndex">0</param>
+      <param name="eqIsPass">0</param>
+      <eqList>
+        <eq index="0">
+          <param name="type">0</param>
+          <param name="freq">24</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="1">
+          <param name="type">0</param>
+          <param name="freq">60</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="2">
+          <param name="type">0</param>
+          <param name="freq">96</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="3">
+          <param name="type">0</param>
+          <param name="freq">132</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="4">
+          <param name="type">0</param>
+          <param name="freq">168</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="5">
+          <param name="type">0</param>
+          <param name="freq">204</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="6">
+          <param name="type">0</param>
+          <param name="freq">240</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="7">
+          <param name="type">0</param>
+          <param name="freq">276</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+        <eq index="8">
+          <param name="type">0</param>
+          <param name="freq">312</param>
+          <param name="gain">120</param>
+          <param name="q">16</param>
+          <param name="s">10</param>
+        </eq>
+      </eqList>
+    </eqGroup>
+  </module>
+  <module name="system">
+    <param name="musicStartVolume">20</param>
+    <param name="musicMaxVolume">82</param>
+    <param name="micStartVolume">25</param>
+    <param name="micMaxVolume">82</param>
+    <param name="effectStartVolume">27</param>
+    <param name="effectMaxVolume">70</param>
+    <param name="timbre">0</param>
+    <param name="musicInputPort">0</param>
+  </module>
+</AEC>

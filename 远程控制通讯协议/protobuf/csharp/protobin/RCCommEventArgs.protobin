@@ -1,0 +1,68 @@
+
+¡
+proto/RCCommEventArgs.protoAEC.RemoteControl.Message"@
+RCCommEvent
+
+event_name (	R	eventName
+args (Rargs"9
+RCCommStateChangedArgs
+comm_status (R
+commStatus"†
+RCCommProgressUpdatedArgs
+msg (	Rmsg
+end (Rend-
+progress_increment (RprogressIncrement
+failed (Rfailed"M
+$RCCommLoadEffectorModelCompletedArgs%
+effector_model (ReffectorModel"I
+RCCommCompletedArgs
+process (Rprocess
+success (Rsuccess"È
+#RCCommOutputLimiterStatusLoadedArgsd
+status (2L.AEC.RemoteControl.Message.RCCommOutputLimiterStatusLoadedArgs.LimiterStatusRstatus;
+LimiterStatus
+level (Rlevel
+ratio (Rratio"w
+RCDataParamChangedArgs!
+module_index (RmoduleIndex
+addr (Raddr
+max (Rmax
+value (Rvalue"À
+RCEQChangedArgs!
+module_index (RmoduleIndex
+eq_index (ReqIndex
+eq_type (ReqType
+eq_freq (ReqFreq
+eq_gain (ReqGain
+eq_q (ReqQ
+eq_s (ReqS"G
+RCPasswordChangedArgs
+addr (Raddr
+password (	Rpassword"R
+RCSaveDeviceModeArgs
+
+mode_index (R	modeIndex
+	mode_name (	RmodeName"[
+RCUpdateModuleAllDataArgs!
+module_index (RmoduleIndex
+	data_list (RdataList"P
+RCLoadDataCompletedArgs
+data (Rdata!
+comm_process (RcommProcess"‹
+RCCallDeviceModeCompletedArgs
+data (Rdata!
+comm_process (RcommProcess3
+device_mode_call_index (RdeviceModeCallIndex"-
+RCDeviceModeIndexArgs
+index (Rindex"H
+RCDeviceModeDataArgs
+data (Rdata
+	encrypted (R	encrypted"X
+RCDeviceModeArgs
+name (	Rname
+data (Rdata
+	encrypted (R	encrypted"f
+RCMultiDeviceModesArgsL
+device_mode (2+.AEC.RemoteControl.Message.RCDeviceModeArgsR
+deviceModeB+
+com.maudio.aec.rcs.messageBCommEventArgs

@@ -1,0 +1,1270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\check.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\close_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\close_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="max_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\max_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="max_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\max_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="min_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\min_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="min_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\min_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EQ_gain_slider_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\EQ_gain_slider_background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EQ_gain_slider_thumb_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\EQ_gain_slider_thumb_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EQ_gain_slider_thumb_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\EQ_gain_slider_thumb_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EQ_gain_slider_thumb_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\EQ_gain_slider_thumb_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EQ_gain_slider_thumb_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\EQ_gain_slider_thumb_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HSliderThumbDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\HSliderThumb\HSliderThumbDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HSliderThumbHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\HSliderThumb\HSliderThumbHover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HSliderThumbNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\HSliderThumb\HSliderThumbNormal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HSliderThumbPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\HSliderThumb\HSliderThumbPressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EQ_index_back_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\EQ_index_back_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_EQ_index_back_actived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_EQ_index_back_actived.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighShelfChecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\HighShelfChecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighShelfUnchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\HighShelfUnchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LowShelfChecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\LowShelfChecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LowShelfUnchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\LowShelfUnchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighShelfHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\HighShelfHover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LowShelfHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\LowShelfHover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeakingChecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\PeakingChecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeakingHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\PeakingHover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeakingUnchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\PeakingUnchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\close_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="max_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\max_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="min_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\min_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\menu_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\menu_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\WindowButton\menu_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\down_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\down_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\down_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\down_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down_hover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\down_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down_normal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\down_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down_pressed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\down_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="up_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\up_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="up_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\up_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="up_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\up_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="up_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\up_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="param_label_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\param_label_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="param_label_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\ParamLabel\param_label_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighShelfDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\HighShelfDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LowShelfDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\LowShelfDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeakingDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\EQ\PeakingDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connect_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Connect\connect_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connect_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Connect\connect_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connect_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Connect\connect_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connected_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Connect\connected_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connected_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Connect\connected_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connect_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Connect\connect_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbe_left_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\fbe_left_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbe_left_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\fbe_left_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbe_left_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\fbe_left_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbe_right_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\fbe_right_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbe_right_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\fbe_right_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbe_right_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\fbe_right_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbe_left_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\fbe_left_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbe_right_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\fbe_right_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux1_output_EQ_index_back_actived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux1Output\aux1_output_EQ_index_back_actived.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux2_output_EQ_index_back_actived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux2Output\aux2_output_EQ_index_back_actived.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="effect_EQ_index_back_actived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Effect\effect_EQ_index_back_actived.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_output_EQ_index_back_actived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\main_output_EQ_index_back_actived.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_EQ_index_back_actived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_EQ_index_back_actived.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sur_output_EQ_index_back_actived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\sur_output_EQ_index_back_actived.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="effect_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Effect\effect_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phase_negative_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Phase\phase_negative_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phase_negative_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Phase\phase_negative_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phase_negative_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Phase\phase_negative_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phase_negative_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Phase\phase_negative_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phase_positive_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Phase\phase_positive_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phase_positive_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Phase\phase_positive_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phase_positive_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Phase\phase_positive_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phase_positive_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Phase\phase_positive_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux1_output_mixer_level_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux1Output\aux1_output_mixer_level_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux1_output_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux1Output\aux1_output_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux2_output_mixer_level_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux2Output\aux2_output_mixer_level_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux2_output_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux2Output\aux2_output_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_output_mixer_level_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\main_output_mixer_level_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_output_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\main_output_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sur_output_mixer_level_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\sur_output_mixer_level_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sur_output_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\sur_output_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_mute_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_mute_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_mute_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_mute_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_mute_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_mute_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_mute_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_mute_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\system_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volume_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Volume\volume_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volume_slider_thumb_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Volume\volume_slider_thumb_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volume_slider_thumb_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Volume\volume_slider_thumb_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volume_slider_thumb_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Volume\volume_slider_thumb_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volume_slider_thumb_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Volume\volume_slider_thumb_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volume_label_mute_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Volume\volume_label_mute_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volume_label_normal_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Volume\volume_label_normal_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\RadioButton\rdo_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\RadioButton\rdo_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\RadioButton\rdo_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\RadioButton\rdo_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="call_device_mode_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\call_device_mode_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="call_device_mode_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\call_device_mode_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="call_device_mode_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\call_device_mode_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="call_device_mode_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\call_device_mode_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_device_mode_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\save_device_mode_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_device_mode_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\save_device_mode_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_device_mode_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\save_device_mode_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_device_mode_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\save_device_mode_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="load_data_to_device_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\load_data_to_device_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="load_data_to_device_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\load_data_to_device_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="load_data_to_device_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\load_data_to_device_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="load_data_to_device_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\load_data_to_device_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_data_to_file_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\save_data_to_file_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_data_to_file_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\save_data_to_file_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_data_to_file_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\save_data_to_file_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_data_to_file_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\save_data_to_file_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_button_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FromMain\main_button_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_button_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FromMain\main_button_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FromMain\main_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_button_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FromMain\main_button_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QRCodeVideoTutorial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FromMain\QRCodeVideoTutorial.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="迷你简准圆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Fonts\迷你简准圆.ttf;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="music_EQ_hs_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_EQ_hs_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_EQ_hs_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_EQ_hs_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_EQ_ls_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_EQ_ls_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_EQ_ls_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_EQ_ls_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_EQ_peak_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_EQ_peak_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_EQ_peak_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_EQ_peak_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_EQ_hs_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_EQ_hs_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_EQ_hs_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_EQ_hs_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_EQ_ls_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_EQ_ls_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_EQ_ls_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_EQ_ls_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_EQ_peak_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_EQ_peak_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_EQ_peak_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_EQ_peak_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="effect_EQ_hs_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Effect\effect_EQ_hs_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="effect_EQ_hs_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Effect\effect_EQ_hs_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="effect_EQ_ls_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Effect\effect_EQ_ls_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="effect_EQ_ls_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Effect\effect_EQ_ls_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="effect_EQ_peak_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Effect\effect_EQ_peak_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="effect_EQ_peak_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Effect\effect_EQ_peak_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_output_EQ_hs_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\main_output_EQ_hs_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_output_EQ_hs_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\main_output_EQ_hs_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_output_EQ_ls_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\main_output_EQ_ls_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_output_EQ_ls_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\main_output_EQ_ls_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_output_EQ_peak_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\main_output_EQ_peak_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_output_EQ_peak_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\main_output_EQ_peak_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux1_output_EQ_hs_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux1Output\aux1_output_EQ_hs_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux1_output_EQ_hs_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux1Output\aux1_output_EQ_hs_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux1_output_EQ_ls_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux1Output\aux1_output_EQ_ls_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux1_output_EQ_ls_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux1Output\aux1_output_EQ_ls_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux1_output_EQ_peak_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux1Output\aux1_output_EQ_peak_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux1_output_EQ_peak_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux1Output\aux1_output_EQ_peak_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux2_output_EQ_hs_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux2Output\aux2_output_EQ_hs_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux2_output_EQ_hs_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux2Output\aux2_output_EQ_hs_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux2_output_EQ_ls_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux2Output\aux2_output_EQ_ls_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux2_output_EQ_ls_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux2Output\aux2_output_EQ_ls_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux2_output_EQ_peak_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux2Output\aux2_output_EQ_peak_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aux2_output_EQ_peak_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\Aux2Output\aux2_output_EQ_peak_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sur_output_EQ_hs_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\sur_output_EQ_hs_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sur_output_EQ_hs_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\sur_output_EQ_hs_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sur_output_EQ_ls_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\sur_output_EQ_ls_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sur_output_EQ_ls_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\sur_output_EQ_ls_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sur_output_EQ_peak_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\sur_output_EQ_peak_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sur_output_EQ_peak_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\sur_output_EQ_peak_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="output_mixer_level_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\output_mixer_level_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_close_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FromMain\btn_close_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_close_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FromMain\btn_close_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_close_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FromMain\btn_close_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_close_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FromMain\btn_close_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mode_locked_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\mode_locked_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mode_locked_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\mode_locked_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mode_unlock_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\mode_unlock_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mode_unlock_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\mode_unlock_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mode_unlock_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\mode_unlock_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mode_unlock_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\mode_unlock_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pink_sweep_16k" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\pink_sweep_16k.dat;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pink_sweep_32k" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\pink_sweep_32k.dat;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pink_sweep_8k" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\pink_sweep_8k.dat;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="group_a_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_a_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_a_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_a_unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_b_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_b_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_b_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_b_unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_c_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_c_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_c_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_c_unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_d_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_d_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_d_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_d_unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_e_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_e_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_e_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\group_e_unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_trace_ng_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_trace_ng_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_trace_ng_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_trace_ng_unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_trace_ok_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_trace_ok_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_trace_ok_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_trace_ok_unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_refresh_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_refresh_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_refresh_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_refresh_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_refresh_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_refresh_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_refresh_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_refresh_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_on_closed_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_on_closed_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_on_closed_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_on_closed_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_on_closed_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_on_closed_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_on_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_on_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_on_opened_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_on_opened_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_on_opened_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_on_opened_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_on_opened_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_on_opened_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_sp_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_sp_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_sp_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_sp_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_sp_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_sp_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_sp_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_sp_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_tf_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_tf_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_tf_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_tf_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_tf_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_tf_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_tf_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_tf_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_bitdepth_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_bitdepth_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_bitdepth_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_bitdepth_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_bitdepth_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_bitdepth_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_bitdepth_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_bitdepth_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_graph_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_graph_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_graph_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_graph_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_graph_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_graph_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_graph_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_graph_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch2_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch2_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch2_off_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch2_off_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch2_off_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch2_off_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch2_off_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch2_off_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch2_on_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch2_on_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch2_on_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch2_on_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch2_on_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch2_on_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_continue_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_continue_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_continue_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_continue_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_continue_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_continue_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_pause_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_pause_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_pause_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_pause_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_pause_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_pause_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_pause_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_pause_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch1_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch1_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch1_off_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch1_off_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch1_off_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch1_off_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch1_off_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch1_off_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch1_on_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch1_on_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch1_on_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch1_on_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rta_switch1_on_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTA\rta_switch1_on_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lang_en_US" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Languages\lang_en-US.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lang_zh_CN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Languages\lang_zh-CN.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox\error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox\question.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox\warning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox\information.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="limiter_level_light_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\Limiter\limiter_level_light_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="limiter_level_light_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\Limiter\limiter_level_light_on.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="limiter_level_tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\Limiter\limiter_level_tick.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="limiter_ratio_light_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\Limiter\limiter_ratio_light_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="limiter_ratio_light_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\Limiter\limiter_ratio_light_on.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="limiter_ratio_tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\Limiter\limiter_ratio_tick.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="output_slider_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\output_slider_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="auto_btn_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\auto_btn_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch_unit_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\switch_unit_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch_unit_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\switch_unit_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch_unit_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\switch_unit_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch_unit_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Monitor\switch_unit_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rc_setting_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoteControl\rc_setting_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deq_slider_back_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\deq_slider_back_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_deq_slider_back_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\MicDEQ\mic_deq_slider_back_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_deq_slider_back_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\MusicDEQ\music_deq_slider_back_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Factory_M5Pro_Meng_Echo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\M5Pro\Factory_M5Pro_Meng-Echo.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_A100_Meng_Echo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\A100\Factory_A100_Meng-Echo.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="music_slider_back_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_slider_back_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_cm_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\RadioButton\rdo_cm_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_cm_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\RadioButton\rdo_cm_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_cm_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\RadioButton\rdo_cm_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_cm_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\RadioButton\rdo_cm_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_amp_sen_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\AmpSen\btn_amp_sen_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_amp_sen_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\AmpSen\btn_amp_sen_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_amp_sen_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\AmpSen\btn_amp_sen_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_amp_sen_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\AmpSen\btn_amp_sen_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_dm_above_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\DM\rdo_dm_above_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_dm_above_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\DM\rdo_dm_above_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_dm_above_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\DM\rdo_dm_above_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_dm_below_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\DM\rdo_dm_below_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_dm_below_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\DM\rdo_dm_below_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_dm_below_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\DM\rdo_dm_below_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_dm_off_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\DM\rdo_dm_off_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_dm_off_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\DM\rdo_dm_off_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_dm_off_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\DEQ\DM\rdo_dm_off-pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_main_output_eqcm_linkage_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\rdo_main_output_eqcm_linkage_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_main_output_eqcm_linkage_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\MainOutput\rdo_main_output_eqcm_linkage_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_sur_output_eqcm_linkage_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\rdo_sur_output_eqcm_linkage_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_sur_output_eqcm_linkage_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\SurOutput\rdo_sur_output_eqcm_linkage_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_output_eqcm_left_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\rdo_output_eqcm_left_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_output_eqcm_left_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\rdo_output_eqcm_left_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_output_eqcm_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\rdo_output_eqcm_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_output_eqcm_right_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\rdo_output_eqcm_right_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rdo_output_eqcm_right_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Output\rdo_output_eqcm_right_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Factory_E300_LG_Echo_Rev_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\E300\Factory_E300_LG-Echo+Rev_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_E300_LG_Echo_Rev_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\E300\Factory_E300_LG-Echo+Rev_2.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_E300_LG_Echo_Rev_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\E300\Factory_E300_LG-Echo+Rev_3.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_E300_Meng_Echo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\E300\Factory_E300_Meng-Echo.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_E300_PT_Echo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\E300\Factory_E300_PT-Echo.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_E300_PT_Echo_Rev_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\E300\Factory_E300_PT-Echo+Rev_4.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_E300_PT_Reverb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\E300\Factory_E300_PT-Reverb.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_V5_LG_Echo_Rev_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\V5\Factory_V5_LG-Echo+Rev_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_V5_LG_Echo_Rev_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\V5\Factory_V5_LG-Echo+Rev_2.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_V5_LG_Echo_Rev_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\V5\Factory_V5_LG-Echo+Rev_3.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_V5_Meng_Echo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\V5\Factory_V5_Meng-Echo.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_V5_PT_Echo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\V5\Factory_V5_PT-Echo.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_V5_PT_Echo_Rev_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\V5\Factory_V5_PT-Echo+Rev_4.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_V5_PT_Reverb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\V5\Factory_V5_PT-Reverb.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VHi_LG_Echo_Rev_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VHi\Factory_VHi_LG-Echo+Rev_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VHi_LG_Echo_Rev_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VHi\Factory_VHi_LG-Echo+Rev_2.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VHi_LG_Echo_Rev_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VHi\Factory_VHi_LG-Echo+Rev_3.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VHi_Meng_Echo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VHi\Factory_VHi_Meng-Echo.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VHi_PT_Echo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VHi\Factory_VHi_PT-Echo.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VHi_PT_Echo_Rev_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VHi\Factory_VHi_PT-Echo+Rev_4.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VHi_PT_Reverb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VHi\Factory_VHi_PT-Reverb.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="reverb_slider_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Reverb\reverb_slider_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\icon_64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_app" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\icon_app.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_form_mask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\icon_form_mask.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Factory_VKx_Echo_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKx\Factory_VKx_Echo_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKx_Echo_Reverb_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKx_Echo_Reverb_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_2.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKx_Echo_Reverb_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_3.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKx_Echo_Reverb_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_4.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKx_Echo_Reverb_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKx\Factory_VKx_Echo+Reverb_5.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKx_Reverb_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKx\Factory_VKx_Reverb_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKx_Reverb_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKx\Factory_VKx_Reverb_2.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="music_rdo_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_rdo_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_rdo_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_rdo_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_rdo_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_rdo_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_rdo_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Music\music_rdo_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Factory_X5_Factory_Preset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\X5\Factory_X5_Factory Preset.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="M_DSP_115200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Extend\WiFiToRS232\M_DSP_115200.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="M_DSP_57600" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Extend\WiFiToRS232\M_DSP_57600.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxS_Echo_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxS_Echo_MT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_MT.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxS_Echo_Reverb_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxS_Echo_Reverb_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_2.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxS_Echo_Reverb_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_3.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxS_Echo_Reverb_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_4.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxS_Echo_Reverb_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxS\Factory_VKxS_Echo_Reverb_5.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxS_Reverb_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxS\Factory_VKxS_Reverb_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxS_Reverb_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxS\Factory_VKxS_Reverb_2.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxDM_Echo_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxDM_Echo_MT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_MT.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxDM_Echo_Reverb_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxDM_Echo_Reverb_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_2.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxDM_Echo_Reverb_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_3.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxDM_Echo_Reverb_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_4.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxDM_Echo_Reverb_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxDM\Factory_VKxDM_Echo_Reverb_5.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxDM_Reverb_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxDM\Factory_VKxDM_Reverb_1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKxDM_Reverb_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKxDM\Factory_VKxDM_Reverb_2.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factory_VKx_Echo_MT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FactoryPresets\VKx\Factory_VKx_Echo_MT.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="reverb_EQ_hs_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Reverb\reverb_EQ_hs_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reverb_EQ_hs_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Reverb\reverb_EQ_hs_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reverb_EQ_index_back_actived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Reverb\reverb_EQ_index_back_actived.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reverb_EQ_ls_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Reverb\reverb_EQ_ls_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reverb_EQ_ls_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Reverb\reverb_EQ_ls_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reverb_EQ_peak_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Reverb\reverb_EQ_peak_checked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reverb_EQ_peak_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Reverb\reverb_EQ_peak_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unvisible_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_unvisible_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unvisible_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_unvisible_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unvisible_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_unvisible_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_visible_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_visible_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_visible_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_visible_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_visible_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_visible_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unvisible_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_unvisible_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_visible_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\Common\Button\btn_visible_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system_usage_limit_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\system_usage_limit_lock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usage_limit_lock_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\System\usage_limit_lock_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_ab_linked_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_ab_linked_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_ab_linked_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_ab_linked_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_ab_linked_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_ab_linked_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_ab_linked_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_ab_linked_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_ab_unlinked_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_ab_unlinked_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_ab_unlinked_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_ab_unlinked_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_ab_unlinked_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_ab_unlinked_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mic_ab_unlinked_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormController\MIC\mic_ab_unlinked_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

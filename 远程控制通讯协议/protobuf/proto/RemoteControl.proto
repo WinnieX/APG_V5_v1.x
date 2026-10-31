@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package AEC.RemoteControl.Message;
+option java_package = "com.maudio.aec.rcs.message";
+option java_outer_classname = "RemoteControl";
+
+message RCRequest{
+  required string cmd_name = 1;   //命令名称
+  optional bytes data = 2;        //附带数据
+}
+
+message RCResponse{
+  required string cmd_name = 1;   //命令名称
+  optional bytes data = 2;        //附带数据
+}

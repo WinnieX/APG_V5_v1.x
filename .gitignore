@@ -1,0 +1,21 @@
+# Miscellaneous
+*.sdf
+
+# AEC related
+/AEC/bin/
+/AEC/obj/
+
+# AECPackage related
+/AECPackage/bin/
+/AECPackage/Debug/
+/AECPackage/Release/
+/AECPackage/Resources/
+
+!/AECPackage/Resources/icon_app.ico
+
+/Debug/
+/Release/
+
+*.opensdf
+*.aps
+*.suo

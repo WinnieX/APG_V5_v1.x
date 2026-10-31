@@ -1,0 +1,7 @@
+
+Æ
+proto/ClientAudioDevice.protoAEC.RemoteControl.Message"Y
+AudioDevice#
+input_devices (	RinputDevices%
+output_devices (	RoutputDevicesB/
+com.maudio.aec.rcs.messageBClientAudioDevice
