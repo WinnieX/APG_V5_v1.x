@@ -33,7 +33,7 @@ namespace AEC.Effectors.VX.Modules
         public MusicModule(EventBus effectorEvent_) :
             base(VXCommProtocol.musicModuleIndex, effectorEvent_)
         {
-            base._themeColor = Color.FromArgb(211, 14, 14);
+            base._themeColor = Color.FromArgb(72, 208, 7);
 
             this.singHPF = XPFilterFactory.CreateImmutableTypeHighPassFilter(HPFMaxFreq, HPFInitFreq, FilterType.Butterworth12dB);// new HighPassFilter(maxHPFFreqIndex);
             this.discoHPF = XPFilterFactory.CreateImmutableTypeHighPassFilter(HPFMaxFreq, HPFInitFreq, FilterType.Butterworth12dB);

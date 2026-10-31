@@ -57,7 +57,7 @@ namespace AEC.Effectors.VX.Modules
         {
             //_themeColor = Color.FromArgb(2, 119, 189);
             //_themeColor = Color.FromArgb(1, 88, 198);
-            _themeColor = Color.FromArgb(0, 186, 255);
+            _themeColor = Color.FromArgb(72, 208, 7);
         }
     }
 
@@ -67,7 +67,7 @@ namespace AEC.Effectors.VX.Modules
             base(OutputChannelType.Aux2Output, VXCommProtocol.aux2ModuleIndex, effectorEvent_, music_)
         {
             //_themeColor = Color.FromArgb(0, 148, 148);
-            _themeColor = Color.FromArgb(0, 188, 188);
+            _themeColor = Color.FromArgb(72, 208, 7);
         }
     }
 }

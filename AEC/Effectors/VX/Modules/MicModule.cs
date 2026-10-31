@@ -30,7 +30,7 @@ namespace AEC.Effectors.VX.Modules
             base(VXCommProtocol.micModuleIndex, effectorEvent_)
         {
             //_themeColor = Color.FromArgb(168, 68, 0);
-            base._themeColor = Color.FromArgb(230, 81, 0);
+            base._themeColor = Color.FromArgb(72, 208, 7);
 
             this.compressor = new Compressor(
                 this.moduleIndex,

@@ -43,65 +43,65 @@
             // 
             this.levelReverb.BackColor = System.Drawing.Color.Transparent;
             this.levelReverb.backgroundDisabled = null;
-            this.levelReverb.backgroundNormal = global::AEC.Properties.Resources.main_output_mixer_level_back;
-            this.levelReverb.backLeftTop = new System.Drawing.Point(5, 0);
+            this.levelReverb.backgroundNormal = global::AEC.Properties.Resources.main_output_slider_back;
+            this.levelReverb.backLeftTop = new System.Drawing.Point(0, 6);
             this.levelReverb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.levelReverb.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.levelReverb.Location = new System.Drawing.Point(113, 97);
+            this.levelReverb.Location = new System.Drawing.Point(113, 104);
             this.levelReverb.Name = "levelReverb";
-            this.levelReverb.Size = new System.Drawing.Size(210, 30);
+            this.levelReverb.Size = new System.Drawing.Size(210, 23);
             this.levelReverb.SliderWidth = 114;
             this.levelReverb.TabIndex = 25;
-            this.levelReverb.thumbCenterY = 19;
-            this.levelReverb.ThumbEndX = 100;
+            this.levelReverb.thumbCenterY = 11;
+            this.levelReverb.ThumbEndX = 92;
             // 
             // levelEcho
             // 
             this.levelEcho.BackColor = System.Drawing.Color.Transparent;
             this.levelEcho.backgroundDisabled = null;
-            this.levelEcho.backgroundNormal = global::AEC.Properties.Resources.main_output_mixer_level_back;
-            this.levelEcho.backLeftTop = new System.Drawing.Point(5, 0);
+            this.levelEcho.backgroundNormal = global::AEC.Properties.Resources.main_output_slider_back;
+            this.levelEcho.backLeftTop = new System.Drawing.Point(0, 6);
             this.levelEcho.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.levelEcho.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.levelEcho.Location = new System.Drawing.Point(113, 65);
+            this.levelEcho.Location = new System.Drawing.Point(113, 72);
             this.levelEcho.Name = "levelEcho";
-            this.levelEcho.Size = new System.Drawing.Size(210, 30);
+            this.levelEcho.Size = new System.Drawing.Size(210, 23);
             this.levelEcho.SliderWidth = 114;
             this.levelEcho.TabIndex = 25;
-            this.levelEcho.thumbCenterY = 19;
-            this.levelEcho.ThumbEndX = 100;
+            this.levelEcho.thumbCenterY = 11;
+            this.levelEcho.ThumbEndX = 92;
             // 
             // levelMic
             // 
             this.levelMic.BackColor = System.Drawing.Color.Transparent;
             this.levelMic.backgroundDisabled = null;
-            this.levelMic.backgroundNormal = global::AEC.Properties.Resources.main_output_mixer_level_back;
-            this.levelMic.backLeftTop = new System.Drawing.Point(5, 0);
+            this.levelMic.backgroundNormal = global::AEC.Properties.Resources.main_output_slider_back;
+            this.levelMic.backLeftTop = new System.Drawing.Point(0, 6);
             this.levelMic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.levelMic.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.levelMic.Location = new System.Drawing.Point(113, 33);
+            this.levelMic.Location = new System.Drawing.Point(113, 40);
             this.levelMic.Name = "levelMic";
-            this.levelMic.Size = new System.Drawing.Size(210, 30);
+            this.levelMic.Size = new System.Drawing.Size(210, 23);
             this.levelMic.SliderWidth = 114;
             this.levelMic.TabIndex = 25;
-            this.levelMic.thumbCenterY = 19;
-            this.levelMic.ThumbEndX = 100;
+            this.levelMic.thumbCenterY = 11;
+            this.levelMic.ThumbEndX = 92;
             // 
             // levelMusic
             // 
             this.levelMusic.BackColor = System.Drawing.Color.Transparent;
             this.levelMusic.backgroundDisabled = null;
-            this.levelMusic.backgroundNormal = global::AEC.Properties.Resources.main_output_mixer_level_back;
-            this.levelMusic.backLeftTop = new System.Drawing.Point(5, 0);
+            this.levelMusic.backgroundNormal = global::AEC.Properties.Resources.main_output_slider_back;
+            this.levelMusic.backLeftTop = new System.Drawing.Point(0, 6);
             this.levelMusic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.levelMusic.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.levelMusic.Location = new System.Drawing.Point(113, 1);
+            this.levelMusic.Location = new System.Drawing.Point(113, 12);
             this.levelMusic.Name = "levelMusic";
-            this.levelMusic.Size = new System.Drawing.Size(210, 30);
+            this.levelMusic.Size = new System.Drawing.Size(210, 23);
             this.levelMusic.SliderWidth = 114;
             this.levelMusic.TabIndex = 25;
-            this.levelMusic.thumbCenterY = 19;
-            this.levelMusic.ThumbEndX = 100;
+            this.levelMusic.thumbCenterY = 11;
+            this.levelMusic.ThumbEndX = 92;
             // 
             // lblReverbLevel
             // 

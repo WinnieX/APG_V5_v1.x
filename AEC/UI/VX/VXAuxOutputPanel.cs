@@ -175,8 +175,8 @@ namespace AEC.UI.VX
         public VXAux1OutputPanel()
             : base()
         {
-            this.mixerSliderBack = global::AEC.Properties.Resources.aux1_output_mixer_level_back;
-            this.sliderNormalBack = global::AEC.Properties.Resources.aux1_output_slider_back;
+            this.mixerSliderBack = global::AEC.Properties.Resources.main_output_slider_back;
+            this.sliderNormalBack = global::AEC.Properties.Resources.main_output_slider_back;
         }
 
         public override void BindingController(MController mController_, EventBus eventBus_)
@@ -194,8 +194,8 @@ namespace AEC.UI.VX
         public VXAux2OutputPanel()
             : base()
         {
-            this.mixerSliderBack = global::AEC.Properties.Resources.aux2_output_mixer_level_back;
-            this.sliderNormalBack = global::AEC.Properties.Resources.aux2_output_slider_back;
+            this.mixerSliderBack = global::AEC.Properties.Resources.main_output_slider_back;
+            this.sliderNormalBack = global::AEC.Properties.Resources.main_output_slider_back;
         }
 
         public override void BindingController(MController mController_, EventBus eventBus_)

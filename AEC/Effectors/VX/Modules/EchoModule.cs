@@ -46,7 +46,7 @@ namespace AEC.Effectors.VX.Modules
             base(VXCommProtocol.echoModuleIndex, effectorEvent_)
         {
             //_themeColor = Color.FromArgb(202, 143, 36);
-            _themeColor = Color.FromArgb(255, 171, 0);
+            base._themeColor = Color.FromArgb(72, 208, 7);
 
             this.echoLevel = new Level(
                 this.moduleIndex,
