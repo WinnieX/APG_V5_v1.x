@@ -56,7 +56,7 @@
             this.paramLabel.BackColor = System.Drawing.Color.Transparent;
             this.paramLabel.disabledBack = global::AEC.Properties.Resources.param_label_disabled;
             this.paramLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.paramLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.paramLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.paramLabel.initV = ((short)(0));
             this.paramLabel.isShowUpdownButton = true;
             this.paramLabel.Location = new System.Drawing.Point(208, 0);

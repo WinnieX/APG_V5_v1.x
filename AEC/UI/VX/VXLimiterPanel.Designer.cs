@@ -129,7 +129,7 @@
             // 
             this.lblClipThreshold.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblClipThreshold.BackColor = System.Drawing.Color.Transparent;
-            this.lblClipThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblClipThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblClipThreshold.Location = new System.Drawing.Point(32, 94);
             this.lblClipThreshold.Name = "lblClipThreshold";
             this.lblClipThreshold.Size = new System.Drawing.Size(90, 23);
@@ -140,7 +140,7 @@
             // 
             this.lblRelease.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblRelease.BackColor = System.Drawing.Color.Transparent;
-            this.lblRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblRelease.Location = new System.Drawing.Point(32, 66);
             this.lblRelease.Name = "lblRelease";
             this.lblRelease.Size = new System.Drawing.Size(90, 23);
@@ -151,7 +151,7 @@
             // 
             this.lblAttack.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblAttack.BackColor = System.Drawing.Color.Transparent;
-            this.lblAttack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblAttack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblAttack.Location = new System.Drawing.Point(32, 38);
             this.lblAttack.Name = "lblAttack";
             this.lblAttack.Size = new System.Drawing.Size(90, 23);
@@ -162,7 +162,7 @@
             // 
             this.lblThreshold.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblThreshold.BackColor = System.Drawing.Color.Transparent;
-            this.lblThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblThreshold.Location = new System.Drawing.Point(32, 10);
             this.lblThreshold.Name = "lblThreshold";
             this.lblThreshold.Size = new System.Drawing.Size(90, 23);
@@ -173,7 +173,7 @@
             // 
             this.lblClipRelease.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblClipRelease.BackColor = System.Drawing.Color.Transparent;
-            this.lblClipRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblClipRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblClipRelease.Location = new System.Drawing.Point(32, 122);
             this.lblClipRelease.Name = "lblClipRelease";
             this.lblClipRelease.Size = new System.Drawing.Size(90, 23);
@@ -219,7 +219,7 @@
             // 
             // VXLimiterPanel
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.Controls.Add(this.btnSwitchUnit);
             this.Controls.Add(this.sliderClipRelease);
             this.Controls.Add(this.sliderClipThreshold);
@@ -231,9 +231,11 @@
             this.Controls.Add(this.lblRelease);
             this.Controls.Add(this.lblAttack);
             this.Controls.Add(this.lblThreshold);
+            this.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "VXLimiterPanel";
+            this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.Size = new System.Drawing.Size(331, 154);
             this.ResumeLayout(false);
 

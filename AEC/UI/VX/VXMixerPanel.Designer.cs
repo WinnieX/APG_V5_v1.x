@@ -107,7 +107,7 @@
             // 
             this.lblReverbLevel.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblReverbLevel.BackColor = System.Drawing.Color.Transparent;
-            this.lblReverbLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblReverbLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblReverbLevel.Location = new System.Drawing.Point(21, 104);
             this.lblReverbLevel.Margin = new System.Windows.Forms.Padding(0);
             this.lblReverbLevel.Name = "lblReverbLevel";
@@ -119,7 +119,7 @@
             // 
             this.lblEchoLevel.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblEchoLevel.BackColor = System.Drawing.Color.Transparent;
-            this.lblEchoLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblEchoLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblEchoLevel.Location = new System.Drawing.Point(21, 72);
             this.lblEchoLevel.Margin = new System.Windows.Forms.Padding(0);
             this.lblEchoLevel.Name = "lblEchoLevel";
@@ -131,7 +131,7 @@
             // 
             this.lblMicLevel.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblMicLevel.BackColor = System.Drawing.Color.Transparent;
-            this.lblMicLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblMicLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblMicLevel.Location = new System.Drawing.Point(21, 40);
             this.lblMicLevel.Margin = new System.Windows.Forms.Padding(0);
             this.lblMicLevel.Name = "lblMicLevel";
@@ -143,7 +143,7 @@
             // 
             this.lblMusicLevel.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblMusicLevel.BackColor = System.Drawing.Color.Transparent;
-            this.lblMusicLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblMusicLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblMusicLevel.Location = new System.Drawing.Point(21, 12);
             this.lblMusicLevel.Margin = new System.Windows.Forms.Padding(0);
             this.lblMusicLevel.Name = "lblMusicLevel";
@@ -179,9 +179,11 @@
             this.Controls.Add(this.lblEchoLevel);
             this.Controls.Add(this.lblMicLevel);
             this.Controls.Add(this.lblMusicLevel);
+            this.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "VXMixerPanel";
+            this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.Size = new System.Drawing.Size(331, 136);
             this.ResumeLayout(false);
 

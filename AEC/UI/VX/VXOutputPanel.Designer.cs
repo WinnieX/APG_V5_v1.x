@@ -61,7 +61,7 @@
             // 
             this.lblLeftDelay.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblLeftDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblLeftDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblLeftDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblLeftDelay.Location = new System.Drawing.Point(0, 0);
             this.lblLeftDelay.Name = "lblLeftDelay";
             this.lblLeftDelay.Size = new System.Drawing.Size(84, 23);
@@ -72,7 +72,7 @@
             // 
             this.lblRightDelay.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblRightDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblRightDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblRightDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblRightDelay.Location = new System.Drawing.Point(0, 29);
             this.lblRightDelay.Name = "lblRightDelay";
             this.lblRightDelay.Size = new System.Drawing.Size(84, 23);
@@ -105,7 +105,7 @@
             this.chkLeftMute.backHover = global::AEC.Properties.Resources.btn_mute_hover;
             this.chkLeftMute.backNormal = global::AEC.Properties.Resources.btn_mute_normal;
             this.chkLeftMute.backPressed = global::AEC.Properties.Resources.btn_mute_pressed;
-            this.chkLeftMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.chkLeftMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.chkLeftMute.isAutoCheck = true;
             this.chkLeftMute.isChecked = false;
             this.chkLeftMute.isShowCheckedBackWhenDsiabled = true;
@@ -125,7 +125,7 @@
             this.chkRightMute.backHover = global::AEC.Properties.Resources.btn_mute_hover;
             this.chkRightMute.backNormal = global::AEC.Properties.Resources.btn_mute_normal;
             this.chkRightMute.backPressed = global::AEC.Properties.Resources.btn_mute_pressed;
-            this.chkRightMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.chkRightMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.chkRightMute.isAutoCheck = true;
             this.chkRightMute.isChecked = false;
             this.chkRightMute.isShowCheckedBackWhenDsiabled = true;
@@ -140,20 +140,20 @@
             // 
             // panelDelayAndMute
             // 
-            this.panelDelayAndMute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panelDelayAndMute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.panelDelayAndMute.Controls.Add(this.sliderLeftDelay);
             this.panelDelayAndMute.Controls.Add(this.chkRightMute);
             this.panelDelayAndMute.Controls.Add(this.lblLeftDelay);
             this.panelDelayAndMute.Controls.Add(this.chkLeftMute);
             this.panelDelayAndMute.Controls.Add(this.lblRightDelay);
             this.panelDelayAndMute.Controls.Add(this.sliderRightDelay);
-            this.panelDelayAndMute.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panelDelayAndMute.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.panelDelayAndMute.ForeColor = System.Drawing.Color.LightGray;
             this.panelDelayAndMute.Location = new System.Drawing.Point(346, 204);
             this.panelDelayAndMute.Name = "panelDelayAndMute";
             this.panelDelayAndMute.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panelDelayAndMute.Radius = 0;
-            this.panelDelayAndMute.RectColor = System.Drawing.Color.Black;
+            this.panelDelayAndMute.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.panelDelayAndMute.ShowRect = false;
             this.panelDelayAndMute.Size = new System.Drawing.Size(274, 96);
             this.panelDelayAndMute.TabIndex = 28;

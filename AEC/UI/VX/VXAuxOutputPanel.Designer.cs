@@ -78,7 +78,7 @@
             // 
             this.lblDelay.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.lblDelay.BackColor = System.Drawing.Color.Transparent;
-            this.lblDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.lblDelay.Location = new System.Drawing.Point(0, 15);
             this.lblDelay.Name = "lblDelay";
             this.lblDelay.Size = new System.Drawing.Size(78, 23);
@@ -87,11 +87,11 @@
             // 
             // panelDelayAndMute
             // 
-            this.panelDelayAndMute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panelDelayAndMute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.panelDelayAndMute.Controls.Add(this.sliderDelay);
             this.panelDelayAndMute.Controls.Add(this.chkMute);
             this.panelDelayAndMute.Controls.Add(this.lblDelay);
-            this.panelDelayAndMute.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panelDelayAndMute.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.panelDelayAndMute.ForeColor = System.Drawing.Color.LightGray;
             this.panelDelayAndMute.Location = new System.Drawing.Point(346, 200);
             this.panelDelayAndMute.Name = "panelDelayAndMute";

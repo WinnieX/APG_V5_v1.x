@@ -15,7 +15,7 @@
     <StartArguments>D:\雷萌工具\V5\</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <StartArguments>D:\雷萌工具\Meng-Audio\</StartArguments>
+    <StartArguments>D:\Developments\Projects\test</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UNENCRYPTED_COMM|x86'">
     <StartArguments>D:\雷萌工具\VHi\</StartArguments>

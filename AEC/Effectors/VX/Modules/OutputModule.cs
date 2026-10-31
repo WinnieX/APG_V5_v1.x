@@ -85,7 +85,7 @@ namespace AEC.Effectors.VX.Modules
             base(OutputChannelType.SurOutput, VXCommProtocol.surOutputModuleIndex, effectorEvent_, new EQGroup(initFreqList), music_: music_)
         {
             //_themeColor = Color.FromArgb(107, 11, 137);
-            _themeColor = Color.FromArgb(189, 33, 237);
+            _themeColor = Color.FromArgb(72, 208, 7);
         }
     }
 }

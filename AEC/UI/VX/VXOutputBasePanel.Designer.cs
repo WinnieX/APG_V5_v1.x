@@ -54,7 +54,7 @@
             this.mixerPanel.BackColor = System.Drawing.Color.Transparent;
             this.mixerPanel.backgroundDisabled = global::AEC.Properties.Resources.output_mixer_level_disabled;
             this.mixerPanel.backgroundNormal = global::AEC.Properties.Resources.main_output_mixer_level_back;
-            this.mixerPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.mixerPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.mixerPanel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.mixerPanel.ForeColor = System.Drawing.Color.LightGray;
             this.mixerPanel.Location = new System.Drawing.Point(5, 8);
@@ -62,7 +62,8 @@
             this.mixerPanel.Name = "mixerPanel";
             this.mixerPanel.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.mixerPanel.Radius = 18;
-            this.mixerPanel.RectColor = System.Drawing.Color.Gray;
+            this.mixerPanel.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
+            this.mixerPanel.ShowRect = true;
             this.mixerPanel.Size = new System.Drawing.Size(331, 136);
             this.mixerPanel.TabIndex = 10;
             this.mixerPanel.title = null;
@@ -71,7 +72,7 @@
             // limiterPanel
             // 
             this.limiterPanel.BackColor = System.Drawing.Color.Transparent;
-            this.limiterPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.limiterPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.limiterPanel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.limiterPanel.ForeColor = System.Drawing.Color.LightGray;
             this.limiterPanel.Location = new System.Drawing.Point(5, 152);
@@ -79,7 +80,8 @@
             this.limiterPanel.Name = "limiterPanel";
             this.limiterPanel.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.limiterPanel.Radius = 18;
-            this.limiterPanel.RectColor = System.Drawing.Color.Gray;
+            this.limiterPanel.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
+            this.limiterPanel.ShowRect = true;
             this.limiterPanel.Size = new System.Drawing.Size(331, 154);
             this.limiterPanel.sliderbackgroundDisabled = global::AEC.Properties.Resources.output_slider_disabled;
             this.limiterPanel.sliderNormalBack = global::AEC.Properties.Resources.main_output_slider_back;
@@ -104,7 +106,7 @@
             // 
             this.workModePanel.BackColor = System.Drawing.Color.Transparent;
             this.workModePanel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.workModePanel.ForeColor = System.Drawing.Color.LightGray;
+            this.workModePanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.workModePanel.Location = new System.Drawing.Point(823, 275);
             this.workModePanel.Margin = new System.Windows.Forms.Padding(0);
             this.workModePanel.Name = "workModePanel";
@@ -135,20 +137,20 @@
             this.gtPanel1.Controls.Add(this.sliderHpfQ);
             this.gtPanel1.Controls.Add(this.labelLpfFreq);
             this.gtPanel1.Controls.Add(this.labelLpfMode);
-            this.gtPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.gtPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(236)))));
             this.gtPanel1.ForeColor = System.Drawing.Color.LightGray;
             this.gtPanel1.Location = new System.Drawing.Point(342, 8);
             this.gtPanel1.Name = "gtPanel1";
             this.gtPanel1.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.gtPanel1.Radius = 18;
-            this.gtPanel1.RectColor = System.Drawing.Color.Black;
+            this.gtPanel1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(190)))));
             this.gtPanel1.ShowRect = true;
             this.gtPanel1.Size = new System.Drawing.Size(284, 298);
             this.gtPanel1.TabIndex = 9;
             this.gtPanel1.title = null;
             this.gtPanel1.titleHeight = 20;
             // 
-            // cmbLpfMode
+            // cmbLpfType
             // 
             this.cmbLpfType.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cmbLpfType.DropDownBtnColor = System.Drawing.Color.White;
@@ -163,7 +165,7 @@
             "User 12dB",
             "User 24dB"});
             this.cmbLpfType.Location = new System.Drawing.Point(132, 161);
-            this.cmbLpfType.Name = "cmbLpfMode";
+            this.cmbLpfType.Name = "cmbLpfType";
             this.cmbLpfType.Size = new System.Drawing.Size(140, 27);
             this.cmbLpfType.TabIndex = 25;
             this.cmbLpfType.TabStop = false;
@@ -187,7 +189,7 @@
             this.sliderHpfFreq.upperLimit = ((short)(100));
             this.sliderHpfFreq.value = ((short)(0));
             // 
-            // cmbHpfMode
+            // cmbHpfType
             // 
             this.cmbHpfType.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cmbHpfType.DropDownBtnColor = System.Drawing.Color.White;
@@ -203,7 +205,7 @@
             "User 24dB"});
             this.cmbHpfType.Location = new System.Drawing.Point(132, 68);
             this.cmbHpfType.Margin = new System.Windows.Forms.Padding(0);
-            this.cmbHpfType.Name = "cmbHpfMode";
+            this.cmbHpfType.Name = "cmbHpfType";
             this.cmbHpfType.Size = new System.Drawing.Size(140, 27);
             this.cmbHpfType.TabIndex = 25;
             this.cmbHpfType.TabStop = false;
@@ -212,7 +214,7 @@
             // 
             this.labelHpfFreq.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.labelHpfFreq.BackColor = System.Drawing.Color.Transparent;
-            this.labelHpfFreq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelHpfFreq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.labelHpfFreq.Location = new System.Drawing.Point(34, 8);
             this.labelHpfFreq.Name = "labelHpfFreq";
             this.labelHpfFreq.Size = new System.Drawing.Size(37, 23);
@@ -242,7 +244,7 @@
             // 
             this.labelHpfQ.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.labelHpfQ.BackColor = System.Drawing.Color.Transparent;
-            this.labelHpfQ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelHpfQ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.labelHpfQ.Location = new System.Drawing.Point(16, 39);
             this.labelHpfQ.Name = "labelHpfQ";
             this.labelHpfQ.Size = new System.Drawing.Size(55, 23);
@@ -253,7 +255,7 @@
             // 
             this.labelLpfQ.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.labelLpfQ.BackColor = System.Drawing.Color.Transparent;
-            this.labelLpfQ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelLpfQ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.labelLpfQ.Location = new System.Drawing.Point(16, 131);
             this.labelLpfQ.Name = "labelLpfQ";
             this.labelLpfQ.Size = new System.Drawing.Size(55, 23);
@@ -264,7 +266,7 @@
             // 
             this.labelHpfMode.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.labelHpfMode.BackColor = System.Drawing.Color.Transparent;
-            this.labelHpfMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelHpfMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.labelHpfMode.Location = new System.Drawing.Point(16, 69);
             this.labelHpfMode.Name = "labelHpfMode";
             this.labelHpfMode.Size = new System.Drawing.Size(113, 23);
@@ -313,7 +315,7 @@
             // 
             this.labelLpfFreq.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.labelLpfFreq.BackColor = System.Drawing.Color.Transparent;
-            this.labelLpfFreq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelLpfFreq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.labelLpfFreq.Location = new System.Drawing.Point(34, 101);
             this.labelLpfFreq.Name = "labelLpfFreq";
             this.labelLpfFreq.Size = new System.Drawing.Size(37, 23);
@@ -324,7 +326,7 @@
             // 
             this.labelLpfMode.alignment = AEC.UI.gtLabel.AlignMent.Right;
             this.labelLpfMode.BackColor = System.Drawing.Color.Transparent;
-            this.labelLpfMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelLpfMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.labelLpfMode.Location = new System.Drawing.Point(16, 164);
             this.labelLpfMode.Name = "labelLpfMode";
             this.labelLpfMode.Size = new System.Drawing.Size(110, 23);
