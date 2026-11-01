@@ -12,7 +12,7 @@ namespace AEC
         public const bool isEncryptCommunication = false;
         public const bool isOutputDebugLog = true;
         public const bool isLoadCustomDeviceInfo = true;
-        public const bool isLogOutputToConsole = false;
+        public const bool isLogOutputToConsole = true;
         public const bool isSupportSwitchDeviceModel = true;
         public const bool isSupportOnlineHelp = true;
         public const bool isSupportBluetoothRename = true;
@@ -41,7 +41,7 @@ namespace AEC
             //DeviceModel.VK8,
             //DeviceModel.VK5D,
 
-            DeviceModel.VK3D,
+//            DeviceModel.VK3D,
             //DeviceModel.VK3BT,
 
             //DeviceModel.VK8S,

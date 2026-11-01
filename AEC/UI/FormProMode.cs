@@ -275,7 +275,7 @@ namespace AEC.UI
                 {Keys.F1, ShowHelpHandler},
                 {Keys.F12, ShowFormCommSettings},
                 {Keys.F11, ShowRTAOptionHandler},
-                {Keys.F10, SwitchLockStatusHandler},
+                //{Keys.F10, SwitchLockStatusHandler},
                 {Keys.Q, AdjuestVolume},
                 {Keys.W, AdjuestVolume},
                 {Keys.E, AdjuestVolume},
@@ -1382,8 +1382,8 @@ namespace AEC.UI
             //this.UpdateEffectorModel();
             //syncContext.Post(AsyncUpdate, null);
 
-            isLockParams = true;
-            LockParams(isLockParams);
+            //isLockParams = false;
+            //LockParams(isLockParams);
 #if COMM_TEST
             this.InitCommTestUI();
 #endif
@@ -3160,10 +3160,10 @@ namespace AEC.UI
             }
 
             sb.AppendFormat("{0} ", ProductsConfig.ProductName);
-            if(!isLockParams)
-            {
-                sb.AppendFormat("- Unlocked");
-            }
+            //if(!isLockParams)
+            //{
+            //    sb.AppendFormat("- Unlocked");
+            //}
             
             if(this.mController.isConnected)
             {

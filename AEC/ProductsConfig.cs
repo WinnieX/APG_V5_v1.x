@@ -110,7 +110,7 @@ namespace AEC
 
             Model_VHi = 0x101,
             Model_V0 = 0x102,
-            Model_V5 = 0x103,
+            Model_V5 = 0x003,
             Model_M5Pro = 0x110,
             Model_A100 = 0x111,
             Model_E300 = 0x120,

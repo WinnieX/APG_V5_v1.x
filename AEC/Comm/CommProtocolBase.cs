@@ -22,45 +22,45 @@ namespace AEC.Comm
             HeaderIndex             = 0x00,
             IdentityIndex           = 0x01,
             LengthLowIndex          = 0x02,
-            LengthHighIndex         = 0x03,
-            CmdTypeIndex            = 0x04,
-            ModuleIndex             = 0x05,
-            DataAddressIndex        = 0x06,
-            ValidDataStartIndex     = 0x07,
+            //LengthHighIndex         = 0x03,
+            CmdTypeIndex            = 0x03,
+            ModuleIndex             = 0x04,
+            DataAddressIndex        = 0x05,
+            ValidDataStartIndex     = 0x06,
         };
 
         protected const byte Header = 0xFC;
         protected const byte ReadCmd = 0xA0;                 //读取命令
         protected const byte WriteCmd = 0xA7;                //写入命令
         //protected const byte DataLength = 0x09;              //数据长度
-        protected const byte ReadModuleCmdLength = 0x09 + 1;        //读取模块数据长度
-        protected const byte ReadSystemParamCmdLength = 0x07 + 1;
-        protected const byte ReadSystemModeNameParamCmdLength = 0x09 + 1;
-        protected const byte ReadSystemUsageLimitLockCmdLength = 0x09 + 1;
-        protected const byte ReadActivationCodeCmdLength = 0x09 + 1;
-        protected const byte ConnectCmdLength = 0x09 + 1; 
-        protected const byte ReadCmdMinLength = 0x07 + 1;         //读取命令最短长度
-        protected const byte WriteCmdMinLength = 0x09 + 1;        //写入命令最短长度
-        protected const byte ReadResponseMinLength = 0x09 + 1;    //读取数据响应最短长度
-        protected const byte DefReadDataCmdLength = 0x09 + 1;              //数据长度
-        protected const byte DefWriteDataCmdLength = 0x09 + 1;              //数据长度
-        protected const byte BeforCmdLength = 0x04;           //控制命令之前的4个字节:起始标志\身份标识\数据包长度
-        protected const byte ReadSysCmdLength = 0x07 + 1;
-        protected const byte WriteSysCmdLength = 0x09 + 1;
-        protected const byte WriteSysKeyCmdLength = 0x0B + 1;
-        protected const byte WriteSystemWorkModeCmdLength = 0x0D + 1;
+        protected const byte ReadModuleCmdLength = 0x09;        //读取模块数据长度
+        protected const byte ReadSystemParamCmdLength = 0x07;
+        protected const byte ReadSystemModeNameParamCmdLength = 0x09;
+        protected const byte ReadSystemUsageLimitLockCmdLength = 0x09;
+        protected const byte ReadActivationCodeCmdLength = 0x09;
+        protected const byte ConnectCmdLength = 0x09; 
+        protected const byte ReadCmdMinLength = 0x07;         //读取命令最短长度
+        protected const byte WriteCmdMinLength = 0x09;        //写入命令最短长度
+        protected const byte ReadResponseMinLength = 0x09;    //读取数据响应最短长度
+        protected const byte DefReadDataCmdLength = 0x09;              //数据长度
+        protected const byte DefWriteDataCmdLength = 0x09;              //数据长度
+        protected const byte BeforCmdLength = 0x03;           //控制命令之前的4个字节:起始标志\身份标识\数据包长度
+        protected const byte ReadSysCmdLength = 0x07;
+        protected const byte WriteSysCmdLength = 0x09;
+        protected const byte WriteSysKeyCmdLength = 0x0B;
+        protected const byte WriteSystemWorkModeCmdLength = 0x0D;
         
-        protected const byte SystemFrontLevelDataTotalLength = 0x0C + 1;
-        protected const byte SystemEndLevelDataTotalLength = 0x10 + 1;
+        protected const byte SystemFrontLevelDataTotalLength = 0x0C;
+        protected const byte SystemEndLevelDataTotalLength = 0x10;
         
         protected const byte SystemLevelDataLength = 0x04;
-        protected const byte ModuleValidDataStartIndex = 0x06 + 1;
-        protected const byte ValidDataStartIndex = 0x06 + 1;
-        protected const byte ReadSystemResponseDataIndex = 0x05 + 1;
+        protected const byte ModuleValidDataStartIndex = 0x06;
+        protected const byte ValidDataStartIndex = 0x06;
+        protected const byte ReadSystemResponseDataIndex = 0x05;
         protected const byte ModuleIndexLength = 0x02;
-        protected const byte WriteModuleParamCmdLength = 0x09 + 1;
-        protected const byte WriteEQCmdLength = 0x013 + 1;
-        protected const byte WriteModuleDEQParamCmdLength = 0x0b + 1;
+        protected const byte WriteModuleParamCmdLength = 0x09;
+        protected const byte WriteEQCmdLength = 0x013;
+        protected const byte WriteModuleDEQParamCmdLength = 0x0b;
 
         protected const float ZerodBuLevel = -512;
 
@@ -74,8 +74,8 @@ namespace AEC.Comm
         public const int HeartbeatInterval = HeartbeatTimerInterval + TimerError;
         public const int WriteDeviceModeWaitTime = 2048;
 
-        private const byte DefaultIdentity = 0x4D;
-        public const byte DefaultSystemModuleIndex = 0x00;
+        private const byte DefaultIdentity = 0x31;
+        public const byte DefaultSystemModuleIndex = 0x0A;
 
         private readonly byte identity = DefaultIdentity;
         private readonly byte systemModuleIndex = DefaultSystemModuleIndex;
@@ -1170,7 +1170,6 @@ namespace AEC.Comm
             cmd[(uint)DataFrame.IdentityIndex] = DefaultIdentity;
             ushort length = (ushort)(cmd.Length - BeforCmdLength);
             cmd[(uint)DataFrame.LengthLowIndex] = GetLowByte(length);
-            cmd[(uint)DataFrame.LengthHighIndex] = GetHighByte(length);
             cmd[(uint)DataFrame.CmdTypeIndex] = WriteCmd;
             cmd[(uint)DataFrame.ModuleIndex] = DefaultSystemModuleIndex;
             cmd[(uint)DataFrame.DataAddressIndex] = (byte)addr;
@@ -1204,7 +1203,6 @@ namespace AEC.Comm
             cmd[(uint)DataFrame.IdentityIndex] = DefaultIdentity;
             ushort length = (ushort)(cmd.Length - BeforCmdLength);
             cmd[(uint)DataFrame.LengthLowIndex] = GetLowByte(length);
-            cmd[(uint)DataFrame.LengthHighIndex] = GetHighByte(length);
             cmd[(uint)DataFrame.CmdTypeIndex] = ReadCmd;
             cmd[(uint)DataFrame.ModuleIndex] = DefaultSystemModuleIndex;
             cmd[(uint)DataFrame.DataAddressIndex] = (byte)addr;
@@ -1405,7 +1403,6 @@ namespace AEC.Comm
             data[(uint)DataFrame.IdentityIndex] = identity;
             ushort length = (ushort)(data.Length - BeforCmdLength);
             data[(uint)DataFrame.LengthLowIndex] = GetLowByte(length);
-            data[(uint)DataFrame.LengthHighIndex] = GetHighByte(length);
         }
 
         public static void EncryptCmd(byte[] cmd, CommKeyPair keyPair, int startIndex = ValidDataStartIndex)

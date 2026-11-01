@@ -17,7 +17,7 @@
 //#define M_IAP
 
 #ifndef M_IAP
-#define DEVICE_MODEL APG
+#define DEVICE_MODEL APG-Sound
 #define EXE_FILE_NAME AEC.exe
 #define CONFIG_FILE_NAME AEC.exe.config
 #define TARGET_EXE_FILE_NAME DEVICE_MODEL EXE_FILE_NAME
