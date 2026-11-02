@@ -36,7 +36,8 @@ namespace AEC.Effectors.VX.Modules
 
         public readonly EQGroup _eqGroup = null;
 
-        public readonly MusicModule music;
+        //public readonly MusicModule music;
+        public readonly AutoWorkMode autoWorkMode;
 
         public readonly OutputChannelType channel;
 
@@ -46,7 +47,7 @@ namespace AEC.Effectors.VX.Modules
             set;
         }
 
-        public OutputBaseModule(OutputChannelType outputChannel, byte index, EventBus effectorEvent_, EQGroup eqGroup_, MusicModule music_) :
+        public OutputBaseModule(OutputChannelType outputChannel, byte index, EventBus effectorEvent_, EQGroup eqGroup_, AutoWorkMode autoWorkMode_) :
             base(index:index, effectorEvent_:effectorEvent_)
         {
             this.channel = outputChannel;
@@ -54,18 +55,22 @@ namespace AEC.Effectors.VX.Modules
             this.musicLevel = new OutputLevel(
                 this.moduleIndex,
                 (byte)VXCommProtocol.OutputBaseParamAddr.musicSingLevel,
+                (byte)VXCommProtocol.OutputBaseParamAddr.musicSingLevelPhase,
                 this.OnParamChanged);
             this.micLevel = new OutputLevel(
                 this.moduleIndex,
                 (byte)VXCommProtocol.OutputBaseParamAddr.micSingLevel,
+                (byte)VXCommProtocol.OutputBaseParamAddr.micSingLevelPhase,
                 this.OnParamChanged);
             this.echoLevel = new OutputLevel(
                 this.moduleIndex,
                 (byte)VXCommProtocol.OutputBaseParamAddr.echoSingLevel,
+                (byte)VXCommProtocol.OutputBaseParamAddr.echoSingLevelPhase,
                 this.OnParamChanged);
             this.reverbLevel = new OutputLevel(
                 this.moduleIndex,
                 (byte)VXCommProtocol.OutputBaseParamAddr.reverbSingLevel,
+                (byte)VXCommProtocol.OutputBaseParamAddr.reverbSingLevelPhase,
                 this.OnParamChanged);
 
             this.highPassFilter = XPFilterFactory.CreateClassicalXoverHighPassFilter();
@@ -81,7 +86,7 @@ namespace AEC.Effectors.VX.Modules
 
             this._eqGroup = eqGroup_;
 
-            this.music = music_;
+            this.autoWorkMode = autoWorkMode_;
 
             this.highPassFilter.BindingParams(this.hpfFreqParam, this.hpfTypeParam, this.hpfQParam);
             this.lowPassFilter.BindingParams(this.lpfFreqParam, this.lpfTypeParam, this.lpfQParam);
@@ -176,7 +181,7 @@ namespace AEC.Effectors.VX.Modules
         {
             get
             {
-                return music.workSelect == WorkSelect.Sing;
+                return this.autoWorkMode.workSelect == WorkSelect.Sing;
             }
         }
 
@@ -184,7 +189,7 @@ namespace AEC.Effectors.VX.Modules
         {
             get
             {
-                return music.workMode == WorkMode.Manual;
+                return this.autoWorkMode.workMode == WorkMode.Manual;
             }
         }
 

@@ -115,7 +115,7 @@ namespace AEC.Comm.VXComm
             micDiscoLevelPhase = 0x07,
             echoSingLevel = 0x08,
             echoDiscoLevel = 0x09,
-            echoDingLevelPhase = 0x0a,
+            echoSingLevelPhase = 0x0a,
             echoDiscoLevelPhase = 0x0b,
             reverbSingLevel = 0x0c,
             reverbDiscoLevel = 0x0d,
@@ -366,8 +366,11 @@ namespace AEC.Comm.VXComm
 
             int pointer = 0;
 
-            music.wm.initV = dataList[pointer++];
-            music.ws.initV = dataList[pointer++];
+            music.autoWorkMode.workModeInit = dataList[pointer++];
+            music.autoWorkMode.workSelectInit = dataList[pointer++];
+            //music.wm.initV = dataList[pointer++];
+            //music.ws.initV = dataList[pointer++];
+
             music.singHPF.freqIndex = dataList[pointer++];
             music.discoHPF.freqIndex = dataList[pointer++];
             CommProtocolBase.ParseDataList2EQGroup(dataList, ref pointer, music.singEQGroup);
@@ -586,8 +589,11 @@ namespace AEC.Comm.VXComm
         {
             Debug.Assert(music != null);
             List<short> moduleData = new List<short>();
-            moduleData.Add(music.wm.v);
-            moduleData.Add(music.ws.v);
+            //moduleData.Add(music.wm.v);
+            //moduleData.Add(music.ws.v);
+            moduleData.Add(music.autoWorkMode.wm.v);
+            moduleData.Add(music.autoWorkMode.ws.v);
+
             moduleData.Add(music.singHPF.freqIndex);
             moduleData.Add(music.discoHPF.freqIndex);
             CommProtocolBase.AppendEQGroup2DataBuffer(moduleData, music.singEQGroup);

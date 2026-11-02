@@ -98,7 +98,7 @@ namespace AEC.Misc
         public const int DefaultCommRetries = MaxCommRetries;
 
         //public const ConnectionMethod DefConnectionMethodFlag = ConnectionMethod.USB | ConnectionMethod.RS232 | ConnectionMethod.UDP;
-        public const ConnectionMethod AllConnectionMethodFlag = ConnectionMethod.USB | ConnectionMethod.RS232 | ConnectionMethod.UDP | ConnectionMethod.TCP;
+        public const ConnectionMethod AllConnectionMethodFlag = ConnectionMethod.RS232 | ConnectionMethod.UDP | ConnectionMethod.TCP;
 
         public const int MinTemperature = -30;
         public const int MaxTemperature = 70;
@@ -1266,7 +1266,7 @@ namespace AEC.Misc
         RS232 = 0x00000002,
         UDP = 0x00000004,
         TCP = 0x00000008,
-        Default = USB | RS232 | UDP,
+        Default = RS232 | UDP,
         All = USB | RS232 | UDP | TCP,
     }
 

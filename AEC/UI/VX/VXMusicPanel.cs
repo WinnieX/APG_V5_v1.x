@@ -61,6 +61,7 @@ namespace AEC.UI.VX
             this.eqResetAndByPassPanel.Enabled = this.music.isManual;
 
             //this.workModePanel.Init(this.music, this._eventBus, this.music.themeColor);
+            this.workModePanel.Init(this.music.autoWorkMode, this._eventBus, this.music.themeColor);
 
             this.hpfFreqSlider.Enabled = this.music.isManual;
 
@@ -123,10 +124,6 @@ namespace AEC.UI.VX
             this.eqResetAndByPassPanel.Enabled = this.music.isManual;
             this.eqPanel.UpdateEqCanbeChanged();
             this.hpfFreqSlider.Enabled = this.music.isManual;
-            if (this.music.isManual)
-            {
-                this.music.ws.UpdateParam();
-            }
         }
 
         protected override void WrokSelectChanged()

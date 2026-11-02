@@ -1497,6 +1497,14 @@ namespace AEC.Core
             this.discoLevel = new Level(moduleIndex, address, (byte)(address + 1), dataChanged, this.maxLevel);
         }
 
+        public OutputLevel(byte moduleIndex, byte levelAddress, byte phaseAddress, EventHandler<DataParamChangedArgs> dataChanged, short maxLevel_ = MaxLevel)
+        {
+            this.maxLevel = maxLevel_;
+
+            this.singLevel = new Level(moduleIndex, levelAddress, phaseAddress, dataChanged, this.maxLevel);
+            this.discoLevel = new Level(moduleIndex, levelAddress, phaseAddress, dataChanged, this.maxLevel);
+        }
+
         public void CopyFrom(OutputLevel other)
         {
             //Debug.Assert(this._maxLevel == other._maxLevel);

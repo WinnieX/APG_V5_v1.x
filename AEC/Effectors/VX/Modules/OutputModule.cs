@@ -28,8 +28,8 @@ namespace AEC.Effectors.VX.Modules
             }
         }
 
-        public OutputModule(OutputChannelType outputChannel, byte index, EventBus effectorEvent_, EQGroup eqGroup_, MusicModule music_) :
-            base(outputChannel, index, effectorEvent_, eqGroup_, music_)
+        public OutputModule(OutputChannelType outputChannel, byte index, EventBus effectorEvent_, EQGroup eqGroup_, AutoWorkMode autoWorkMode_) :
+            base(outputChannel, index, effectorEvent_, eqGroup_, autoWorkMode_)
         {
             this.leftChDelay = new ShortParam(
                 this.moduleIndex,
@@ -69,8 +69,8 @@ namespace AEC.Effectors.VX.Modules
     {
         public static readonly double[] initFreqList = new double[] { 80.3, 191.0, 463.0, 1100.0, 2620.0, 6350.0, 15100.0 };
 
-        public MainOutputModule(EventBus effectorEvent_, MusicModule music_) :
-            base(OutputChannelType.MainOutput, VXCommProtocol.mainOutputModuleIndex, effectorEvent_, new EQGroup(initFreqList), music_)
+        public MainOutputModule(EventBus effectorEvent_, AutoWorkMode autoWorkMode_) :
+            base(OutputChannelType.MainOutput, VXCommProtocol.mainOutputModuleIndex, effectorEvent_, new EQGroup(initFreqList), autoWorkMode_)
         {
             //_themeColor = Color.FromArgb(55, 150, 0);
             _themeColor = Color.FromArgb(72, 208, 7);
@@ -81,8 +81,8 @@ namespace AEC.Effectors.VX.Modules
     {
         public static readonly double[] initFreqList = new double[] { 80.3, 297.0, 1100.0, 4080.0, 15100.0 };
 
-        public SurOutputModule(EventBus effectorEvent_, MusicModule music_) :
-            base(OutputChannelType.SurOutput, VXCommProtocol.surOutputModuleIndex, effectorEvent_, new EQGroup(initFreqList), music_: music_)
+        public SurOutputModule(EventBus effectorEvent_, AutoWorkMode autoWorkMode_) :
+            base(OutputChannelType.SurOutput, VXCommProtocol.surOutputModuleIndex, effectorEvent_, new EQGroup(initFreqList), autoWorkMode_)
         {
             //_themeColor = Color.FromArgb(107, 11, 137);
             _themeColor = Color.FromArgb(72, 208, 7);

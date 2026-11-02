@@ -68,7 +68,7 @@
             this.buttonCancel.backHover = global::AEC.Properties.Resources.btn_hover;
             this.buttonCancel.backNormal = global::AEC.Properties.Resources.btn_normal;
             this.buttonCancel.backPressed = global::AEC.Properties.Resources.btn_pressed;
-            this.buttonCancel.ForeColor = System.Drawing.Color.White;
+            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.buttonCancel.isStretch = true;
             this.buttonCancel.Location = new System.Drawing.Point(372, 146);
             this.buttonCancel.Name = "buttonCancel";
@@ -87,7 +87,7 @@
             this.buttonOK.backHover = global::AEC.Properties.Resources.btn_hover;
             this.buttonOK.backNormal = global::AEC.Properties.Resources.btn_normal;
             this.buttonOK.backPressed = global::AEC.Properties.Resources.btn_pressed;
-            this.buttonOK.ForeColor = System.Drawing.Color.White;
+            this.buttonOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.buttonOK.isStretch = true;
             this.buttonOK.Location = new System.Drawing.Point(274, 146);
             this.buttonOK.Name = "buttonOK";

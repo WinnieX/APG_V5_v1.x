@@ -9,10 +9,10 @@ namespace AEC
     {
         public const bool isShowManufacturer = true;
         public const bool isShowMainForm = false;
-        public const bool isEncryptCommunication = false;
+        public const bool isEncryptCommunication = true;
         public const bool isOutputDebugLog = true;
         public const bool isLoadCustomDeviceInfo = true;
-        public const bool isLogOutputToConsole = true;
+        public const bool isLogOutputToConsole = false;
         public const bool isSupportSwitchDeviceModel = true;
         public const bool isSupportOnlineHelp = true;
         public const bool isSupportBluetoothRename = true;

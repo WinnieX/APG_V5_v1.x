@@ -36,6 +36,13 @@ namespace AEC.UI
             this.rdoAuto.MouseClick += rdo_MouseClick;
             this.rdoSing.MouseClick += rdo_MouseClick;
             this.rdoDisco.MouseClick += rdo_MouseClick;
+
+            this.ForeColorChanged += WorkModePanel_ForeColorChanged;
+        }
+
+        void WorkModePanel_ForeColorChanged(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
         }
 
         private void InitFont()

@@ -215,11 +215,11 @@ namespace AEC.Effectors.VX
             switch(name)
             {
                 case workModeNode:
-                    music.wm.initV = value;
+                    music.autoWorkMode.workModeInit = value;
                     break;
 
                 case workSelectNode:
-                    music.ws.initV = value;
+                    music.autoWorkMode.workSelectInit = value;
                     break;
 
                 case singHPFFreqNode:
@@ -236,8 +236,8 @@ namespace AEC.Effectors.VX
         {
             XmlElement ele = CreateModuleNode(xmldoc, musicModule);
 
-            ele.AppendChild(CreateParamNode(xmldoc, workModeNode, music.wm));
-            ele.AppendChild(CreateParamNode(xmldoc, workSelectNode, music.ws));
+            ele.AppendChild(CreateParamNode(xmldoc, workModeNode, music.autoWorkMode.wm.v));
+            ele.AppendChild(CreateParamNode(xmldoc, workSelectNode, music.autoWorkMode.ws.v));
             ele.AppendChild(CreateParamNode(xmldoc, singHPFFreqNode, music.singHPF.freqIndex));
             ele.AppendChild(CreateParamNode(xmldoc, discoHPFFreqNode, music.discoHPF.freqIndex));
             ele.AppendChild(CreateEQGroupElement(xmldoc, music.singEQGroup, singEQGroupAttr));

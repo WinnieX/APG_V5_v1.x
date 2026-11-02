@@ -876,7 +876,16 @@ namespace AEC
 
         public bool SeralizeEffectorModelToFile(EffectorModelBase effectorModel, string path)
         {
-            if (this.currEffectorFamily == MEffectorFamily.X5)
+            if (this.currEffectorFamily == MEffectorFamily.VX)
+            {
+                VXEffectorModel vxModel = effectorModel as VXEffectorModel;
+                if (vxModel != null)
+                {
+                    VXDataStorage.SaveToFile(vxModel, this.mEffectorModel.currModelSeralizeType, path, this.isSuperUserMode);
+                    return true;
+                }
+            }
+            else if (this.currEffectorFamily == MEffectorFamily.X5)
             {
                 X5EffectorModel x5Model = effectorModel as X5EffectorModel;
                 if(x5Model != null)

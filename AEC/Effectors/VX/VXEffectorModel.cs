@@ -85,10 +85,10 @@ namespace AEC.Effectors.VX
             this.dEffect = new DEffectModule(effectorEvent_);
             this.echo = new EchoModule(effectorEvent_);
             this.reverb = new ReverbModule(effectorEvent_);
-            this.mainOutput = new MainOutputModule(effectorEvent_, music);
-            this.aux1Output = new Aux1OutputModule(effectorEvent_, music);
-            this.aux2Output = new Aux2OutputModule(effectorEvent_, music);
-            this.surOutput = new SurOutputModule(effectorEvent_, music);
+            this.mainOutput = new MainOutputModule(effectorEvent_, music.autoWorkMode);
+            this.aux1Output = new Aux1OutputModule(effectorEvent_, music.autoWorkMode);
+            this.aux2Output = new Aux2OutputModule(effectorEvent_, music.autoWorkMode);
+            this.surOutput = new SurOutputModule(effectorEvent_, music.autoWorkMode);
             base.system = new SystemModule(effectorEvent_);
 
             base.nonSystemModules = new ModuleBase[]

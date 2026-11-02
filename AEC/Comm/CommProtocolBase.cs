@@ -1331,7 +1331,8 @@ namespace AEC.Comm
                 return null;
             }
 
-            int cmdLength = GetShortFromDualBytes(buffer, (int)DataFrame.LengthLowIndex) + (int)DataFrame.CmdTypeIndex;
+            //int cmdLength = GetShortFromDualBytes(buffer, (int)DataFrame.LengthLowIndex) + (int)DataFrame.CmdTypeIndex;
+            int cmdLength = buffer[(int)DataFrame.LengthLowIndex] + (int)DataFrame.CmdTypeIndex;
             int length = cmdLength - 1 - (int)DataFrame.ValidDataStartIndex;
             if (length <= 0)
             {
@@ -1353,7 +1354,8 @@ namespace AEC.Comm
                 return null;
             }
 
-            int cmdLength = GetShortFromDualBytes(buffer, (int)DataFrame.LengthLowIndex) + (int)DataFrame.CmdTypeIndex;
+            //int cmdLength = GetShortFromDualBytes(buffer, (int)DataFrame.LengthLowIndex) + (int)DataFrame.CmdTypeIndex;
+            int cmdLength = buffer[(int)DataFrame.LengthLowIndex] + (int)DataFrame.CmdTypeIndex;
             int length = cmdLength - 1 - (int)DataFrame.ValidDataStartIndex;
             if (length <= 0)
             {
@@ -1600,7 +1602,8 @@ namespace AEC.Comm
             if (length >= ReadResponseMinLength &&
                 byte_arr[0] == Header)
             {
-                int cmdLength = BitConverter.ToUInt16(byte_arr, (int)DataFrame.LengthLowIndex);
+                //int cmdLength = BitConverter.ToUInt16(byte_arr, (int)DataFrame.LengthLowIndex);
+                int cmdLength = byte_arr[(int)DataFrame.LengthLowIndex];
 
                 int dataLength = cmdLength + BeforCmdLength;
 
@@ -1632,7 +1635,8 @@ namespace AEC.Comm
             if (length >= ReadResponseMinLength && 
                 byte_arr[0] == Header)
             {
-                int cmdLength = BitConverter.ToUInt16(byte_arr, (int)DataFrame.LengthLowIndex);
+                //int cmdLength = BitConverter.ToUInt16(byte_arr, (int)DataFrame.LengthLowIndex);
+                int cmdLength = byte_arr[(int)DataFrame.LengthLowIndex];
                 //AEC.Log.OutputLine("检测读取数据响应是否完成..{0}, length = {1}, lengthFlag = {2}", DateTime.Now.ToString("hh:mm:ss fff"), length, byte_arr[2]);
                 return cmdLength + BeforCmdLength <= length;
             }

@@ -148,10 +148,13 @@ namespace AEC.UI.VX
 
             this.WrokModeChanged();
 
+            //this.eqResetAndByPassPanel.Init(this.outputBase.eqGroup.isBypass, this.outputBase.themeColor);
+            //this.eqResetAndByPassPanel.Enabled = this.outputBase.music.isManual;
             this.eqResetAndByPassPanel.Init(this.outputBase.eqGroup.isBypass, this.outputBase.themeColor);
-            this.eqResetAndByPassPanel.Enabled = this.outputBase.music.isManual;
+            this.eqResetAndByPassPanel.Enabled = this.outputBase.autoWorkMode.isManual;
 
             //this.workModePanel.Init(this.outputBase.music, this._eventBus, this.outputBase.themeColor);
+            this.workModePanel.Init(this.outputBase.autoWorkMode, this._eventBus, this.outputBase.themeColor);
 
             this.RegisterCmbSelectedIndexChangedHandler();
 
@@ -178,7 +181,7 @@ namespace AEC.UI.VX
             this.sliderLpfQ.Enabled = this.outputBase.lpf.qCanBeChanged;
 
             this.eqResetAndByPassPanel.isPass = this.outputBase.eqGroup.isBypass;
-            this.mixerPanel.Enabled = this.outputBase.music.isManual;
+            this.mixerPanel.Enabled = this.outputBase.autoWorkMode.isManual;
             this.workModePanel.UpdateUIFromData();
         }
 
@@ -238,7 +241,7 @@ namespace AEC.UI.VX
 
         protected override void WrokModeChanged()
         {
-            this.mixerPanel.Enabled = outputBase.music.workMode == WorkMode.Manual;
+            this.mixerPanel.Enabled = outputBase.autoWorkMode.workMode == WorkMode.Manual;
         }
 
         protected override void WrokSelectChanged()

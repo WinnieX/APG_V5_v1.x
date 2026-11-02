@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using AEC.Core;
 using AEC.Comm.VXComm;
+using AEC.Common;
 
 namespace AEC.Effectors.VX.Modules
 {
@@ -23,8 +24,8 @@ namespace AEC.Effectors.VX.Modules
             }
         }
 
-        public AuxOutputModule(OutputChannelType outputChannel, byte index, EventBus effectorEvent_, MusicModule music_) :
-            base(outputChannel: outputChannel, index: index, effectorEvent_: effectorEvent_, eqGroup_: new EQGroup(initFreqList), music_: music_)
+        public AuxOutputModule(OutputChannelType outputChannel, byte index, EventBus effectorEvent_, AutoWorkMode autoWorkMode_) :
+            base(outputChannel: outputChannel, index: index, effectorEvent_: effectorEvent_, eqGroup_: new EQGroup(initFreqList), autoWorkMode_: autoWorkMode_)
         {
             this.delay = new ShortParam(
                 this.moduleIndex,
@@ -52,8 +53,8 @@ namespace AEC.Effectors.VX.Modules
 
     public class Aux1OutputModule : AuxOutputModule
     {
-        public Aux1OutputModule(EventBus effectorEvent_, MusicModule music_) :
-            base(OutputChannelType.Aux1Output, VXCommProtocol.aux1ModuleIndex, effectorEvent_, music_)
+        public Aux1OutputModule(EventBus effectorEvent_, AutoWorkMode autoWorkMode_) :
+            base(OutputChannelType.Aux1Output, VXCommProtocol.aux1ModuleIndex, effectorEvent_, autoWorkMode_)
         {
             //_themeColor = Color.FromArgb(2, 119, 189);
             //_themeColor = Color.FromArgb(1, 88, 198);
@@ -63,8 +64,8 @@ namespace AEC.Effectors.VX.Modules
 
     public class Aux2OutputModule : AuxOutputModule
     {
-        public Aux2OutputModule(EventBus effectorEvent_, MusicModule music_) :
-            base(OutputChannelType.Aux2Output, VXCommProtocol.aux2ModuleIndex, effectorEvent_, music_)
+        public Aux2OutputModule(EventBus effectorEvent_, AutoWorkMode autoWorkMode_) :
+            base(OutputChannelType.Aux2Output, VXCommProtocol.aux2ModuleIndex, effectorEvent_, autoWorkMode_)
         {
             //_themeColor = Color.FromArgb(0, 148, 148);
             _themeColor = Color.FromArgb(72, 208, 7);

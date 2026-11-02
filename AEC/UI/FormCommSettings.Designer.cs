@@ -329,6 +329,7 @@
             this.mSwitchCommViaUSB.CheckedPressedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(175)))), ((int)(((byte)(87)))));
             this.mSwitchCommViaUSB.CheckedPressedTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.mSwitchCommViaUSB.DisplayOrder = AEC.UI.Controls.SwitchDisplayOrder.BoxText;
+            this.mSwitchCommViaUSB.Enabled = false;
             this.mSwitchCommViaUSB.fillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.mSwitchCommViaUSB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.mSwitchCommViaUSB.isAutoCheck = false;

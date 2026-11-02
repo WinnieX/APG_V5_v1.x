@@ -99,9 +99,9 @@ namespace AEC.Comm
                 new SystemParamComment(SystemCommProtocol.SystemParamAddr.deviceModeSave, localization[Localization.comm_DeviceModeSave]),
                 new SystemParamComment(SystemCommProtocol.SystemParamAddr.deviceModeCall, localization[Localization.comm_DeviceModeCall]),
                 new SystemParamComment(SystemCommProtocol.SystemParamAddr.deviceId, localization[Localization.comm_DeviceId]),
-                new SystemParamComment(SystemCommProtocol.SystemParamAddr.deviceHardwareState, localization[Localization.comm_DeviceHardwareState]),
-                new SystemParamComment(SystemCommProtocol.SystemParamAddr.deviceName, localization[Localization.comm_DeviceName]),
-                new SystemParamComment(SystemCommProtocol.SystemParamAddr.usageLimitLock, localization[Localization.comm_UsageLimitLockData]),
+                //new SystemParamComment(SystemCommProtocol.SystemParamAddr.deviceHardwareState, localization[Localization.comm_DeviceHardwareState]),
+                //new SystemParamComment(SystemCommProtocol.SystemParamAddr.deviceName, localization[Localization.comm_DeviceName]),
+                //new SystemParamComment(SystemCommProtocol.SystemParamAddr.usageLimitLock, localization[Localization.comm_UsageLimitLockData]),
             };
         }
 

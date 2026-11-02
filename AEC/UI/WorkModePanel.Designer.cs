@@ -43,7 +43,7 @@
             this.panelWorkMode.BackColor = System.Drawing.Color.Transparent;
             this.panelWorkMode.Controls.Add(this.rdoAuto);
             this.panelWorkMode.Controls.Add(this.rdoManual);
-            this.panelWorkMode.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelWorkMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelWorkMode.Location = new System.Drawing.Point(2, 0);
             this.panelWorkMode.Margin = new System.Windows.Forms.Padding(0);
             this.panelWorkMode.Name = "panelWorkMode";
@@ -97,7 +97,7 @@
             this.panelWrokSelect.BackColor = System.Drawing.Color.Transparent;
             this.panelWrokSelect.Controls.Add(this.rdoDisco);
             this.panelWrokSelect.Controls.Add(this.rdoSing);
-            this.panelWrokSelect.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelWrokSelect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.panelWrokSelect.Location = new System.Drawing.Point(170, 0);
             this.panelWrokSelect.Margin = new System.Windows.Forms.Padding(0);
             this.panelWrokSelect.Name = "panelWrokSelect";
@@ -153,6 +153,7 @@
             this.Controls.Add(this.panelWrokSelect);
             this.Controls.Add(this.panelWorkMode);
             this.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "WorkModePanel";
             this.Size = new System.Drawing.Size(336, 32);

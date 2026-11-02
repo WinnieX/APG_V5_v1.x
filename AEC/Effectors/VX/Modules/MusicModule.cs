@@ -17,8 +17,9 @@ namespace AEC.Effectors.VX.Modules
         public const double HPFMaxFreq = 303;
         public const double HPFInitFreq = 50.6;
         
-        public readonly MusicParam wm = null;
-        public readonly MusicParam ws = null;
+        //public readonly MusicParam wm = null;
+        //public readonly MusicParam ws = null;
+        public readonly AutoWorkMode autoWorkMode = null;
 
         public readonly HighPassFilter singHPF = null;
         public readonly HighPassFilter discoHPF = null;
@@ -40,14 +41,16 @@ namespace AEC.Effectors.VX.Modules
             this.singEQGroup = new EQGroup(initFreqList);
             this.discoEQGroup = new EQGroup(initFreqList);
 
-            this.wm = new MusicParam((byte)VXCommProtocol.MusicParamAddr.workMode, (short)WorkMode.Manual, OnParamChanged);
-            this.ws = new MusicParam((byte)VXCommProtocol.MusicParamAddr.workSelect, (short)WorkSelect.Disco, OnParamChanged);
+            this.autoWorkMode = new AutoWorkMode(VXCommProtocol.musicModuleIndex, (byte)VXCommProtocol.MusicParamAddr.workMode, this.OnParamChanged);
+
+            //this.wm = new MusicParam((byte)VXCommProtocol.MusicParamAddr.workMode, (short)WorkMode.Manual, OnParamChanged);
+            //this.ws = new MusicParam((byte)VXCommProtocol.MusicParamAddr.workSelect, (short)WorkSelect.Disco, OnParamChanged);
             this.singHpfFreqParam = new MusicParam((byte)VXCommProtocol.MusicParamAddr.hpfFreq, this.singHPF.freqMaxIndex, OnParamChanged);
             this.discoHpfFreqParam = new MusicParam((byte)VXCommProtocol.MusicParamAddr.hpfFreq, this.discoHPF.freqMaxIndex, OnParamChanged);
             this.singEQBypassParam = new BoolParam(this.moduleIndex, (byte)VXCommProtocol.MusicParamAddr.eqPass, this.OnParamChanged);
             this.discoEQBypassParam = new BoolParam(this.moduleIndex, (byte)VXCommProtocol.MusicParamAddr.eqPass, this.OnParamChanged);
-            workModeInit = (short)WorkMode.Manual;
-            workSelectInit = (short)WorkSelect.Sing;
+            //workModeInit = (short)WorkMode.Manual;
+            //workSelectInit = (short)WorkSelect.Sing;
 
             this.singHPF.BindingParams(this.singHpfFreqParam);
             this.discoHPF.BindingParams(this.discoHpfFreqParam);
@@ -57,10 +60,11 @@ namespace AEC.Effectors.VX.Modules
 
         public void CopyFrom(MusicModule other)
         {
+            this.autoWorkMode.CopyFrom(other.autoWorkMode);
             //this._workMode = other._workMode;
             //this._workSelect = other._workSelect;
-            this.wm.initV = other.wm.v;
-            this.ws.initV = other.ws.v;
+            //this.wm.initV = other.wm.v;
+            //this.ws.initV = other.ws.v;
             this.singHPF.CopyFrom(other.singHPF);
             this.discoHPF.CopyFrom(other.discoHPF);            
             this.singEQGroup.CopyFrom(other.singEQGroup);
@@ -133,11 +137,11 @@ namespace AEC.Effectors.VX.Modules
         {
             get
             {
-                return DataConverter.Short2WorkMode(this.wm.v);
+                return DataConverter.Short2WorkMode(this.autoWorkMode.wm.v);
             }
             set
             {
-                this.wm.v = (short)value;
+                this.autoWorkMode.wm.v = (short)value;
             }
         }
 
@@ -145,34 +149,36 @@ namespace AEC.Effectors.VX.Modules
         {
             get
             {
-                return DataConverter.Short2WorkSelect(this.ws.v);
+                return DataConverter.Short2WorkSelect(this.autoWorkMode.ws.v);
             }
             set
             {
-                this.ws.v = (short)value;
+                this.autoWorkMode.ws.v = (short)value;
             }
         }
 
-        public short workModeInit
-        {
-            set
-            {
-                this.wm.initV = value;
-            }
-        }
+        //public short workModeInit
+        //{
+        //    set
+        //    {
+        //        this.wm.initV = value;
+        //    }
+        //}
 
-        public short workSelectInit
-        {
-            set
-            {
-                this.ws.initV = value;
-            }
-        }
+        //public short workSelectInit
+        //{
+        //    set
+        //    {
+        //        this.ws.initV = value;
+        //    }
+        //}
 
         public override void ResetData()
         {
-            workModeInit = (short)WorkMode.Manual;
-            workSelectInit = (short)WorkSelect.Sing;
+            //workModeInit = (short)WorkMode.Manual;
+            //workSelectInit = (short)WorkSelect.Sing;
+            this.autoWorkMode.Reset();
+
             singHPF.Reset();
             discoHPF.Reset();
 

@@ -159,7 +159,7 @@
             // 
             this.workModePanel.BackColor = System.Drawing.Color.Transparent;
             this.workModePanel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.workModePanel.ForeColor = System.Drawing.Color.LightGray;
+            this.workModePanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.workModePanel.Location = new System.Drawing.Point(575, 275);
             this.workModePanel.Margin = new System.Windows.Forms.Padding(0);
             this.workModePanel.Name = "workModePanel";

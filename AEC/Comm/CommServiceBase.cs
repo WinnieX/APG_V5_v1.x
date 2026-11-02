@@ -706,16 +706,16 @@ namespace AEC.Comm
                 return false;
             }
 
-            //初始化密钥
-            if (!InitCommKey())
+            //加载设备型号
+            if (!LoadEffectorModel(commProcess))
             {
                 UpdateConnectDeviceFailedProgress();
                 OnCommFailed();
                 return false;
             }
 
-            //加载设备型号
-            if (!LoadEffectorModel(commProcess))
+            //初始化密钥
+            if (!InitCommKey())
             {
                 UpdateConnectDeviceFailedProgress();
                 OnCommFailed();

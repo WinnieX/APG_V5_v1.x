@@ -9,8 +9,8 @@ namespace AEC.Comm.CommDevices
     {
         private System.IO.Ports.SerialPort sp = new System.IO.Ports.SerialPort();
 
-        public const int defaultBaudRate = 115200;
-        public const int secondaryBaudRate = 57600;
+        public const int defaultBaudRate = 57600;
+        public const int secondaryBaudRate = 115200;
 
         private static readonly string defPortName = "COM1";
         private static readonly int dataBits = 8;
